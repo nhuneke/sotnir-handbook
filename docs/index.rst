@@ -16,15 +16,18 @@ Contributors are credited on each page.
    :maxdepth: 1
    :caption: Getting started:
    
+   getting-started/linux-machines.rst
+   getting-started/unix-basics.rst
+   
+.. toctree::
+	:maxdepth: 1
+	:caption: BIDS:
+   
 .. toctree::
    :maxdepth: 1
    :caption: fMRI Preprocessing with fMRIPrep:
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. note::
+	Under construction. When new sections are completed they will be listed here.
+	
+	26/07/2021 - version 0.1.0

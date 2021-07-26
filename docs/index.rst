@@ -3,12 +3,22 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to SOTNIR handbook's documentation!
+Welcome to the SOTNIR handbook!
 ===========================================
 
+This handbook is a resource for those carrying out neuroimaging projects at the University of Southampton, and accompanies the Southampton Neuroimaging Repository (SOTNIR).
+
+This resource contains quickstart guides, standardised workflows, example scripts, and documentation regarding neuroimaging datasets, developed at the University of Southampton.
+
+Contributors are credited on each page.
+
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 1
+   :caption: Getting started:
+   
+.. toctree::
+   :maxdepth: 1
+   :caption: fMRI Preprocessing with fMRIPrep:
 
 
 

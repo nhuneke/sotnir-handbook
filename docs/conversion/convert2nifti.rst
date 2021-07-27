@@ -360,7 +360,8 @@ Here is an example script using DataLad to convert either a single session or bo
                      -i sourcedata/${sub}/ses-${sesh}/ \
                      -o ${sub}/ses-${sesh}/ \
                     -m "Convert ${sub}/ses-${sesh} to nifti" \
-                    "dcm2bids -d sourcedata/${sub}/ses-${sesh} -p ${label} -s ${sesh} -c code/roar_bids_config.json --forceDcm2niix" ;;
+                    "dcm2bids -d sourcedata/${sub}/ses-${sesh} -p ${label} -s ${sesh} -c code/roar_bids_config.json --forceDcm2niix" 
+                done ;;
             *)  # else
                     echo "$(tput setaf 1)$(tput bold)ERROR$(tput sgr 0)"  # "ERROR" red & bold
                     echo "Please enter session1, session2, or both" ;;

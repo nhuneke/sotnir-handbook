@@ -26,6 +26,12 @@ Contributors are credited on each page.
  
 .. toctree::
    :maxdepth: 1
+   :caption: Getting Access to Clinical Data at UHS
+
+   XNAT/intro.rst
+ 
+.. toctree::
+   :maxdepth: 1
    :caption: Undertaking a Neuroimaging Project in Southampton:
 
    projects-soton/intro.rst

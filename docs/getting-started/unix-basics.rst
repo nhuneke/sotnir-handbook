@@ -7,8 +7,9 @@ Contributors: Nathan TM Huneke, Harry Fagan
 
 ------------------------
 
+-----
 Unix
-****
+-----
 * Unix is an operating system (like Mac or Windows).
 * It uses a command line interface (or command line) where you type commands you want to run into a terminal.
 * Command line interpreters are called shells (two commonly used ones are bash [Bourne-again shell] and zsh [Z-shell])

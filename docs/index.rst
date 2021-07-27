@@ -12,6 +12,10 @@ This resource contains quickstart guides, example scripts, and standardised work
 
 Contributors are credited on each page.
 
+.. important::
+   
+   If you would like to contribute to this handbook, please contact Nathan (N.Huneke@soton.ac.uk), Ara (A.Varatharaj@soton.ac.uk), or Kai (Y.Zou@soton.ac.uk)
+
 .. toctree::
    :maxdepth: 1
    :caption: Getting started:
@@ -19,7 +23,13 @@ Contributors are credited on each page.
    getting-started/linux-machines.rst
    getting-started/unix-basics.rst
    getting-started/BIDS.rst
-  
+ 
+.. toctree::
+   :maxdepth: 1
+   :caption: Undertaking a Neuroimaging Project in Southampton:
+
+   projects-soton/intro.rst
+
 .. toctree::
    :maxdepth: 1
    :caption: File conversion:
@@ -39,6 +49,20 @@ Contributors are credited on each page.
 .. toctree::
    :maxdepth: 1
    :caption: fMRI Analysis:
+
+   fmri-analysis/intro.rst
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Functional connectivity analyses:
+
+   connectivity/intro.rst
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Diffusion Tensor Imaging:
+
+   dti/intro.rst
 
 .. note::
 	Under construction. When new sections are completed they will be listed here.

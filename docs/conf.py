@@ -19,8 +19,8 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = 'SOTNIR handbook'
-copyright = '2021, Huneke NTM, Zou K, Varatharaj A'
-author = 'Huneke NTM, Zou K, Varatharaj A'
+copyright = '2021, Huneke NTM, Varatharaj A, Zou K'
+author = 'Huneke NTM, Varatharaj A, Zou K'
 
 # The full version, including alpha/beta/rc tags
 release = '0.1.0'

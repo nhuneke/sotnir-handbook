@@ -19,7 +19,13 @@ Contributors are credited on each page.
    getting-started/linux-machines.rst
    getting-started/unix-basics.rst
    getting-started/BIDS.rst
-   
+  
+.. toctree::
+   :maxdepth: 1
+   :caption: File conversion:
+
+   conversion/convert2nifti.rst
+
 .. toctree::
    :maxdepth: 1
    :caption: fMRI Preprocessing with fMRIPrep:

@@ -1,7 +1,7 @@
 .. _running-fmriprep.rst:
 
 ====================================
-Step 3: Running fMRIPrep
+Step 2: Running fMRIPrep
 ====================================
 | Contributors: Nathan TM Huneke
 | Maintainers: Nathan TM Huneke

@@ -8,8 +8,7 @@ Convert from DICOM to NIfTI
 
 ------------------------------------------
 
-fMRIPrep is an example of a BIDS app. Therefore, before we can run fMRIPrep, 
-we need to convert our data from the DICOM format output by the scanner
+Before we can do any MRI analysis, we need to convert our data from the DICOM format output by the scanner
 to NIfTI in the BIDS structure. To do this, we suggest using an app called Dcm2bids (link).
 
 Installation

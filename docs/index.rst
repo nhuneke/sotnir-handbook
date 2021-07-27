@@ -6,9 +6,9 @@
 Welcome to the SOTNIR handbook!
 ===========================================
 
-This handbook is a resource for those carrying out neuroimaging projects at the University of Southampton, and accompanies the Southampton Neuroimaging Repository (SOTNIR).
+This handbook is a resource for those carrying out neuroimaging projects at the University of Southampton (UoS) or University Hospital Southampton (UHS), and accompanies the Southampton Neuroimaging Repository (SOTNIR).
 
-This resource contains quickstart guides, standardised workflows, example scripts, and documentation regarding neuroimaging datasets, developed at the University of Southampton.
+This resource contains quickstart guides, example scripts, and standardised workflows, developed at the University of Southampton.
 
 Contributors are credited on each page.
 
@@ -21,12 +21,17 @@ Contributors are credited on each page.
    getting-started/BIDS.rst
    
 .. toctree::
-	:maxdepth: 1
-	:caption: BIDS:
-   
-.. toctree::
    :maxdepth: 1
    :caption: fMRI Preprocessing with fMRIPrep:
+
+   fmriprep/intro.rst
+   fmriprep/convert2nifti.rst
+   fmriprep/install-fmriprep.rst
+   fmriprep/running-fmriprep.rst
+
+.. toctree::
+   :maxdepth: 1
+   :caption: fMRI Analysis:
 
 .. note::
 	Under construction. When new sections are completed they will be listed here.

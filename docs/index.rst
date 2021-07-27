@@ -18,6 +18,7 @@ Contributors are credited on each page.
    
    getting-started/linux-machines.rst
    getting-started/unix-basics.rst
+   getting-started/BIDS.rst
    
 .. toctree::
 	:maxdepth: 1

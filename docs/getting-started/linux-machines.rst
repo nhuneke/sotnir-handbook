@@ -17,6 +17,7 @@ since popular software packages such as FSL, AFNI and FreeSurfer do not run on a
 The University of Southampton provides a number of Linux workstations that run a *flavour* of Linux known as 
 Red Hat Enterprise Linux (RHEL) 7. Some of these have been configured for neuroimaging analysis. Current machines
 that can be used for this purpose include:
+
 * uos-210028
 * uos-211997
 
@@ -129,6 +130,7 @@ To deactivate your environment, use the following command:
 
 Much of the software you will need is already present on the machine. However, some software will need to be installed within your newly created 
 conda environment. These are:
+
 * DataLad
 * Pigz
 * Dcm2niix

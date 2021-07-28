@@ -18,11 +18,12 @@ Contributors are credited on each page.
 
 .. toctree::
    :maxdepth: 1
-   :caption: Getting started:
+   :caption: Getting started
    
    getting-started/linux-machines.rst
    getting-started/unix-basics.rst
    getting-started/BIDS.rst
+   getting-started/datalad.rst
  
 .. toctree::
    :maxdepth: 1
@@ -32,20 +33,20 @@ Contributors are credited on each page.
  
 .. toctree::
    :maxdepth: 1
-   :caption: Undertaking a Neuroimaging Project in Southampton:
+   :caption: Undertaking a Neuroimaging Project in Southampton
 
    projects-soton/intro.rst
 
 .. toctree::
    :maxdepth: 1
-   :caption: File conversion:
+   :caption: File conversion
 
    conversion/convert2nifti.rst
    conversion/pydeface.rst
 
 .. toctree::
    :maxdepth: 1
-   :caption: fMRI Preprocessing with fMRIPrep:
+   :caption: fMRI Preprocessing with fMRIPrep
 
    fmriprep/intro.rst
    fmriprep/convert2nifti.rst
@@ -54,19 +55,19 @@ Contributors are credited on each page.
 
 .. toctree::
    :maxdepth: 1
-   :caption: fMRI Analysis:
+   :caption: fMRI Analysis
 
    fmri-analysis/intro.rst
 
 .. toctree::
    :maxdepth: 1
-   :caption: Functional connectivity analyses:
+   :caption: Functional connectivity analyses
 
    connectivity/intro.rst
 
 .. toctree::
    :maxdepth: 1
-   :caption: Diffusion Tensor Imaging:
+   :caption: Diffusion Tensor Imaging
 
    dti/intro.rst
 

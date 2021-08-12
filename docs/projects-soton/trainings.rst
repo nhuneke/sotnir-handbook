@@ -24,4 +24,4 @@ To be added
 PACS at UHS
 -----------
 
-In order to gain access to the PACS, you must complete the training.
+In order to gain access to the Picture archiving and communication system (PACS), first, complete training "PACS at UHS e-learning" on VLE. Then, request access via the Service Catalogue. This can be found on the IT Service Desk, from there, scroll down to the bottom of the page and select the system you wish to request access to.

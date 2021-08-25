@@ -23,7 +23,7 @@ that can be used for this purpose include:
 
 .. note::
 
-    For more information on the University's  RHEL7 machines, see http://linuxdesktops.soton.ac.uk/
+    For more information on the University's RHEL7 machines, see http://linuxdesktops.soton.ac.uk/
 
 Setting Up the Machine
 -------------------------

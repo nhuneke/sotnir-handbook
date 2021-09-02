@@ -131,7 +131,7 @@ is the ``datalad run`` command. Using this command allows you to capture your co
 do something with them, and then save the results. 
 
 For example, the following ``datalad run`` command, runs a script on a file called 
-``anonymised_dataset.csv`` to convert it to long format::
+``anonymised_dataset.csv`` to convert it to long format:
 
 .. code-block:: bash
 
@@ -167,7 +167,7 @@ After running this, checking the ``git log`` will show the following::
         ^^^ Do not change lines above ^^^
 
 Because the command and files needed are all saved in the log, we can even re-run this command if needed! 
-To do so, we use ``datalad rerun <SHASUM>`` using the SHASUM of the commit in question. For example::
+To do so, we use ``datalad rerun <SHASUM>`` using the SHASUM of the commit in question. For example:
 
 .. code-block:: bash
 

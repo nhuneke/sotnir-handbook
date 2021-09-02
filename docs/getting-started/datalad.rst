@@ -70,10 +70,120 @@ By running ``git log`` (or a tool that displays Git history) in the dataset or o
 specific files, you can find out what has been done to the dataset or to individual files
 by whom, and when.
 
+Saving changes you make to a dataset
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If you make a change to a dataset, you will need to save it into the history 
+so that you or other users in the future can see what was done when and by whom. The
+command ``datalad status`` will show you whether any changes need to be saved. If you run
+this command you might see either the message::
+
+    nothing to save, working tree clean
+
+In which case the log is up to date, or::
+
+    modified: file1.txt (file)
+
+There is a file (``file1.txt``) that has been modified. This modification needs to be
+saved in the dataset's history. To do so run a ``datalad save`` command. This will
+produce the following output::
+
+    add(ok): file1.txt (file)                                                       
+    save(ok): . (dataset)                                                           
+    action summary:                                                                 
+        add (ok: 1)
+        save (ok: 1)
+
+``file1.txt`` was added to the repository and then the dataset was saved. It is
+useful to add a message regarding what was saved, so that you can keep track of 
+what has been done to the dataset. To do so use the ``-m`` argument, e.g.:
+
+.. code-block:: bash
+
+    datalad save -m "Add file1.txt"
+
+If you now look at the ``git log`` you will see that this entry is accompanied by the 
+message that file1.txt was added::
+
+    commit 7a286d45195b7ac6a167fefb2a2229fa87af2425
+    Author: nh6g15 <n.huneke@soton.ac.uk>
+    Date:   Mon Jun 21 14:49:43 2021 +0100
+
+        Add file1.txt
+
+    commit a736983ec90a2094ce401105173122f9a9033824
+    Author: nh6g15 <n.huneke@soton.ac.uk>
+    Date:   Thu Jun 17 14:34:17 2021 +0100
+
+        Apply YODA dataset setup
+
+    commit 8bf3c337ef7c06852ffe07ee738eae7f44b1f46c
+    Author: nh6g15 <n.huneke@soton.ac.uk>
+    Date:   Thu Jun 17 14:34:15 2021 +0100
+
+        [DATALAD] new dataset
+
+DataLad Run
+^^^^^^^^^^^^
+
+Possibly the most useful feature of DataLad for computationally intensive analyses (e.g. neuroimaging) 
+is the ``datalad run`` command. Using this command allows you to capture your command(s), fetch relevant files, 
+do something with them, and then save the results. 
+
+For example, the following ``datalad run`` command, runs a script on a file called 
+``anonymised_dataset.csv`` to convert it to long format::
+
+.. code-block:: bash
+
+    datalad run \
+        -m "Save long format dataset" \
+        -i anonymised_dataset.csv \
+        -o dataset_long_format.csv \
+        "code/convert2long.R"
+
+After running this, checking the ``git log`` will show the following::
+
+    commit 1eac06986726b3f98c61b0b7eab0964ca54c2e0b (HEAD -> master)
+    Author: nh6g15 <n.huneke@soton.ac.uk>
+    Date:   Fri Jun 25 16:17:16 2021 +0100
+
+        [DATALAD RUNCMD] Save long format dataset
+        
+        === Do not change lines below ===
+        {
+        "chain": [],
+        "cmd": "code/convert2long.R",
+        "dsid": "9663676d-5ac4-4071-9406-6ee778f7d49e",
+        "exit": 0,
+        "extra_inputs": [],
+        "inputs": [
+        "anonymised_dataset.csv"
+        ],
+        "outputs": [
+        "dataset_long_format.csv"
+        ],
+        "pwd": "."
+        }
+        ^^^ Do not change lines above ^^^
+
+Because the command and files needed are all saved in the log, we can even re-run this command if needed! 
+To do so, we use ``datalad rerun <SHASUM>`` using the SHASUM of the commit in question. For example::
+
+.. code-block:: bash
+
+    datalad rerun 1eac06986726b3f98c61b0b7eab0964ca54c2e0b
+
+I strongly suggest you read the Chapter on ``datalad run`` in the `DataLad handbook <http://handbook.datalad.org/en/latest/basics/basics-run.html>`_ 
+as this command is so important.
+
+.. note:: 
+    
+    To add: 
+    - Using DataLad with GitLab
+    - Remote Indexed Archives for dataset storage and backup
+
 More information
 ^^^^^^^^^^^^^^^^
 
 More information on DataLad and how to use it can be found in the DataLad Handbook at
-`handbook.datalad.org <http://handbook.datalad.org/en/latest/index.html>`_. The
-chapter "DataLad datasets" can help you to familiarize yourself with the
-concept of a dataset.
+`handbook.datalad.org <http://handbook.datalad.org/en/latest/index.html>`_.

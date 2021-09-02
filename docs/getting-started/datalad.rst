@@ -179,6 +179,7 @@ as this command is so important.
 .. note:: 
     
     To add: 
+
     - Using DataLad with GitLab
     - Remote Indexed Archives for dataset storage and backup
 
@@ -186,4 +187,6 @@ More information
 ^^^^^^^^^^^^^^^^
 
 More information on DataLad and how to use it can be found in the DataLad Handbook at
-`handbook.datalad.org <http://handbook.datalad.org/en/latest/index.html>`_.
+`handbook.datalad.org <http://handbook.datalad.org/en/latest/index.html>`_. The chapter
+`What you really need to know <http://handbook.datalad.org/en/latest/intro/executive_summary.html#>`_ 
+is particularly useful.

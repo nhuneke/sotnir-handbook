@@ -23,7 +23,7 @@ that can be used for this purpose include:
 
 .. note::
 
-    For more information on the University's  RHEL7 machines, see http://linuxdesktops.soton.ac.uk/
+    For more information on the University's RHEL7 machines, see http://linuxdesktops.soton.ac.uk/
 
 Setting Up the Machine
 -------------------------
@@ -35,6 +35,11 @@ To use the above machines effectively, you need to go through a number of initia
 
 These machines can be accessed remotely via windows remote desktop or SSH. Windows remote desktop is automatically installed on University machines running Windows.
 On personal machines you can download and install Windows remote desktop.
+
+.. note::
+
+    If you are logging in from a personal machine then you will need to connect to  
+    the University's `VPN <https://knowledgenow.soton.ac.uk/Articles/KB0011610>`_.
 
 1. On your machine, click on *Start* and search for ``Remote Desktop Connection``
 2. Type in the computer name as above and click connect

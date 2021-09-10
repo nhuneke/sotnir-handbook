@@ -289,6 +289,7 @@ Once you have written your configuration file, Dcm2bids can be run as follows:
     dcm2bids -d sourcedata/sub-01 -p 01 -c code/bids_config.json --forceDcm2niix
 
 There's a few arguments to note here:
+
 * ``-d`` refers to the DICOM directory
 * ``-p`` refers to participant ID
 * ``-c`` refers to the location of your configuration file

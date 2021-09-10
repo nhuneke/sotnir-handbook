@@ -36,6 +36,7 @@ Contributors are credited on each page.
    :caption: Undertaking a Neuroimaging Project in Southampton
 
    projects-soton/intro.rst
+   projects-soton/mri-scanner.rst
 
 .. toctree::
    :maxdepth: 1

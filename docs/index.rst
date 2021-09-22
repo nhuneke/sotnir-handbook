@@ -6,9 +6,9 @@
 Welcome to the SOTNIR handbook!
 ===========================================
 
-This handbook is a resource for those carrying out neuroimaging projects at the University of Southampton (UoS) or University Hospital Southampton (UHS), and accompanies the Southampton Neuroimaging Repository (SOTNIR).
+This handbook is a resource for those carrying out neuroimaging projects.
 
-This resource contains quickstart guides, example scripts, and standardised workflows, developed at the University of Southampton.
+This resource contains quickstart guides, example scripts, and standardised workflows, developed in Southampton.
 
 Contributors are credited on each page.
 

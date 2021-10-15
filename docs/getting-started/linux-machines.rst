@@ -3,7 +3,7 @@
 =====================
 Linux Workstations
 =====================
-| Contributors: Nathan TM Huneke, Harry Fagan, Nick Hedger
+| Contributors: Nathan TM Huneke, Harry Fagan, Nick Hedger, Yukai Zou
 | Maintainers: Nathan TM Huneke
 
 --------------
@@ -14,10 +14,9 @@ Why Linux?
 For neuroimaging analysis, it is almost essential that you use a UNIX - based operating system (Mac or Linux), 
 since popular software packages such as FSL, AFNI and FreeSurfer do not run on a Windows operating system.
 
-The University of Southampton provides a number of Linux workstations that run a *flavour* of Linux known as 
-Red Hat Enterprise Linux (RHEL) 7. Some of these have been configured for neuroimaging analysis. Current machines
-that can be used for this purpose include:
+A number of workstations at the University of Southampton run a *flavour* of Linux operating system known as Red Hat Enterprise Linux (RHEL) 7. Some of these have been configured for neuroimaging analysis. Current machines that can be used for this purpose include:
 
+* uos-15263
 * uos-210028
 * uos-211997
 
@@ -30,10 +29,24 @@ Setting Up the Machine
 
 To use the above machines effectively, you need to go through a number of initial set up steps.
 
+0. Grant Access
+===============
+
+First of all, your access to the specific University linux workstation needs to be granted. This is typically done by the admin (i.e. you would need to find out who that person is) of that workstation, who will raise an iSolution ticket on behalf of you.
+
+.. note::
+
+    Please provide your UoS username to the admin.
+
 1. Log in
 ============
 
-These machines can be accessed remotely via windows remote desktop or SSH. Windows remote desktop is automatically installed on University machines running Windows.
+These machines can be accessed remotely via windows remote desktop or SSH. 
+
+Windows Remote Desktop
+**********************
+
+Windows remote desktop is automatically installed on University machines running Windows.
 On personal machines you can download and install Windows remote desktop.
 
 .. note::
@@ -43,7 +56,21 @@ On personal machines you can download and install Windows remote desktop.
 
 1. On your machine, click on *Start* and search for ``Remote Desktop Connection``
 2. Type in the computer name as above and click connect
-3. Input your university of southampton username and password when prompted
+3. Input your University of Southampton username and password when prompted
+
+SSH
+********************
+
+To connect remotely via SSH, launch a Terminal window, and enter the following command:
+
+.. note::
+
+    If you are logging in from a personal machine then you will need to connect to
+    the University's `VPN <https://knowledgenow.soton.ac.uk/Articles/KB0011610>`_.
+
+``ssh username@uos-#.clients.soton.ac.uk`` - Replace ``username`` with your University of Southampton username, and ``#`` with the specific workstation ID
+
+Please enter your University of Southampton password when prompted, and then hit Return.
 
 2. Install Conda
 =================

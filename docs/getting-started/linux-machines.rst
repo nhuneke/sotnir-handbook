@@ -51,8 +51,8 @@ On personal machines you can download and install Windows remote desktop.
 
 .. note::
 
-    If you are logging in from a personal machine then you will need to connect to  
-    the University's `VPN <https://knowledgenow.soton.ac.uk/Articles/KB0011610>`_.
+    If you are off site when logging in then you will need to connect to  
+    the University's `VPN <https://knowledgenow.soton.ac.uk/Articles/KB0011610>`_ first.
 
 1. On your machine, click on *Start* and search for ``Remote Desktop Connection``
 2. Type in the computer name as above and click connect
@@ -65,8 +65,8 @@ To connect remotely via SSH, launch a Terminal window, and enter the following c
 
 .. note::
 
-    If you are logging in from a personal machine then you will need to connect to
-    the University's `VPN <https://knowledgenow.soton.ac.uk/Articles/KB0011610>`_.
+    If you are off site when logging in then you will need to connect to  
+    the University's `VPN <https://knowledgenow.soton.ac.uk/Articles/KB0011610>`_ first.
 
 ``ssh username@uos-#.clients.soton.ac.uk`` - Replace ``username`` with your University of Southampton username, and ``#`` with the specific workstation ID.
 

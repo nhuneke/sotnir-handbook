@@ -7,9 +7,8 @@ Contributors: Nathan TM Huneke, Harry Fagan
 
 ------------------------
 
------
 Unix
------
+------
 * Unix is an operating system (like Mac or Windows).
 * It uses a command line interface (or command line) where you type commands you want to run into a terminal.
 * Command line interpreters are called shells (two commonly used ones are bash [Bourne-again shell] and zsh [Z-shell])
@@ -20,7 +19,7 @@ Unix
     You can practice using Unix online with JupyterLab (see https://neuroimaging-core-docs.readthedocs.io/en/latest/pages/unix.html for an excellent tutorial)
 
 Basic Unix Commands
-********************
+--------------------
 * ``pwd`` - Print Working Directory, tells you the current directory you are in
 * ``cd directory`` - Change Directory, takes to you the directory specified 
 * ``cd ~`` - Go to home directory
@@ -30,7 +29,6 @@ Basic Unix Commands
 * ``ls -a`` - lists all files and directories in the directory you are in (including hidden ones which start with an “.” and don’t appear is you just you the “ls” command)
 * ``ls -l`` - Long list, lists all files and directory with ownership and user permissions
 * ``ls -al`` - Long list (including hidden files and directories) 
-* ``ls /etc`` - Lists all files and subdirectories in the directory you are in
 * ``mkdir <name>`` - creates a directory with that name
 * ``mkdir .<name>`` - creates a hidden directory with that name
 * ``history`` - lists all recently run commands 
@@ -41,7 +39,7 @@ Basic Unix Commands
 * ``rm -rf <directory>`` - deletes a directory 
 
 Important Unix Directories
-**************************
+--------------------------
 |  ``/bin``
 |  Where built-in Unix commands (e.g. ``ls``, ``mkdir``, etc...) are stored
 |  

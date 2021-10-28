@@ -124,7 +124,7 @@ Once the installer has finished, close and reopen the terminal window. Then type
 =============================================================
 
 What is a conda environment?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+****************************
 
 An environment is a self-contained collection of conda packages. If you change one environment, your other environments and other installed software are not
 affected. Some software, particularly DataLad, seems to interfere with other software on the Linux machines. It is therefore safest to use this software
@@ -133,7 +133,7 @@ in a self-contained environment.
 Conda environments can be easily activated and deactivated as needed.
 
 Create your environment
-~~~~~~~~~~~~~~~~~~~~~~~~~
+***********************
 
 To create your environment, open a terminal. If conda is installed, you should see that you are currently in the ``base`` environment, 
 which is signified like so:
@@ -151,7 +151,7 @@ Type the following to create a new environment:
 Replace ``myenv`` with whatever you want to call your environment. Press y when prompted to complete the creation.
 
 Activating and deactivating your environment
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+********************************************
 
 To activate your environment use the following command:
 

@@ -68,9 +68,25 @@ To connect remotely via SSH, launch a Terminal window, and enter the following c
     If you are logging in from a personal machine then you will need to connect to
     the University's `VPN <https://knowledgenow.soton.ac.uk/Articles/KB0011610>`_.
 
-``ssh username@uos-#.clients.soton.ac.uk`` - Replace ``username`` with your University of Southampton username, and ``#`` with the specific workstation ID
+``ssh username@uos-#.clients.soton.ac.uk`` - Replace ``username`` with your University of Southampton username, and ``#`` with the specific workstation ID.
 
 Please enter your University of Southampton password when prompted, and then hit Return.
+
+To display application GUI's from the remote machine on your computer (e.g. the GUI for FSL or Matlab) you will need to connect with X-forwarding enabled by using
+the ``-X`` flag (or on Mac, ``-Y``):
+
+.. code-block:: bash
+
+    ssh -X username@uos-#.clients.soton.ac.uk
+
+Click `here <https://knowledgenow.soton.ac.uk/Articles/KB0011734>`_ for more information on common problems with X and how to solve them.
+
+.. tip::
+    
+    **What if I am using a Windows machine?**
+    
+    You can install a terminal emulator and use the commands as above. `MobaXterm <https://mobaxterm.mobatek.net/>`_ has all the features needed to achieve
+    X-forwarding on a Windows machine.
 
 2. Install Conda
 =================
@@ -165,8 +181,6 @@ conda environment. These are:
 
 * DataLad
 * Pigz
-* Dcm2niix
-* Dcm2bids
 
 First activate your conda environment:
 
@@ -180,8 +194,6 @@ Then install each of these software packages with the following:
 
     $ conda install -c conda-forge datalad
     $ conda install -c conda-forge pigz
-    $ conda install -c conda-forge dcm2niix
-    $ conda install -c conda-forge dcm2bids
 
 5. Set up FSL 
 ===============

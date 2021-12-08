@@ -85,8 +85,41 @@ Click `here <https://knowledgenow.soton.ac.uk/Articles/KB0011734>`_ for more inf
     
     **What if I am using a Windows machine?**
     
-    You can install a terminal emulator and use the commands as above. `MobaXterm <https://mobaxterm.mobatek.net/>`_ has all the features needed to achieve
-    X-forwarding on a Windows machine.
+    You can install a terminal emulator and use the commands as above. For example, `MobaXterm <https://mobaxterm.mobatek.net/>`_ has all the features needed to achieve X-forwarding on a Windows machine. Alternatively, you can also use `Git BASH <https://gitforwindows.org/>`_, a BASH emulation used to run Git from the command line, which is already installed on all University Windows machines.
+
+.. tip::
+
+   **I can't connect via SSH and I got a warning message: "REMOTE HOST IDENTIFICATION HAS CHANGED!" What should I do?**
+   
+   The issue here is most probably due to a new (randomised) host ID has been generated, which is usually a result of system upgrade.
+   
+   *Why is it causing a warning?*
+   
+   ssh is warning you that this host ID is different to what it previously saw when you connected to the computer, since it has no way to know whether (as in this case) it is a legitimate change made by the machine owner, or whether someone has maliciously tampered and may be trying to steal information by getting you to connect to a different computer entirely.
+   
+   *How to solve?*
+   
+   There are several ways to work around:
+       
+       1. If this is the only computer that you use ‘ssh’ or related commands (e.g. rsync, scp, sftp) to connect to, then you can safely just delete the file where it keeps its log of host key fingerprints:
+           
+           .. code-block:: bash
+           
+           $ rm /h/.ssh/known_hosts
+           
+       then try the ssh command again, confirm you wish to store the host ID, and proceed as usual.
+       
+       2. Alternatively, if you wish to preserve the old file, you can rename it to a different filename:
+           
+           .. code-block:: bash
+           
+           $ mv /h/.ssh/known_hosts rm /h/.ssh/known_hosts_old
+           
+       then try the ssh command again. In this case, a new known_hosts file will be generated.
+       
+       3. Alternatively, if you use ssh for other purposes as well (e.g. connect to other computers) and want to keep their host key fingerprints intact, then you will need to delete just the relevant lines from the file. 
+       
+       You could edit the file with ``vi`` or ``nano`` if you are comfortable with those editors, or, you could use Wordpad or Notepad++ (but not notepad since it is likely not to ‘understand’ the line endings) in Windows, finding the file at ``h:\.ssh\known_hosts``
 
 2. Install Conda
 =================

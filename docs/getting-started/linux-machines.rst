@@ -107,7 +107,7 @@ Click `here <https://knowledgenow.soton.ac.uk/Articles/KB0011734>`_ for more inf
            
            .. code-block:: bash
            
-           $ rm /h/.ssh/known_hosts
+               $ rm /h/.ssh/known_hosts
            
        then try the ssh command again, confirm you wish to store the host ID, and proceed as usual.
        
@@ -115,7 +115,7 @@ Click `here <https://knowledgenow.soton.ac.uk/Articles/KB0011734>`_ for more inf
            
            .. code-block:: bash
            
-           $ mv /h/.ssh/known_hosts rm /h/.ssh/known_hosts_old
+               $ mv /h/.ssh/known_hosts rm /h/.ssh/known_hosts_old
            
        then try the ssh command again. In this case, a new known_hosts file will be generated.
        
@@ -244,7 +244,7 @@ At the end of the file copy and paste the following lines:
 
 .. code-block:: bash
 
-    FSLDIR=/usr/local/fsl
+    FSLDIR=/usr/local/fsl    # NOTE: This is default; modify this line to match your local path
     . ${FSLDIR}/etc/fslconf/fsl.sh
     PATH=${FSLDIR}/bin:${PATH}
     export FSLDIR PATH

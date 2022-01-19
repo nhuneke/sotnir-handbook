@@ -11,8 +11,7 @@ Linux Workstations
 Why Linux?
 -------------
 
-For neuroimaging analysis, it is almost essential that you use a UNIX - based operating system (Mac or Linux), 
-since popular software packages such as FSL, AFNI and FreeSurfer do not run on a Windows operating system.
+Linux is a lightweight (small size) platform which consumes not as much memory as a Windows OS. This feature is particularly useful when it comes to computing-intensive environment, where a lot of memory and storage spaces are in need. For neuroimaging analysis, it is almost essential that you use a UNIX - based operating system (Mac or Linux), since popular software packages such as FSL, AFNI and FreeSurfer do not run on a Windows operating system.
 
 A number of workstations at the University of Southampton run a *flavour* of Linux operating system known as Red Hat Enterprise Linux (RHEL) 7. Some of these have been configured for neuroimaging analysis. Current machines that can be used for this purpose include:
 
@@ -41,13 +40,14 @@ First of all, your access to the specific University linux workstation needs to 
 1. Log in
 ============
 
-These machines can be accessed remotely via windows remote desktop or SSH. 
+These machines can be accessed remotely via remote desktop apps or SSH. 
 
-Windows Remote Desktop
+Remote Desktop Apps
 **********************
 
-Windows remote desktop is automatically installed on University machines running Windows.
-On personal machines you can download and install Windows remote desktop.
+For MacOS, you can use “Microsoft Remote Desktop”. If you already have it installed for connecting to “Win 10 Student” at the University, then this would come handy. 
+For Windows, you can use “Remote Desktop Connection”, which is automatically installed on University machines running Windows.
+You should be able to download and install either app on your personal machines.
 
 .. note::
 
@@ -57,6 +57,8 @@ On personal machines you can download and install Windows remote desktop.
 1. On your machine, click on *Start* and search for ``Remote Desktop Connection``
 2. Type in the computer name as above and click connect
 3. Input your University of Southampton username and password when prompted
+
+Alternatively, if you would like to connect via remote desktop app on Linux, you can use Remmina by following an instruction `here <https://knowledgenow.soton.ac.uk/Articles/KB0020338>`_.
 
 SSH
 ********************
@@ -85,8 +87,41 @@ Click `here <https://knowledgenow.soton.ac.uk/Articles/KB0011734>`_ for more inf
     
     **What if I am using a Windows machine?**
     
-    You can install a terminal emulator and use the commands as above. `MobaXterm <https://mobaxterm.mobatek.net/>`_ has all the features needed to achieve
-    X-forwarding on a Windows machine.
+    You can install a terminal emulator and use the commands as above. For example, `MobaXterm <https://mobaxterm.mobatek.net/>`_ has all the features needed to achieve X-forwarding on a Windows machine. Alternatively, you can also use `Git BASH <https://gitforwindows.org/>`_, a BASH emulation used to run Git from the command line, which is already installed on all University Windows machines.
+
+.. tip::
+
+   **I can't connect via SSH and I got a warning message: "REMOTE HOST IDENTIFICATION HAS CHANGED!" What should I do?**
+   
+   The issue here is most probably due to a new (randomised) host ID has been generated, which is usually a result of system upgrade.
+   
+   *Why is it causing a warning?*
+   
+   ssh is warning you that this host ID is different to what it previously saw when you connected to the computer, since it has no way to know whether (as in this case) it is a legitimate change made by the machine owner, or whether someone has maliciously tampered and may be trying to steal information by getting you to connect to a different computer entirely.
+   
+   *How to solve?*
+   
+   There are several ways to work around:
+       
+       1. If this is the only computer that you use ‘ssh’ or related commands (e.g. rsync, scp, sftp) to connect to, then you can safely just delete the file where it keeps its log of host key fingerprints:
+           
+           .. code-block:: bash
+           
+           $ rm /h/.ssh/known_hosts
+           
+       then try the ssh command again, confirm you wish to store the host ID, and proceed as usual.
+       
+       2. Alternatively, if you wish to preserve the old file, you can rename it to a different filename:
+           
+           .. code-block:: bash
+           
+           $ mv /h/.ssh/known_hosts rm /h/.ssh/known_hosts_old
+           
+       then try the ssh command again. In this case, a new known_hosts file will be generated.
+       
+       3. Alternatively, if you use ssh for other purposes as well (e.g. connect to other computers) and want to keep their host key fingerprints intact, then you will need to delete just the relevant lines from the file. 
+       
+       You could edit the file with ``vi`` or ``nano`` if you are comfortable with those editors, or, you could use Wordpad or Notepad++ (but not notepad since it is likely not to ‘understand’ the line endings) in Windows, finding the file at ``h:\.ssh\known_hosts``
 
 2. Install Conda
 =================

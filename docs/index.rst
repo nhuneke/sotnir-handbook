@@ -47,25 +47,10 @@ Contributors are credited on each page.
    conversion/pydeface.rst
 
 .. toctree::
-   :maxdepth: 1
-   :caption: fMRI Preprocessing with fMRIPrep
-
-   fmriprep/intro.rst
-   fmriprep/convert2nifti.rst
-   fmriprep/install-fmriprep.rst
-   fmriprep/running-fmriprep.rst
-
-.. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: fMRI Analysis
 
    fmri-analysis/intro.rst
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Functional connectivity analyses
-
-   connectivity/intro.rst
 
 .. toctree::
    :maxdepth: 1

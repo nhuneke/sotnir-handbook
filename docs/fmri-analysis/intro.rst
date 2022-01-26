@@ -12,9 +12,9 @@ Under construction
 
 .. toctree::
     :maxdepth: 1
-    :caption: Sections 
+    :caption: Sections
 
-   qa-checks/qa-checks.rst
-   fmriprep/intro.rst
-   fmri-analysis/intro.rst
-   connectivity/intro.rst
+    qa-checks/qa-checks.rst
+    fmriprep/intro.rst
+    fsl/intro.rst
+    connectivity/intro.rst

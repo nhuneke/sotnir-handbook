@@ -34,7 +34,11 @@ release = '0.1.0'
 extensions = [
 	'sphinx_rtd_theme',
 	'sphinx.ext.autosectionlabel',
+	'sphinx.ext.todo',
 ]
+
+extensions.append('sphinx.ext.todo')
+todo_include_todos=True
 
 # Make sure the target is unique
 autosectionlabel_prefix_document = True

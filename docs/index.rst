@@ -12,6 +12,9 @@ This resource contains quickstart guides, example scripts, and standardised work
 
 Contributors are credited on each page.
 
+.. note::
+	Under construction
+
 .. important::
    
    If you would like to contribute to this handbook, please contact Nathan (N.Huneke@soton.ac.uk), Ara (A.Varatharaj@soton.ac.uk), or Kai (Y.Zou@soton.ac.uk)
@@ -58,7 +61,3 @@ Contributors are credited on each page.
 
    dti/intro.rst
 
-.. note::
-	Under construction. When new sections are completed they will be listed here.
-	
-	26/07/2021 - version 0.1.0

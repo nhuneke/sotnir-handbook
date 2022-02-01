@@ -28,7 +28,7 @@ to be installed.
 
 .. topic:: The formula for calculating temporal signal to noise (tSNR) is
 
-    tSNR = mean/standard deviation
+    tSNR = temporal mean/temporal standard deviation
 
 We can therefore use the following commands to create the maps:
 
@@ -45,3 +45,52 @@ We can therefore use the following commands to create the maps:
 
 Replace the filenames in ``< >`` above with the paths to your input images and chosen output
 paths.
+
+Using MRIQC for Quality Assurance
+----------------------------------
+
+`MRIQC <https://mriqc.readthedocs.io/en/stable/>`_ is a BIDS app that extracts quality metrics from structural and functional MRI data.
+
+It is best to run and install MRIQC using Docker.
+
+Install MRIQC with Docker
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Type the following to download the latest MRIQC image:
+
+.. code-block:: shell
+
+    docker run -it poldracklab/mriqc:latest --version
+    
+Run MRIQC with Docker
+~~~~~~~~~~~~~~~~~~~~~~
+
+Participant-level
+******************
+
+To prevent your machine's RAM from being overloaded, it is best to run 1 participant at a time. Use the following command:
+
+.. code-block:: shell
+    
+    docker run -it --rm -v <path/to/bids/dataset>:/data:ro -v <desired/path/to/outputs>:/out nipreps/mriqc:latest /data /out participant --participant-label 01
+    
+.. warning::
+    
+    The paths above must be *absolute* paths.
+
+If you see potential artifacts on the reports, you can re-run the participant and output extra information:
+
+.. code-block:: shell
+
+    docker run -it --rm -v <path/to/bids/dataset>:/data:ro -v <desired/path/to/outputs>:/out nipreps/mriqc:latest /data /out participant --participant-label 01 --ica --verbose-reports
+    
+This will provide a more detailed report as well as the results of independent component analysis.
+
+Group-level
+************
+
+MRIQC can also generate group-level reports to help you identify any outlying participants. Use the following command to run a group-level QC check:
+
+.. code-block:: shell
+
+    docker run -it --rm -v <path/to/bids/dataset>:/data:ro -v <desired/path/to/outputs>:/out nipreps/mriqc:latest /data /out group

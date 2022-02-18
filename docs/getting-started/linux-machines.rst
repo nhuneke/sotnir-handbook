@@ -103,27 +103,23 @@ Click `here <https://knowledgenow.soton.ac.uk/Articles/KB0011734>`_ for more inf
    
    There are several ways to work around:
        
-       1. If this is the only computer that you use ‘ssh’ or related commands (e.g. rsync, scp, sftp) to connect to, then you can safely just delete the file where it keeps its log of host key fingerprints:
-           
-           .. code-block:: bash
-           
-           $ rm /h/.ssh/known_hosts
-           
-       then try the ssh command again, confirm you wish to store the host ID, and proceed as usual.
-       
-       2. Alternatively, if you wish to preserve the old file, you can rename it to a different filename:
-           
-           .. code-block:: bash
-           
-           $ mv /h/.ssh/known_hosts rm /h/.ssh/known_hosts_old
-           
-       then try the ssh command again. In this case, a new known_hosts file will be generated.
-       
-       3. Alternatively, if you use ssh for other purposes as well (e.g. connect to other computers) and want to keep their host key fingerprints intact, then you will need to delete just the relevant lines from the file. 
-       
-       You could edit the file with ``vi`` or ``nano`` if you are comfortable with those editors, or, you could use Wordpad or Notepad++ (but not notepad since it is likely not to ‘understand’ the line endings) in Windows, finding the file at ``h:\.ssh\known_hosts``
+   1. If this is the only computer that you use ‘ssh’ or related commands (e.g. rsync, scp, sftp) to connect to, then you can safely just delete the file where it keeps its log of host key fingerprints::
 
-2. Install Conda
+        $ rm /h/.ssh/known_hosts
+    
+    then try the ssh command again, confirm you wish to store the host ID, and proceed as usual.
+       
+   2. Alternatively, if you wish to preserve the old file, you can rename it to a different filename::
+           
+        $ mv /h/.ssh/known_hosts rm /h/.ssh/known_hosts_old
+           
+    then try the ssh command again. In this case, a new known_hosts file will be generated.
+       
+   3. Alternatively, if you use ssh for other purposes as well (e.g. connect to other computers) and want to keep their host key fingerprints intact, then you will need to delete just the relevant lines from the file. 
+   
+    You could edit the file with ``vi`` or ``nano`` if you are comfortable with those editors, or, you could use Wordpad or Notepad++ (but not notepad since it is likely not to ‘understand’ the line endings) in Windows, finding the file at ``h:\.ssh\known_hosts``
+
+1. Install Conda
 =================
 Most of the software you will need has been pre-installed on the machine. However, Conda (a distribution of Python) needs to be installed on a per-user
 basis. 

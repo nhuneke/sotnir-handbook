@@ -12,6 +12,9 @@ This resource contains quickstart guides, example scripts, and standardised work
 
 Contributors are credited on each page.
 
+.. note::
+	Under construction
+
 .. important::
    
    If you would like to contribute to this handbook, please contact Nathan (N.Huneke@soton.ac.uk), Ara (A.Varatharaj@soton.ac.uk), or Kai (Y.Zou@soton.ac.uk)
@@ -47,25 +50,10 @@ Contributors are credited on each page.
    conversion/pydeface.rst
 
 .. toctree::
-   :maxdepth: 1
-   :caption: fMRI Preprocessing with fMRIPrep
-
-   fmriprep/intro.rst
-   fmriprep/convert2nifti.rst
-   fmriprep/install-fmriprep.rst
-   fmriprep/running-fmriprep.rst
-
-.. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: fMRI Analysis
 
    fmri-analysis/intro.rst
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Functional connectivity analyses
-
-   connectivity/intro.rst
 
 .. toctree::
    :maxdepth: 1
@@ -73,7 +61,3 @@ Contributors are credited on each page.
 
    dti/intro.rst
 
-.. note::
-	Under construction. When new sections are completed they will be listed here.
-	
-	26/07/2021 - version 0.1.0

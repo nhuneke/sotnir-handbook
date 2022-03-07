@@ -47,7 +47,7 @@ Contributors are credited on each page.
    :caption: File conversion
 
    conversion/convert2nifti.rst
-   conversion/pydeface.rst
+   conversion/pseudonymise.rst
 
 .. toctree::
    :maxdepth: 2

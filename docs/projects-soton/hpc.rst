@@ -4,41 +4,75 @@
 High Performance Computing
 =====================
 | Contributors: Yukai Zou
-| Maintainers: Yukai Zou
+| Maintainer: Yukai Zou
 
 --------------
 
-Request Access to Iridis
-------------------
+.. note::
+	Under construction
 
-Once you obtain UoS credentials (username + password), you will be able to apply for Iridis access after a completing a short form, the link for which is at https://www.southampton.ac.uk/isolutions/staff/iridis.page). 
+High Performance Computing (HPC) accelerates large workflows of *highly-interdependent* sub-tasks, which can effectively make the processing and analysis of neuroimage data (especially large dataset) more efficient. The University of Southampton has one of the largest computational facilities in the UK. `The Iridis Compute Cluster <https://www.southampton.ac.uk/isolutions/staff/iridis.page>`_ is one of the world's top supercomputers, which is now in the 5th generation.
 
-Here are a few links to Iridis topics:
+.. important::
+   
+   There is a learning curve ahead. It's important that you first get familiar with operating within a command line interface, and know how to write basic scriptings. More contents and resources of these topics will be added to this handbook.
+   
+.. note::
 
-- https://hpc.soton.ac.uk/redmine/projects/iridis-5-support/boards
-- https://hpc.soton.ac.uk/redmine/projects/iridis-5-support/wiki
-- https://hpc.soton.ac.uk/redmine/projects/iridis-5-support/wiki/Job_Submission#Specifying-Job-Resources
+    If you are off site when planning to use Iridis, you will need to connect to  
+    the University's `VPN <https://knowledgenow.soton.ac.uk/Articles/KB0011610>`_ first.
+
+Request Access
+----------------------
+
+Once you obtain UoS username and password, you will be able to apply for Iridis access after a completing an `online application form <https://sotonproduction.service-now.com/soton/it_rq_iridis_application>`_. The form will ask for a brief justification of usage. 
+
+.. note::
+	If you are uncertain how to fill out the form, please contact your research advisor or line manager.
+	
+Once your access has been granted, you are also subscribed to the HPC mailing list. Make sure to keep an eye on any notice regarding power outage and scheduled maintenance, to ensure your workflow can complete successfully.
+
+Here are a few links to the resources:
+
+- Forum: https://hpc.soton.ac.uk/redmine/projects/iridis-5-support/boards
+- Wiki: https://hpc.soton.ac.uk/redmine/projects/iridis-5-support/wiki
+- Submit a job: https://hpc.soton.ac.uk/redmine/projects/iridis-5-support/wiki/Job_Submission
+    - Specify job resources: https://hpc.soton.ac.uk/redmine/projects/iridis-5-support/wiki/Job_Submission#Specifying-Job-Resources
+
+.. note::
+	Examples: under construction
+
+Using job arrays
+==================
+
+To run jobs in parallel can greatly accelerate your workflow and save time.
+
 - https://hpc.soton.ac.uk/redmine/projects/iridis-5-support/wiki/Job_arrays
 
-It is recommended that you subscribe to the mailing list to not miss any notice on maintenance and outage, to ensure your workflow complete successfully.
-
-Submit a job
+Visualisation on Iridis 5
 ==================
 
-Run things in parallel: using array for high-throughput computing
-==================
+Although mainly operated in a command line interface, Iridis 5 provides options for visualisation through graphical interface. This section concerns with the option of using `NICE Desktop Cloud Virtualisation <https://nice.soton.ac.uk>`_. Information about multi-GPU visualisation can be found `here <https://hpc.soton.ac.uk/redmine/projects/iridis-5-support/wiki/Visualisation>`_.
 
-(Optional topic) Connect research filestore to Iridis
-==================
-
-To do this you would need to first request new generation of the research filestore space from iSolution, which allows connecting to Iridis. The research filestore can be upgraded by [requesting a new space](https://sotonproduction.service-now.com/serviceportal?id=sc_cat_item&sys_id=903e688edbbbf300f91c8c994b961974), to allow direct access of data from Iridis 5. I was told by iSolution that due to the age and the nature of the setup of IanGaleaGroup it couldn’t be mounted. It can be mounted onto Windows machines, but Infrastructure can't set up an NFS export that will allow iSolution to mount the directory in a way that also protects the sensitive nature of the data from access via other users on any Linux system, which includes Iridis 5 unfortunately. However, the newest research filestore supports mounting onto Iridis 5. If the owner of the data requests a new research filestore space, then it can be set up now and the old data copied into it. iSolution should be able to mount this onto Iridis 5 in order to provide a more direct access to the research filestore data. Let me know if this is something you’d like to be considered.
+ - Setting up NICE DCV environment: https://hpc.soton.ac.uk/redmine/projects/iridis-5-support/wiki/Setting_up_NICE_DCV_environment
 
 
-(Optional topic) Visualisation in Iridis
-==================
+To obtain access, create a new post under the `Forum: Visualisation Service <https://hpc.soton.ac.uk/redmine/projects/iridis-5-support/boards/25>`_ using the following text:
 
-And here’s the link (would need to connect to VPN) regarding [NICE data visualisation](https://nice.soton.ac.uk) on Iridis:
-https://hpc.soton.ac.uk/redmine/projects/iridis-5-support/wiki/Visualisation
+"Dear HPC Team
 
-To request, simply make a new post in the Forum:
-https://hpc.soton.ac.uk/redmine/projects/iridis-5-support/boards/25
+Please can you grant me access to NICE Visualisation Service? I am running neuroimaging analyses and would be useful to view intermediate images.
+
+Many thanks
+
+<**Your full name**>"
+
+(Optional Topic) Mount Research Filestore to Iridis
+======================================
+
+The University Research Filestore is a secure research data storage service provided by iSolutions, for the research community to store active research data. Data on the research filestore is backed up and with an extra copy stored in a secure location (for disaster recovery purposes). The newest research filestore supports mounting onto Iridis 5, and this allows a more direct access to the research data via a shared filesystems and network.
+
+.. note::
+	Due to the age and the nature of the setup, some research filestore cannot be mounted onto Iridis 5. This is mainly for security reasons. Older research filestore can't set up an NFS export that allows the directory to be mounted in a way that protects the sensitive nature of the data when retrieved via other users on Iridis 5. 
+	
+	**Solution:** If the data owner requests a new research filestore space, then it can be set up with the old data copied into it. To do this, make a request by filling out a form `here <https://sotonproduction.service-now.com/serviceportal?id=sc_cat_item&sys_id=903e688edbbbf300f91c8c994b961974>`_. iSolution should be able to mount the new filestore to Iridis 5 allow direct access of data.

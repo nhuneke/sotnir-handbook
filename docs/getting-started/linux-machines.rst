@@ -240,7 +240,7 @@ At the end of the file copy and paste the following lines:
 
 .. code-block:: bash
 
-    FSLDIR=/usr/local/fsl
+    FSLDIR=/usr/local/fsl    # NOTE: This is default; modify this line to match your local path
     . ${FSLDIR}/etc/fslconf/fsl.sh
     PATH=${FSLDIR}/bin:${PATH}
     export FSLDIR PATH

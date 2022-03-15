@@ -165,7 +165,7 @@ Conda environments can be easily activated and deactivated as needed.
 
 .. tip::
 
-I have created a ready to use conda environment for neuroimaging. See `below <4. Install software>`_
+I have created a ready to use conda environment for neuroimaging. See `below <https://sotnir-handbook.readthedocs.io/en/latest/getting-started/linux-machines.html#install-software>`_
 
 Create your environment
 ***********************

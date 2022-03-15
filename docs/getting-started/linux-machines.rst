@@ -164,8 +164,9 @@ in a self-contained environment.
 Conda environments can be easily activated and deactivated as needed.
 
 .. tip::
-
-    I have created a ready to use conda environment for neuroimaging. See `below <https://sotnir-handbook.readthedocs.io/en/latest/getting-started/linux-machines.html#install-software>`_
+    
+    I have created a ready to use conda environment for neuroimaging. See 
+    `below <https://sotnir-handbook.readthedocs.io/en/latest/getting-started/linux-machines.html#install-software>`_
 
 Create your environment
 ***********************
@@ -220,7 +221,7 @@ conda environment. These are:
 .. tip::
     
     A ready to use conda environment is available from my `Github page <https://github.com/nhuneke/imagingenv>`_ with instructions on how to install. This environment includes
-DataLad, pigz, and many others such as R studio, dcm2bids, etc.
+    DataLad, pigz, and many others such as R studio, dcm2bids, etc.
 
 First activate your conda environment:
 

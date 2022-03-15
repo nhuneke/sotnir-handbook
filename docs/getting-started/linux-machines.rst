@@ -119,7 +119,7 @@ Click `here <https://knowledgenow.soton.ac.uk/Articles/KB0011734>`_ for more inf
    
     You could edit the file with ``vi`` or ``nano`` if you are comfortable with those editors, or, you could use Wordpad or Notepad++ (but not notepad since it is likely not to ‘understand’ the line endings) in Windows, finding the file at ``h:\.ssh\known_hosts``
 
-1. Install Conda
+2. Install Conda
 =================
 Most of the software you will need has been pre-installed on the machine. However, Conda (a distribution of Python) needs to be installed on a per-user
 basis. 
@@ -162,6 +162,10 @@ affected. Some software, particularly DataLad, seems to interfere with other sof
 in a self-contained environment.
 
 Conda environments can be easily activated and deactivated as needed.
+
+.. tip::
+
+I have created a ready to use conda environment for neuroimaging. See `below <4. Install software>`_
 
 Create your environment
 ***********************
@@ -212,6 +216,11 @@ conda environment. These are:
 
 * DataLad
 * Pigz
+
+.. tip::
+
+A ready to use conda environment is available from my `Github page <https://github.com/nhuneke/imagingenv>`_ with instructions on how to install. This environment includes
+DataLad, pigz, and many others such as R studio, dcm2bids, etc.
 
 First activate your conda environment:
 

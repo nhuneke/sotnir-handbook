@@ -32,7 +32,7 @@ Here is how the calendar looks like:
 
 The scheduler itself has an email subscription functionality - it will send you email to inform you a potential reservation to review and approve. You can adjust setting to turn on/off notifications to reduce email traffic, because they could get overwhelming (hopefully not).
 
-**For Research Nurse/Coordinator**: You will have access to view the calendar of the research MRI scanner, where you can see the available scanners (SMR1/SMR5), when the scanner is available/unavailable/booked. You can propose new reservation on the calendar, which is pending approval (i.e. not confirmed yet) depending on radiographer availability during the proposed time. Once the reservation is approved, you will get email notification, and then you or Rina can confirm with the participant about the time and date to come.
+**For Research Nurse/Coordinator**: You will have access to view the calendar of the research MRI scanner, where you can see the available scanners (SMR1/SMR5), when the scanner is available/unavailable/booked. You can propose new reservation on the calendar, which is pending approval (i.e. not confirmed yet) depending on radiographer availability during the proposed time. Once the reservation is approved, you would get an email notification, you can confirm with the participant about the time and date to come.
 
 .. note::
     

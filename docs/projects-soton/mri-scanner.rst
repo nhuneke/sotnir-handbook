@@ -25,7 +25,7 @@ How does this work?
 
 Here is how the calendar looks like:
 
-.. image:: docs/images/labarchives-layout-2022.png
+.. image:: ../images/labarchives-layout-2022.png
    :width: 600
 
 **For Radiographer**: You, as the resource administrator of SMR1/SMR5, will get email notification every time a new reservation is proposed. You can then choose to approve/disprove depending on staff availability during that time. Our study coordinator will then confirm with the participant about the time and date to come.

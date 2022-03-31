@@ -306,9 +306,24 @@ This would convert the data for sub-01, session 02.
 Example scripts
 -----------------
 
-.. note:: 
-    
-    To add - a simple script
+Here is an example script that loops through participants to convert dicoms to NIfTI for a single session experiment:
+
+.. code-block:: bash
+
+    #!/bin/bash
+
+    set -e -u
+
+    # You would run this script from the directory you want your BIDS dataset contained in
+
+    for id in `seq -w 1 20` ; do  # seq -w creates a list from 01 to 20
+        subj="sub-$id"  # puts "sub-" in front of each id in turn, eg. "sub-01" "sub-02" etc.
+        echo "=====> converting $subj..."  # in bash variables are recognised with the $ symbol
+        dcm2bids -d sourcedata/$subj -p $id -c code/bids_config.json --forceDcm2niix  # the dcm2bids command
+        echo
+        echo "Done"
+    done
+
 
 Here is an example script using DataLad to convert either a single session or both sessions for a multi-session experiment:
 

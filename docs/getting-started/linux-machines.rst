@@ -231,3 +231,28 @@ At the end of the file copy and paste the following lines:
     export FSLDIR PATH
 
 Then logout and log back in. FSL will now be ready for use.
+
+Using Space Effectively
+-------------------------
+
+The Linux machines as set up by the University are made up of three broad ``partitions``:
+
+- The root partition ``/``
+- The home partition ``/home/``, or ``~`` for your personal home directory
+- The local partition ``/local/``
+
+The ``root`` and ``home`` partitions are very small. You will not have access to the ``root`` partition anyway as changing things here can be dangerous.
+Only administrators can access this and make changes. But your ``home`` directory is yours. However, this partition is only 50GB in size **in total, for all users!**.
+
+For this reason, you should not store neuroimaging data here, as a single dataset can easily reach more than 50GB in size. Instead, you should use the ``scratch space`` which is in the ``local`` partition. Each user has their own scratch space at::
+
+    /local/scratch/<user id>
+    
+Replace ``user id`` with your username. 
+
+.. warning::
+    
+    **The scratch space is not backed up!**
+    
+The ``scratch space`` is for current work, like a drafting space. It is not backed up. You should regularly make backups of your work here and once the 
+project is finished store the data in a permanent store, such as the university research filestore. DataLad can help with this (add ref).

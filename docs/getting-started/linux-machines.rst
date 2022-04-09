@@ -250,7 +250,7 @@ For this reason, you should not store neuroimaging data here, as a single datase
     
 Replace ``user id`` with your username. 
 
-.. warning::
+.. danger::
     
     **The scratch space is not backed up!**
     

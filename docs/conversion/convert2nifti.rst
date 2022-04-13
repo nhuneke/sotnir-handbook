@@ -9,41 +9,10 @@ Convert from DICOM to NIfTI
 ------------------------------------------
 
 Before we can do any MRI analysis, we need to convert our data from the DICOM format output by the scanner
-to NIfTI in the BIDS structure. To do this, we suggest using an app called Dcm2bids (link).
+to NIfTI in the BIDS structure. To do this, we suggest using an app called `dcm2bids <https://unfmontreal.github.io/Dcm2Bids/>`_.
 
-Installation
----------------------
-
-Software Requirements
-~~~~~~~~~~~~~~~~~~~~~
-* Conda
-* Pigz
-* Dcm2niix
-
-If you are using a University of Southampton Linux workstation then see
-:doc:`the page on Linux workstations </getting-started/linux-machines>` for more
-information on setting these up.
-
-If you are using a personal machine, first install conda, and then install
-pigz and dcm2niix with the following command:
-
-.. code-block:: python
-
-    conda install -c conda-forge <program name>
-
-.. warning::
-
-    We suggest all neuroimaging software and analyses are installed and run
-    in a self-contained conda environment (hyperlink to be inserted).
-
-Installing Dcm2bids
-~~~~~~~~~~~~~~~~~~~~~
-After installing the required software above, dcm2bids can be installed
-with the following command:
-
-.. code-block:: python
-
-    conda install -c conda-forge dcm2bids
+If you are using my :ref:`neuroimaging conda environment <getting-started/linux-machines:3. create a conda environment for your software and analyses>` 
+then dcm2bids and its dependencies will already be installed. 
 
 The Dcm2bids Helper
 ---------------------

@@ -48,11 +48,13 @@ most are not relevant. I suggest you use the following:
 
 There are a few arguments to explain here:
 
+- replace ``path/to/bids/directory`` with the actual path to your BIDS directory
+- replace ``path/to/output/directory`` with the path you would like for your outputs
 - ``participant`` means do pre-processing at the participant as opposed to group level
 - ``--participant-label`` is the subject ID (i.e. the label after ``sub-``)
 - ``--user`` defines which user should own the outputs. ``$( id -u )`` represents your username, so that you will own all the outputs. By default fmriprep-docker will run as root which is unhelpful on a shared machine
 - ``--skip-bids-validation`` prevents an error when using datalad datasets
-- ``--fs-license-file`` specifies the location of the freesurfer license file, which is needed for surface reconstruction
+- ``--fs-license-file`` specifies the location of the freesurfer license file, which is needed for surface reconstruction. The location above is correct for the university linux machines and does not need to be changed
 
 Inspecting the Outputs
 -------------------------

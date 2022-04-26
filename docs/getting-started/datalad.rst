@@ -17,6 +17,10 @@ version controlling collections of large files in repositories known as DataLad 
 how to install DataLad at `handbook.datalad.org/en/latest/intro/installation.html
 <http://handbook.datalad.org/en/latest/intro/installation.html>`_.
 
+.. note:: 
+
+    If you are using my :ref:`neuroimaging conda environment <getting-started/linux-machines:3. create a conda environment for your software and analyses>` then datalad will be installed.
+
 Get the dataset
 ^^^^^^^^^^^^^^^
 
@@ -176,12 +180,186 @@ To do so, we use ``datalad rerun <SHASUM>`` using the SHASUM of the commit in qu
 I strongly suggest you read the Chapter on ``datalad run`` in the `DataLad handbook <http://handbook.datalad.org/en/latest/basics/basics-run.html>`_ 
 as this command is so important.
 
-.. note:: 
-    
-    To add: 
+Dataset Storage and Backup
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-    - Using DataLad with GitLab
-    - Remote Indexed Archives for dataset storage and backup
+DataLad includes tools for easily managing dataset storage and backup. These work very nicely with the 
+University's research filestore. A suggested workflow is described below.
+
+DataLad Siblings
+------------------
+
+Before understanding how DataLad can be used for storage and backup, it is important to understand the 
+concept of a `DataLad sibling <http://handbook.datalad.org/en/latest/basics/101-121-siblings.html>`_.
+A datalad sibling is essentially a 'copy' of a dataset stored in another location. Each sibling will 
+have its own ``git log``, and changes made in either dataset can be incorporated into the other with a 
+``datalad update`` command. For dataset storage and backup, we will be using a special kind of sibling 
+known as a ``special remote``. We will use two types of ``special remote``: ``remote indexed archives`` and a 
+``gitlab remote``.
+
+Remote Indexed Archives
+------------------------
+
+`RIA stores <http://handbook.datalad.org/en/latest/beyond_basics/101-147-riastores.html#>`_ can be easily created or extended from within any dataset. 
+The advantage of using an RIA store is that the remote machine does not need datalad to be installed. Nevertheless, 
+datalad will still be able to find and retrieve dataset contents through a ``datalad get`` command. The RIA 
+store is therefore perfect for content storage and backup, particularly as the University filestore is regularly 
+backed up itself.
+
+The RIA store is created with the following command::
+
+    datalad create-sibling-ria -s ria-backup ria+<URL>
+
+If using the university filestore you would replace ``<URL>`` with the path to access your research filestore via 
+SSH. This takes the following form::
+
+    ssh://ssh.soton.ac.uk:/research/absolute/path/to/ria-store
+
+The final command therefore looks like this::
+
+    datalad create-sibling-ria -s ria-backup ria+ssh://ssh.soton.ac.uk:/research/absolute/path/to/ria-store
+
+.. note:: 
+
+    To access your research filestore via SSH you need to ask iSolutions for ``NFS access`` to the 
+    directory.
+
+To backup your dataset contents in the RIA store, use the following command::
+
+    datalad push --to ria-backup
+
+.. tip:: **Accessing a directory via SSH without password**
+
+    It can be useful to set up access to your filestore via SSH without the need for a 
+    password. This way you can automate operations like getting dataset contents or pushing 
+    dataset updates without needing to input your password every 5 seconds. Doing this 
+    is very straightforward through the use of an ``SSH key``.
+
+    First on your machine, type the following command::
+
+        ssh-keygen
+
+    Just use the defaults when prompted by pressing return. Next, copy your key to the 
+    SSH server with::
+
+        ssh-copy-id user@server
+
+    You should now be able to login without using a password. 
+    
+    This key can be copied (using secure copy) to 
+    any other machine to allow access to the same server without using a password::
+
+        scp ~/.ssh/id_<key> user@machine:~/.ssh/id_<key>
+        scp ~/.ssh/id_<key>.pub user@machine:~/.ssh/id<key>.pub
+
+GitLab Siblings
+----------------
+
+RIA stores are great, but they have one problem: *they are not human-readable*. Here is 
+an example of what an RIA store actually looks like::
+
+     /path/to/my_riastore
+    ├── 946
+    │   └── e8cac-432b-11ea-aac8-f0d5bf7b5561
+    │       ├── annex
+    │       │   └── objects
+    │       │       ├── 6q
+    │       │       │   └── mZ
+    │       │       │       └── MD5E-s93567133--7c93fc5d0b5f197ae8a02e5a89954bc8.nii.gz
+    │       │       │           └── MD5E-s93567133--7c93fc5d0b5f197ae8a02e5a89954bc8.nii.gz
+    │       │       ├── 6v
+    │       │       │   └── zK
+    │       │       │       └── MD5E-s2043924480--47718be3b53037499a325cf1d402b2be.nii.gz
+    │       │       │           └── MD5E-s2043924480--47718be3b53037499a325cf1d402b2be.nii.gz
+    │       │       ├── [...]
+    │       │       └── [...]
+    │       ├── archives
+    │       │   └── archive.7z
+    │       ├── branches
+    │       ├── config
+    │       ├── description
+    │       ├── HEAD
+    │       ├── hooks
+    │       │   ├── applypatch-msg.sample
+    │       │   ├── [...]
+    │       │   └── update.sample
+    │       ├── info
+    │       │   └── exclude
+    │       ├── objects
+    │       │   ├── 05
+    │       │   │   └── 3d25959223e8173497fa7f747442b72c31671c
+    │       │   ├── 0b
+    │       │   │   └── 8d0edbf8b042998dfeb185fa2236d25dd80cf9
+    │       │   ├── [...]
+    │       │   │   └── [...]
+    │       │   ├── info
+    │       │   └── pack
+    │       ├── refs
+    │       │   ├── heads
+    │       │   │   ├── git-annex
+    │       │   │   └── master
+    │       │   └── tags
+    │       ├── ria-layout-version
+    │       └── ria-remote-ebce196a-b057-4c96-81dc-7656ea876234
+    │           └── transfer
+    ├── error_logs
+    └── ria-layout-version
+
+Cloning this dataset would involve finding out the ``dataset id``, which is not trivial 
+when you don't know where to look. Instead, we can store a human-readable version of the dataset 
+on the University's `GitLab instance <https://git.soton.ac.uk>`_. GitLab is not suitable for storing
+dataset contents (other than code), so does need to be used in conjunction with the filestore. GitLab instead 
+stores metadata about the dataset, allowing retrieval of contents from the RIA store using 
+human-readable commands. This is very useful when collaborating with others on a project.
+
+Setup 
+*******
+
+Before a GitLab remote can be created, you need to complete a few setup steps:
+
+1. Generate a personal access token for GitLab `here <(https://git.soton.ac.uk/-/profile/personal_access_tokens)>`_. 
+2. Copy and paste the following into a text file, inserting your personal access token in the appropriate field:
+
+    [soton] 
+    url = https://git.soton.ac.uk
+    private_token = [insert token here]
+
+3. Save this file in your ``home`` directory (``~``) as ``.python-gitlab.cfg``.
+
+Create the GitLab remote
+**************************
+
+To create a GitLab remote, use the following command::
+
+    datalad create-sibling-gitlab -s gitlab --site soton --project <path/to/project>
+
+The metadata and code can then be pushed to gitlab with::
+
+    datalad push --to gitlab
+
+Human-readable metadata will now be visible at ``https://git.soton.ac.uk/path/to/project``. 
+The dataset can then be ``cloned`` with::
+
+    datalad clone https://git.soton.ac.uk/path/to/project .
+
+assuming the cloner has permissions to view the dataset. Contents can then be retrieved with a 
+``datalad get`` as datalad will by default search the RIA store for contents.
+
+.. note:: 
+
+    To reduce complexity, it helps to create a GitLab remote for the ``superdataset`` **only**. 
+    Any subdatasets can be backed up to an RIA store. As long as the superdataset is cloned, it is 
+    possible to then retrieve subdataset contents from the RIA store. One line of code needs to be run 
+    in the superdataset to configure this::
+
+       git config -f .datalad/config "datalad.get.subdataset-source-candidate-origin" "ria+<URL>#{id}" 
+
+Procedures for Setting Up Datasets 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To help speed up the process of setting up a new datalad dataset (including backup siblings), 
+I have written a number of `procedures <http://handbook.datalad.org/en/latest/basics/101-124-procedures.html>`_.
+The github repository including installation and usage instructions is `here <https://github.com/nhuneke/dataset-setup-procedures>`_.
 
 More information
 ^^^^^^^^^^^^^^^^

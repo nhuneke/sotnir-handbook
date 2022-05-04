@@ -221,8 +221,8 @@ The final command therefore looks like this::
 
 .. note:: 
 
-    To access your research filestore via SSH you need to ask iSolutions for ``NFS access`` to the 
-    directory.
+    To access your research filestore via SSH you need to ask iSolutions for the directory to be 
+    ``NFS`` and you need to be added to the list of ``SSH gateway users``.
 
 To backup your dataset contents in the RIA store, use the following command::
 
@@ -318,7 +318,7 @@ Setup
 Before a GitLab remote can be created, you need to complete a few setup steps:
 
 1. Generate a personal access token for GitLab `here <(https://git.soton.ac.uk/-/profile/personal_access_tokens)>`_. 
-2. Copy and paste the following into a text file, inserting your personal access token in the appropriate field:
+2. Copy and paste the following into a text file, inserting your personal access token in the appropriate field::
 
     [soton] 
     url = https://git.soton.ac.uk

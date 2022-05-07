@@ -9,41 +9,10 @@ Convert from DICOM to NIfTI
 ------------------------------------------
 
 Before we can do any MRI analysis, we need to convert our data from the DICOM format output by the scanner
-to NIfTI in the BIDS structure. To do this, we suggest using an app called Dcm2bids (link).
+to NIfTI in the BIDS structure. To do this, we suggest using an app called `dcm2bids <https://unfmontreal.github.io/Dcm2Bids/>`_.
 
-Installation
----------------------
-
-Software Requirements
-~~~~~~~~~~~~~~~~~~~~~
-* Conda
-* Pigz
-* Dcm2niix
-
-If you are using a University of Southampton Linux workstation then see
-:doc:`the page on Linux workstations </getting-started/linux-machines>` for more
-information on setting these up.
-
-If you are using a personal machine, first install conda, and then install
-pigz and dcm2niix with the following command:
-
-.. code-block:: python
-
-    conda install -c conda-forge <program name>
-
-.. warning::
-
-    We suggest all neuroimaging software and analyses are installed and run
-    in a self-contained conda environment (hyperlink to be inserted).
-
-Installing Dcm2bids
-~~~~~~~~~~~~~~~~~~~~~
-After installing the required software above, dcm2bids can be installed
-with the following command:
-
-.. code-block:: python
-
-    conda install -c conda-forge dcm2bids
+If you are using my :ref:`neuroimaging conda environment <getting-started/linux-machines:3. create a conda environment for your software and analyses>` 
+then dcm2bids and its dependencies will already be installed. 
 
 The Dcm2bids Helper
 ---------------------
@@ -306,9 +275,24 @@ This would convert the data for sub-01, session 02.
 Example scripts
 -----------------
 
-.. note:: 
-    
-    To add - a simple script
+Here is an example script that loops through participants to convert dicoms to NIfTI for a single session experiment:
+
+.. code-block:: bash
+
+    #!/bin/bash
+
+    set -e -u
+
+    # You would run this script from the directory you want your BIDS dataset contained in
+
+    for id in `seq -w 1 20` ; do  # seq -w creates a list from 01 to 20
+        subj="sub-$id"  # puts "sub-" in front of each id in turn, eg. "sub-01" "sub-02" etc.
+        echo "=====> converting $subj..."  # in bash variables are recognised with the $ symbol
+        dcm2bids -d sourcedata/$subj -p $id -c code/bids_config.json --forceDcm2niix  # the dcm2bids command
+        echo
+        echo "Done"
+    done
+
 
 Here is an example script using DataLad to convert either a single session or both sessions for a multi-session experiment:
 

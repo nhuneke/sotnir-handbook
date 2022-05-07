@@ -53,6 +53,11 @@ Using MRIQC for Quality Assurance
 
 It is best to run and install MRIQC using Docker.
 
+.. note::
+
+    If you are using a university machine then you will need to be given permission to
+    use Docker. Please speak to the admin for the machine.
+
 Install MRIQC with Docker
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

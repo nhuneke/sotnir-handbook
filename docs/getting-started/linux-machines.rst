@@ -55,7 +55,7 @@ You should be able to download and install either app on your personal machines.
     the University's `VPN <https://knowledgenow.soton.ac.uk/Articles/KB0011610>`_ first.
 
 1. On your machine, click on *Start* and search for ``Remote Desktop Connection``
-2. Type in the computer name as above and click connect
+2. Type in the computer name as above followed by ``.clients.soton.ac.uk`` (e.g. ``uos-210028.clients.soton.ac.uk``) and click connect
 3. Input your University of Southampton username and password when prompted
 
 Alternatively, if you would like to connect via remote desktop app on Linux, you can use Remmina by following an instruction `here <https://knowledgenow.soton.ac.uk/Articles/KB0020338>`_.
@@ -81,7 +81,7 @@ the ``-X`` flag (or on Mac, ``-Y``):
 
     ssh -X username@uos-#.clients.soton.ac.uk
 
-Click `here <https://knowledgenow.soton.ac.uk/Articles/KB0011734>`_ for more information on common problems with X and how to solve them.
+This is particularly useful when using Matlab remotely. Click `here <https://knowledgenow.soton.ac.uk/Articles/KB0011734>`_ for more information on common problems with X and how to solve them.
 
 .. tip::
     
@@ -163,13 +163,10 @@ in a self-contained environment.
 
 Conda environments can be easily activated and deactivated as needed.
 
-.. tip::
-    
-    I have created a ready to use conda environment for neuroimaging. See 
-    `below <https://sotnir-handbook.readthedocs.io/en/latest/getting-started/linux-machines.html#install-software>`_
-
 Create your environment
 ***********************
+
+We have created a ready-to-use conda environment that you can clone.
 
 To create your environment, open a terminal. If conda is installed, you should see that you are currently in the ``base`` environment, 
 which is signified like so:
@@ -178,13 +175,18 @@ which is signified like so:
 
     (base) [nh6g15@uos-211997 ~] $
 
-Type the following to create a new environment:
+Next, install ``mamba``::
 
-.. code-block:: bash
+    $ conda install -c conda-forge mamba
+    
+Next, clone the environment description into your home directory with::
 
-    $ conda create -n myenv
+    $ git clone https://github.com/nhuneke/imagingenv ~/imaging-env
+    
+And now create the environment::
 
-Replace ``myenv`` with whatever you want to call your environment. Press y when prompted to complete the creation.
+    $ cd ~/imaging-env
+    $ mamba env create --file imaging-env.yml
 
 Activating and deactivating your environment
 ********************************************
@@ -193,13 +195,13 @@ To activate your environment use the following command:
 
 .. code-block:: bash
 
-    $ conda activate myenv
+    $ conda activate imaging-env
 
 You should now see this environment is active in the terminal, like so:
 
 .. code-block:: bash
 
-    (myenv) [nh6g15@uos-211997 ~] $
+    (imaging-env) [nh6g15@uos-211997 ~] $
 
 You will now be able to use all the software present in this environment.
 
@@ -209,34 +211,7 @@ To deactivate your environment, use the following command:
 
     $ conda deactivate
 
-4. Install software
-=====================
-
-Much of the software you will need is already present on the machine. However, some software will need to be installed within your newly created 
-conda environment. These are:
-
-* DataLad
-* Pigz
-
-.. tip::
-    
-    A ready to use conda environment is available from my `Github page <https://github.com/nhuneke/imagingenv>`_ with instructions on how to install. This environment includes
-    DataLad, pigz, and many others such as R studio, dcm2bids, etc.
-
-First activate your conda environment:
-
-.. code-block:: bash
-
-    $ conda activate myenv
-
-Then install each of these software packages with the following:
-
-.. code-block:: bash
-
-    $ conda install -c conda-forge datalad
-    $ conda install -c conda-forge pigz
-
-5. Set up FSL 
+4. Set up FSL 
 ===============
 
 If this is your first time logging in on the Linux machine then you will need to set up your shell environment to use FSL. 
@@ -256,3 +231,28 @@ At the end of the file copy and paste the following lines:
     export FSLDIR PATH
 
 Then logout and log back in. FSL will now be ready for use.
+
+Using Space Effectively
+-------------------------
+
+The Linux machines as set up by the University are made up of three broad ``partitions``:
+
+- The root partition ``/``
+- The home partition ``/home/``, or ``~`` for your personal home directory
+- The local partition ``/local/``
+
+The ``root`` and ``home`` partitions are very small. You will not have access to the ``root`` partition anyway as changing things here can be dangerous.
+Only administrators can access this and make changes. But your ``home`` directory is yours. However, this partition is only 50GB in size **in total, for all users!**.
+
+For this reason, you should not store neuroimaging data here, as a single dataset can easily reach more than 50GB in size. Instead, you should use the ``scratch space`` which is in the ``local`` partition. Each user has their own scratch space at::
+
+    /local/scratch/<user id>
+    
+Replace ``user id`` with your username. 
+
+.. danger::
+    
+    **The scratch space is not backed up!**
+    
+The ``scratch space`` is for current work, like a drafting space. It is not backed up. You should regularly make backups of your work here and once the 
+project is finished store the data in a permanent store, such as the university research filestore. DataLad can help with this (add ref).

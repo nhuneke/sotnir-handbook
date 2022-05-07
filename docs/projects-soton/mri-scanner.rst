@@ -8,6 +8,12 @@ Research MRI Scanners
 
 --------------
 
+.. important::
+
+   Your thoughts and feedbacks on how to improve the running and management of research MRI slots are more than welcome and appreciated. I have created a survey link below for you to submit anonymous feedback to me if you'd like:
+
+   Link to the survey: https://forms.office.com/r/ZS6LrG3dde
+
 Making Reservation
 ------------------
 

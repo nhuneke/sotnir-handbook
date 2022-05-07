@@ -12,12 +12,9 @@ This resource contains quickstart guides, example scripts, and standardised work
 
 Contributors are credited on each page.
 
-.. note::
-	Under construction
-
 .. important::
    
-   If you would like to contribute to this handbook, please contact Nathan (N.Huneke@soton.ac.uk), Ara (A.Varatharaj@soton.ac.uk), or Kai (Y.Zou@soton.ac.uk)
+   This site is under construction and active development. Contents of this site are subjected to change. *You can be a part of this project as well!* If you would like to contribute to this handbook, please contact Nathan (N.Huneke@soton.ac.uk), Ara (A.Varatharaj@soton.ac.uk), or Kai (Y.Zou@soton.ac.uk)
 
 .. toctree::
    :maxdepth: 1

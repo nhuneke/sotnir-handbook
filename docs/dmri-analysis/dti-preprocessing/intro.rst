@@ -21,7 +21,7 @@ Preprocess Data
 ---------------
 
 Scripts to preprocess DTI can be accessed at https://github.com/jibikbam/DTI-process-analysis. You may use them if you'd like to try the easiest path.
-- It relies on FSL libraries so install FSL in case your machine doesn't have it.
+
 - Make sure you have ``acqparams.txt``, ``index.txt``, and ``DICOM`` files. The number of values in ``index.txt`` should match the number of diffusion encoding directions of the data you use.
 - Run the processing script with the command ``bash process_DTI.sh``.
 - The eddy current correction requires the longest time, therefore, it is recommended to process in parallel by using ``eddy_openmp`` (multi CPU core) or ``eddy_cuda9.1`` (GPU). Download one depending on the hardware resource available.

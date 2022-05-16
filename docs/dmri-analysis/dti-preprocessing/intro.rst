@@ -44,6 +44,7 @@ Tract-Based Spatial Statistics (TBSS)
     You can stop here if the purpose is to get FA and MD images of each individual. Below are further steps in case you need them.
 
 TBSS extracts white matter tracts. It should be straightforward to follow the TBSS steps described in FSL's documentation page `here <https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/TBSS/UserGuide>`_.
+
 - If you just need skeletonized FA co-registered between all subjects, follow steps until "voxelwise statistics on the skeletonised FA data" section.
 - If you need other metrics such as MD, AD, or RD, follow until "Using non-FA Images in TBSS".
 - Feel free to do further steps as needed.

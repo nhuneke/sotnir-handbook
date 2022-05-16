@@ -19,6 +19,7 @@ dMRI Analysis
 This instruction focuses on the preprocessing and anlysis of diffusion tensor imaging (DTI) processing using FSL libraries. 
 
 Here are some free educational materials that can help understand DTI:
+
 - Book: https://www.sciencedirect.com/book/9780123964601/diffusion-mri
 - http://www.diffusion-imaging.com/2013/01/relation-between-neural-microstructure.html
 - http://www.diffusion-imaging.com/2014/04/from-diffusion-weighted-images-to.html

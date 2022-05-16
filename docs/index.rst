@@ -55,7 +55,7 @@ Contributors are credited on each page.
 
 .. toctree::
    :maxdepth: 1
-   :caption: Diffusion Tensor Imaging
+   :caption: dMRI Analysis
 
-   dti/intro.rst
+   dmri-analysis/intro.rst
 

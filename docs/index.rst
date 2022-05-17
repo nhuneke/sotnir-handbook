@@ -22,8 +22,6 @@ Contributors are credited on each page.
    
    getting-started/linux-machines.rst
    getting-started/unix-basics.rst
-   getting-started/BIDS.rst
-   getting-started/datalad.rst
  
 .. toctree::
    :maxdepth: 1
@@ -48,6 +46,13 @@ Contributors are credited on each page.
    conversion/pseudonymise.rst
 
 .. toctree::
+   :maxdepth: 1
+   :caption: Sharing Neuroimaging Data
+
+   data-sharing/BIDS.rst
+   data-sharing/datalad.rst
+
+.. toctree::
    :maxdepth: 2
    :caption: fMRI Analysis
 
@@ -55,7 +60,7 @@ Contributors are credited on each page.
 
 .. toctree::
    :maxdepth: 1
-   :caption: Diffusion Tensor Imaging
+   :caption: dMRI Analysis
 
-   dti/intro.rst
+   dmri-analysis/intro.rst
 

@@ -1,8 +1,8 @@
 .. _BIDS:
 
-=======================
-An introduction to BIDS
-=======================
+===================================
+Brain Imaging Data Structure (BIDS)
+===================================
 | Contributors: Harry Fagan
 | Maintainers: Nathan TM Huneke
 

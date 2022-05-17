@@ -22,8 +22,6 @@ Contributors are credited on each page.
    
    getting-started/linux-machines.rst
    getting-started/unix-basics.rst
-   getting-started/BIDS.rst
-   getting-started/datalad.rst
  
 .. toctree::
    :maxdepth: 1
@@ -46,6 +44,13 @@ Contributors are credited on each page.
 
    conversion/convert2nifti.rst
    conversion/pseudonymise.rst
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Sharing Neuroimaging Data
+
+   data-sharing/BIDS.rst
+   data-sharing/datalad.rst
 
 .. toctree::
    :maxdepth: 2

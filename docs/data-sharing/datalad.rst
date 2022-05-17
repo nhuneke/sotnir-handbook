@@ -1,7 +1,7 @@
 .. _datalad.rst:
 
 ==============================================
-A Brief Introduction to DataLad
+DataLad: Distributed Data Management
 ==============================================
 | Contributors: Nathan TM Huneke
 | Maintainers: Nathan TM Huneke

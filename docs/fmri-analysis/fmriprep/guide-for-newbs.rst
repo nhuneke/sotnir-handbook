@@ -50,7 +50,7 @@ However, in the active condition, the participant views a salient stimulus, this
 As a result, there is a reduction in the paramagnetic distortions to magnetic resonance and therefore T2* increases. 
 It's this increase in signal that is shown in the image on the right below.
 
-.. figure:: ../images/simple-experiment.png
+.. figure:: ../../images/simple-experiment.png
     :width: 600
 
     Upon visual stimulation there is an increase in local neural activity in the visual cortex. This results in oxygenated hemoglobin rushing to the area.

@@ -16,7 +16,8 @@ Unix
 * Mac and Linux have Terminals installed. Windows users need to install a Terminal emulator to use Unix commands. We do not recommend attempting neuroimaging analyses on a Windows machine. 
 
 .. note::
-    You can practice using Unix online with JupyterLab (see https://neuroimaging-core-docs.readthedocs.io/en/latest/pages/unix.html for an excellent tutorial)
+    You can practice using Unix online with JupyterLab (see https://neuroimaging-core-docs.readthedocs.io/en/latest/pages/unix.html for an excellent tutorial).
+    
     An excellent tutorial on the use of the Unix Shell is available `here <https://swcarpentry.github.io/shell-novice/>`_.
 
 Basic Unix Commands

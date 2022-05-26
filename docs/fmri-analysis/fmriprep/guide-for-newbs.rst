@@ -280,8 +280,8 @@ determined by 10% of the way between the 2nd and 98th percentile. This threshold
 then initialised as a surface model at the brain centre estimate and a set of adaptive forces (described by Smith, 2002) iteratively modulate and deform each vertex 
 so that the brain model moves outward until it reaches the brain surface, as defined by the intensity threshold. 
 
-4. B0 distortion correction
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4. Susceptibility Distortion Correction
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 As described :ref:`above <guide-for-newbs#Other Scans: Shimming and Field Map>`, it is likely that inhomogeneities and susceptibility distortions
 in the magnetic field will be present during scanning. These distortions can distort the apparent anatomy of the brain. Echo planar imaging 

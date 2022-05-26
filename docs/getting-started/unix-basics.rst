@@ -17,6 +17,7 @@ Unix
 
 .. note::
     You can practice using Unix online with JupyterLab (see https://neuroimaging-core-docs.readthedocs.io/en/latest/pages/unix.html for an excellent tutorial)
+    An excellent tutorial on the use of the Unix Shell is available `here <https://swcarpentry.github.io/shell-novice/>`_.
 
 Basic Unix Commands
 --------------------

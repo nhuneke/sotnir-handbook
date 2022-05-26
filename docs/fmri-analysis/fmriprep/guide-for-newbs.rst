@@ -14,6 +14,7 @@ Logic of fMRI
 ---------------
 
 The basic logic underlying functional MRI is as follows:
+
 - Firstly, the brain consumes around 20% of our oxygen uptake. This is usually in response to neural activity, which uses up energy and therefore creates a need for oxygen.
 - Hemoglobin is a molecule in the blood that can transport this oxygen.
 - The magnetic properties of hemoglobin differ depending on whether or not it is carrying oxygen.
@@ -101,6 +102,8 @@ between structures. In fact, it's hard for us to even tell what part of the brai
 resolution structural scan (b), this all becomes a lot easier. We can see that we are recording from the posterior part of the brain, and we can better 
 differentiate between parts of the subjects' anatomy.
 
+.. _functional_image:
+
 .. figure:: ../../images/structural-functional-comparison.png
     :width: 600
 
@@ -134,7 +137,7 @@ In other words, we can sacrifice spatial resolution for temporal resolution and 
 monitors: low resolutions support higher refresh rates than higher resolutions.
 
 Of course, not all functional scans require each volume to be a recording of the entire brain. It is perfectly viable to obtain *partial brain* functional volumes to decrease the 
-TR and length of the experiment. In the functional data we saw :ref:`earlier <guide-for-newbs#id3>`, much of the parietal lobe 
+TR and length of the experiment. In the functional data we saw :ref:`earlier <functional_image>`, much of the parietal lobe 
 was sacrificed so that better spatial resolution of the occipital and temporal lobes could be obtained. 
 
 Functional Scan: Example
@@ -293,7 +296,7 @@ Solutions
 **********
 
 Registration
-=============
+"""""""""""""
 
 We can register our functional data to our high-resolution structural data to improve spatial localisation of task-related activation. Intuitively, it may seem as 
 though this could be achieved via a similar method to that employed in motion correction. The critical differences though, are that 
@@ -307,14 +310,14 @@ image. Finally, a series of linear transformations are conducted on the function
 The method works because if the images are aligned, you would observe such an association regardless of the contrasts of the images, or their resolutions. 
 
 Normalisation
-==============
+"""""""""""""""
 
 We need to apply non-linear transformations to alter the shapes of our subjects brains, so they are the same size and shape as a *standard brain*, such as the MNI brain. 
 The concept of normalisation may be familiar to anyone that has watched a video of 'morphing' software that can transform one person's face into another. 
 Normalisation is considerably more complex than registration. This is because registration can be achieved by simple linear transformations. By contrast, a number of 
 nonlinear transformations are required to alter the shape of a subjects brain to match a standard brain. Although there are many different normalisation algorithms, 
 they usually begin with an initial linear transformation that aligns a subject's brain to a standard as closely as possible (essentially, this is achieved by the 
-same process detailed in the :ref:`<guide-for-newbs/5. Registration and Normalisation/Solutions/Registration>` section). Then, the differences that remain between 
+same process detailed in the :ref:`<guide-for-newbs:5. Registration and Normalisation:Solutions:Registration>` section). Then, the differences that remain between 
 the two images are reduced by local stretching, shrinking and warping. 
 
 For instance, suppose that a subject had a particularly large visual cortex and a particularly small cerebellum. To normalise, we would need to shrink the 

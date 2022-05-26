@@ -283,6 +283,18 @@ so that the brain model moves outward until it reaches the brain surface, as def
 4. B0 distortion correction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+As described :ref:`above <guide-for-newbs#Other Scans: Shimming and Field Map>`, it is likely that inhomogeneities and susceptibility distortions
+in the magnetic field will be present during scanning. These distortions can distort the apparent anatomy of the brain. Echo planar imaging 
+(used for fMRI acquisitions) is particularly susceptible to this. The placement and size of these distortions can be mapped through a *field map scan*. The effect these 
+distortions have on the echo planar images can then be estimated, and unwarping algorithms applied.
+
+.. figure:: ../../images/unwarping.svg
+    :width: 800
+
+    Reproduced from the `fMRIPrep documentation <https://fmriprep.org/en/stable/workflows.html#susceptibility-distortion-correction-sdc>`_.
+
+|
+
 5. Registration and Normalisation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -317,7 +329,7 @@ The concept of normalisation may be familiar to anyone that has watched a video 
 Normalisation is considerably more complex than registration. This is because registration can be achieved by simple linear transformations. By contrast, a number of 
 nonlinear transformations are required to alter the shape of a subjects brain to match a standard brain. Although there are many different normalisation algorithms, 
 they usually begin with an initial linear transformation that aligns a subject's brain to a standard as closely as possible (essentially, this is achieved by the 
-same process detailed in the :ref:`<guide-for-newbs:5. Registration and Normalisation:Solutions:Registration>` section). Then, the differences that remain between 
+same process detailed in the :ref:`<guide-for-newbs:Registration>` section). Then, the differences that remain between 
 the two images are reduced by local stretching, shrinking and warping. 
 
 For instance, suppose that a subject had a particularly large visual cortex and a particularly small cerebellum. To normalise, we would need to shrink the 

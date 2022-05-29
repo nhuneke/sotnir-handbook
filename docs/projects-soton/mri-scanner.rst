@@ -8,12 +8,6 @@ Research MRI Scanners
 
 --------------
 
-.. important::
-
-   Your thoughts and feedbacks on how to improve the running and management of research MRI slots are more than welcome and appreciated. I have created a survey link below for you to submit anonymous feedback to me if you'd like:
-
-   Link to the survey: https://forms.office.com/r/ZS6LrG3dde
-
 Making Reservation
 ------------------
 
@@ -55,3 +49,10 @@ How to look up for the reservations?
 ====================================
 
 To get there you need to click on “Application Management” on top and then select “Reservations”. From there you can specify the filter to, e.g., a certain period of time, user (who made the reservations), and search for any keywords in the Title/Description (i.e. subject ID, hospital ID) of the reservations.
+
+Your feedback matters
+---------------------
+
+If you wish to share your thoughts and feedbacks on how to improve the running and management of research MRI slots, they are more than welcome and appreciated. Below you may find the link to a survey for submitting anonymous feedback:
+
+- Link to the survey: https://forms.office.com/r/ZS6LrG3dde

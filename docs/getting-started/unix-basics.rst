@@ -9,11 +9,11 @@ Unix Basics
 
 Unix
 ------
-* Unix is an operating system (like Mac or Windows).
+* Unix is an operating system (like Windows).
 * It uses a command line interface (or command line) where you type commands you want to run into a terminal.
 * Command line interpreters are called shells (two commonly used ones are bash [Bourne-again shell] and zsh [Z-shell])
 * Most neuroimaging packages need to be run from a command line
-* Mac and Linux have Terminals installed. Windows users need to install a Terminal emulator to use Unix commands. We do not recommend attempting neuroimaging analyses on a Windows machine. 
+* MacOS and Linux have Terminals installed. To use Unix commands on Windows, you would need to install a Terminal emulator, or to enable `Windows Subsystem for Linux (WSL)<https://docs.microsoft.com/en-us/windows/wsl/install>`_ feature.
 
 .. note::
     You can practice using Unix online with JupyterLab (see https://neuroimaging-core-docs.readthedocs.io/en/latest/pages/unix.html for an excellent tutorial).

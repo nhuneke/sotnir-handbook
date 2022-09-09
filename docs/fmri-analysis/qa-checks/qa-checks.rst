@@ -77,7 +77,13 @@ To prevent your machine's RAM from being overloaded, it is best to run 1 partici
 
 .. code-block:: shell
     
-    docker run -it --rm -v <path/to/bids/dataset>:/data:ro -v <desired/path/to/outputs>:/out nipreps/mriqc:latest /data /out participant --participant-label 01
+    docker run -it --rm -v \
+        <path/to/bids/dataset>:/data:ro -v \
+        <desired/path/to/outputs>:/out \
+        nipreps/mriqc:latest \
+        /data /out participant \
+        --participant-label 01 \
+        --user $( id -u )
     
 .. warning::
     
@@ -87,7 +93,14 @@ If you see potential artifacts on the reports, you can re-run the participant an
 
 .. code-block:: shell
 
-    docker run -it --rm -v <path/to/bids/dataset>:/data:ro -v <desired/path/to/outputs>:/out nipreps/mriqc:latest /data /out participant --participant-label 01 --ica --verbose-reports
+    docker run -it --rm -v \
+        <path/to/bids/dataset>:/data:ro -v \
+        <desired/path/to/outputs>:/out \
+        nipreps/mriqc:latest \
+        /data /out participant \
+        --participant-label 01 \
+        --user $( id -u ) \
+        --ica --verbose-reports
     
 This will provide a more detailed report as well as the results of independent component analysis.
 
@@ -98,4 +111,9 @@ MRIQC can also generate group-level reports to help you identify any outlying pa
 
 .. code-block:: shell
 
-    docker run -it --rm -v <path/to/bids/dataset>:/data:ro -v <desired/path/to/outputs>:/out nipreps/mriqc:latest /data /out group
+    docker run -it --rm -v \
+    <path/to/bids/dataset>:/data:ro -v \
+    <desired/path/to/outputs>:/out \
+    nipreps/mriqc:latest \
+    /data /out group \
+    --user $( id -u )

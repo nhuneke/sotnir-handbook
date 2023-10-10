@@ -1,8 +1,8 @@
 .. _hpc:
 
-=====================
+==========================
 High Performance Computing
-=====================
+==========================
 | Contributors: Yukai Zou
 | Maintainer: Yukai Zou
 

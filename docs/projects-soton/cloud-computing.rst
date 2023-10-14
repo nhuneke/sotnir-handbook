@@ -16,6 +16,10 @@ Cloud Computing: Basics
 
 Place holder for intro paragraph. Explain what it is, the benefits, things to consider, and the available options.
 
+.. important::
+   
+   There is a learning curve ahead. Mastering cloud computing requires dedicated effort and practice. To become proficient, you will need to follow a few key steps. First, learn how to request a worker that can do the computational job. Next, set up the software environment and transfer data onto the worker prior to the computation. Finally, specify what computations to run on the worker. If you are stuck, remember to take a break and get back later when your mind is refreshed, or seek assistance from a knowledgable friend!
+
 Working on local machine vs. on cloud
 *************************************
 
@@ -95,7 +99,7 @@ Setting up NITRC-CE on Amazon Web Services (AWS)
 
 Using NITRC-CE on AWS is a straightforward process and can save substantial time setting up a computational environment for neuroimaging data analysis.
 
-1. Visit https://www.nitrc.org/;
+ 1. Visit https://www.nitrc.org/;
 2. Click on "CE: Cloud Computing Environment" on top right;
 3. Click on "Access NITRC-CE", and select "Find a NITRC-CE AMI" in the drop-down menu;
 4. Follow the instructions to set up EC2 instance.

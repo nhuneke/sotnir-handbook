@@ -11,7 +11,52 @@ Cloud Computing
 .. note::
 	Under construction
 
+Cloud Computing: Basics
+-----------------------
+
 Place holder for intro paragraph. Explain what it is, the benefits, things to consider, and the available options.
+
+Working on local machine vs. on cloud
+*************************************
+
++---------------------------------------+---------------------+------------------------+
+|                                       | **Working locally** | **Working on cloud**   |
++---------------------------------------+---------------------+------------------------+
+| **Who is the owner?**                 | You                 | Cloud service provider |
++---------------------------------------+---------------------+------------------------+
+| **Who manages software environment?** | You                 | Cloud service provider |
++---------------------------------------+---------------------+------------------------+
+| **Who installs software packages?**   | You                 | You                    |
++---------------------------------------+---------------------+------------------------+
+| **Availability of apps and code**     | Yes                 | Transfer needed        |
++---------------------------------------+---------------------+------------------------+
+| **Availability of data**              | Yes                 | Tranfer needed         |
++---------------------------------------+---------------------+------------------------+
+
+Instance Types
+**************
+
+::
+
+   mem2_ssd1_v2_x16
+
+* ``mem2``: Memory Available per core, ranging from 3.8 GB to 1.9 TB. 
+* ``ssd1``: Disk Space Available per core, ranging from 40 GB to 60 TB.
+* ``v2``: Versioning. *Always use version 2 of an instance type*.
+* ``x16``: Cores/GPUs available, ranging from 2 to 126 cores.
+
+.. note::
+    
+    **What are the differences between ssd and hdd?**
+
+.. note::
+    
+    **What are the key things to consider when choosing instance types?**
+    
+    - Whether your software requires more memory (``mem2`` vs. ``mem3``)
+    - Whether your software requires large storage space (``ssd1`` vs. ``ssd2``)
+    - Whether your software utilises multiple cores (``x16`` vs. ``x32``)
+    - Whether your software is GPU optimised (``gpu_x32``)
 
 UK Biobank Research Analysis Platform (RAP)
 -------------------------------------------
@@ -25,6 +70,11 @@ Request Access
 **************
 
 1. Register at the UK Biobank Access Management System at https://ams.ukbiobank.ac.uk/ams/, which will take up to 10 working days for approval.
+
+Costs and Billing
+*****************
+
+Detailed information about rates of different instance types is available `here <https://20779781.fs1.hubspotusercontent-na1.net/hubfs/20779781/Product%20Team%20Folder/Rate%20Cards/BiobankResearchAnalysisPlatform_Rate%20Card_Current.pdf>`_.
 
 NITRC-CE
 --------

@@ -76,15 +76,24 @@ Costs and Billing
 
 Detailed information about rates of different instance types is available `here <https://20779781.fs1.hubspotusercontent-na1.net/hubfs/20779781/Product%20Team%20Folder/Rate%20Cards/BiobankResearchAnalysisPlatform_Rate%20Card_Current.pdf>`_.
 
-NITRC-CE
---------
+NeuroImaging Tools & Resourcees Collaboratory (NITRC)
+-----------------------------------------------------
+
+NeuroImaging Tools & Resourcees Collaboratory (NITRC, https://nitrc.org) is a free web-based resource that offers comprehensive information on neuroinformatics software and data. To date, more than 1,000 neuroimaging tools and resources have been registered, and NITRC has become the *de facto* standard mechanism for sharing neuroimaging tools and resources. NITRC contains three main components: Resource Registry (NITRC-RR), Imaging Repository (NITRC-IR), and Computational Environment (NITRC-CE).
+
+NITRC-CE: the Computational Environment
+***************************************
+
+NITRC-CE provides a cloud-based, pay-as-you-go virtual computing platform. It is pre-configured with popular neuroimaging tools, including FSL, FreeSurfer, ANTs, C-PAC, MRIcron, etc. A full list of the installed packages is available `here <https://www.nitrc.org/plugins/mwiki/index.php/nitrc:User_Guide_-_NITRC_Computational_Environment_Installed_Packages>`__. Additionally, you can also add your own commercial or open source tools.
+
+Setting up NITRC-CE on Amazon Web Services (AWS)
+************************************************
 
 .. note::
     
     You can `build your own NITRC-CE instance <https://www.nitrc.org/plugins/mwiki/index.php/nitrc:User_Guide_-_NITRC_Computational_Environment_Getting_Started#Building_Your_Own_NITRC-CE>`_.
 
-Setting up NITRC-CE on AWS Cloud
-********************************
+Using NITRC-CE on AWS is a straightforward process and can save substantial time setting up a computational environment for neuroimaging data analysis.
 
 1. Visit https://www.nitrc.org/;
 2. Click on "CE: Cloud Computing Environment" on top right;

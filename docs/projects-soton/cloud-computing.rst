@@ -79,6 +79,10 @@ Detailed information about rates of different instance types is available `here 
 NITRC-CE
 --------
 
+.. note::
+    
+    You can `build your own NITRC-CE instance <https://www.nitrc.org/plugins/mwiki/index.php/nitrc:User_Guide_-_NITRC_Computational_Environment_Getting_Started#Building_Your_Own_NITRC-CE>`_.
+
 Setting up NITRC-CE on AWS Cloud
 ********************************
 
@@ -93,7 +97,7 @@ Setting up NITRC-CE on AWS Cloud
 .. image:: ../images/nitrc-ce-aws-instance.png
    :width: 600
 
-.. note::
-    
-    You can also `build your own NITRC-CE instance <https://www.nitrc.org/plugins/mwiki/index.php/nitrc:User_Guide_-_NITRC_Computational_Environment_Getting_Started#Building_Your_Own_NITRC-CE>`_.
+AWS EC2 Pricing
+***************
 
+Pricing information for using AWS EC2 instances is available `here <https://aws.amazon.com/ec2/pricing>`_.

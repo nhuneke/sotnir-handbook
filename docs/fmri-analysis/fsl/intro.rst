@@ -66,8 +66,31 @@ Troubleshooting Brain Extraction
 fslinfo and fslhd
 *****************
 
-fslstats and fslmaths
-*********************
+fslstats
+********
+
+
+
+fslmaths
+********
+
+``fslmaths`` is a very general image calculator and can be used to perform a variety of manipulations of images.
+
+As an example, here we have extracted two images from a functional dataset, ``image0`` and ``image1``. We'd like to calculate the difference between two consecutive timepoint images, which may be used as part of a quality assessment. We will call the output ``imdiff``. To do so, run the following command:
+
+::
+
+    fslmaths image0 -sub image1 imdiff
+
+and view the output (`imdiff`).
+
+Now, to calculate this as a percent difference image, run the following command:
+
+::
+
+    fslmaths imdiff -div image0 -mul 100 imdiffpercent
+
+which will first take the difference image (``imdiff``), divide by the first of the original images (``image0``), multiply by 100, and output ``imdiffpercent``. View the output, and run ``fslstats``.
 
 fslsplit and fslmerge
 *********************

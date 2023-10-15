@@ -3,19 +3,36 @@
 ====================================
 Convert from DICOM to NIfTI
 ====================================
-| Contributors: Nathan TM Huneke, Harry Fagan
+| Contributors: Nathan TM Huneke, Harry Fagan, Yukai Zou
 | Maintainers: Nathan TM Huneke
 
 ------------------------------------------
 
-Before we can do any MRI analysis, we need to convert our data from the DICOM format output by the scanner
-to NIfTI in the BIDS structure. To do this, we suggest using an app called `dcm2bids <https://unfmontreal.github.io/Dcm2Bids/>`_.
+A common preprocessing step in neuroimaging data analysis is converting DICOM (Digital Imaging and Communications in Medicine) format output by the scanner to NIfTI (Neuroimaging Informatics Technology Initiative) format. This comes with several benefits, including a more standardised format for neuroimaging data, more consistent data format across multiple imaging modalities and scanners, enhanced compatibility with a wide range of neuroimaging software, and a more streamlined workflow for data analysis and sharing.
+
+Dcm2niix
+--------
+
+::
+
+    dcm2niix -b o -r y -w 1 -o /path/to/destination -f sub-$sID/%t_s%2s_%d/%d_%5r.dcm /path/to/inputdata
+
+- ``-b`` refers to BIDS sidecar, which is set to ``o`` to indicate there is no NIfTI.
+- ``-r`` is set to ``y``, to rename instead of convert DICOMs.
+- ``-w`` is set to ``1`` to overwrite wherever name conflicts occur.
+- ``-f`` specifies how the output filename will look like.
+
+Dcm2bids
+--------
+
+It would be a good practice to organise the NIfTI data in compliance with the BIDS (Brain Imaging Data Structure) standard. To do this, we suggest using an app called `dcm2bids <https://unfmontreal.github.io/Dcm2Bids/>`_.
 
 If you are using my :ref:`neuroimaging conda environment <getting-started/linux-machines:3. create a conda environment for your software and analyses>` 
 then dcm2bids and its dependencies will already be installed. 
 
 The Dcm2bids Helper
----------------------
+*******************
+
 The scanner will output a number of original and derived series, most of which
 are not required for further analysis and do not need to be stored in the BIDS tree.
 Those that are required need to be placed in the correct part of the directory tree, along with 
@@ -118,7 +135,8 @@ a faces task. Not all of these series are original scans, some are derived by th
 for further analysis. Opening up the JSON sidecar files can give more information. 
 
 Configuring Dcm2bids
----------------------
+********************
+
 To tell Dcm2bids which images are anatomical, DTI, etc. we need to create a configuration JSON file. 
 This file should be kept in your dataset in a directory called ``code/``. Here is an example configuration file
 based on this study:
@@ -240,7 +258,7 @@ The configuration file counts up from 0, so in our file above, the number for ea
     BOLD faces (6)
 
 Running Dcm2bids
----------------------
+****************
 .. note::
     
     Prior to running Dcm2bids for the first time you can optionally run ``dcm2bids_scaffold`` to pre-populate your BIDS
@@ -273,7 +291,7 @@ If this were a multi-session study, you would need to add a session label argume
 This would convert the data for sub-01, session 02.
 
 Example scripts
------------------
+***************
 
 Here is an example script that loops through participants to convert dicoms to NIfTI for a single session experiment:
 

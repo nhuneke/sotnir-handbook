@@ -75,6 +75,36 @@ Request Access
 
 1. Register at the UK Biobank Access Management System at https://ams.ukbiobank.ac.uk/ams/, which will take up to 10 working days for approval.
 
+Image Processing on RAP
+***********************
+
+DXJupyterLab App is a DNAnexus extension that allows JupyterLab server to directly view and interact with DNANexus projects, and allows analyses to be carried out in a Jupyter notebook running on the DNAnexus platform. You can simply connect to the Jupyter environment using a local web browser.
+
+JupyterLab app with IMAGE_PROCESSING feature provides access to the following Python libraries:
+
+* ``Nipype (1.8.4)``: click `here <https://miykael.github.io/nipype_tutorial/>`__ for a very good Nipype tutorial.
+* ``FreeSurfer (7.3.2)``
+* ``FSL (3.2.3)``
+
+A full list of individual apps and tools is available at the `Tools Library documentation <https://dnanexus.gitbook.io/uk-biobank-rap/working-on-the-research-analysis-platform/tools-library>`_.
+
+
+To launch DXJupyterLab on RAP's user interface:
+
+1. Click on Projects on the navigation bar, and select a project in which you wish to run this app. 
+2. Click the Start Analysis button.
+3. From the list of tools, select "JupyterLab with Python, R, Stata, ML, Image Processing)".
+
+To launch DXJupyterLab from the command line, run:
+
+::
+
+   dx run dxjupyterlab
+   dx run dxjupyterlab -h # List instructions for specifying inputs
+
+:: important::
+   You will first need to set up the ``dx`` command-line client. Click `here <https://documentation.dnanexus.com/getting-started/cli-quickstart>`__ for a quickstart.
+
 Costs and Billing
 *****************
 
@@ -99,13 +129,14 @@ Setting up NITRC-CE on Amazon Web Services (AWS)
 
 Using NITRC-CE on AWS is a straightforward process and can save substantial time setting up a computational environment for neuroimaging data analysis.
 
- 1. Visit https://www.nitrc.org/;
+1. Visit https://www.nitrc.org/;
 2. Click on "CE: Cloud Computing Environment" on top right;
 3. Click on "Access NITRC-CE", and select "Find a NITRC-CE AMI" in the drop-down menu;
 4. Follow the instructions to set up EC2 instance.
 5. (Optional) Under Advanced details, selecting "Request Spot Instances" can take advantage of spare/unused EC2 instances, which significantly reduces cost compared to On-Demand instances.
 6. After the instance is launched and status checked, from your EC2 Console Dashboard, copy the Instance ID, visit the Public IPv4 address, and paste the Instance ID into the interface.
-7. You will see this screen after login successfully:
+
+You will see this screen after login successfully:
 
 .. image:: ../images/nitrc-ce-aws-instance.png
    :width: 600

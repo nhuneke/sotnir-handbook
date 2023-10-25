@@ -14,7 +14,7 @@ Cloud Computing
 Cloud Computing: Basics
 -----------------------
 
-Place holder for intro paragraph. Explain what it is, the benefits, things to consider, and the available options.
+According to `Amazon Web Services <https://aws.amazon.com/what-is-cloud-computing/?nc2=h_ql_le_int_cc>`_, cloud computing is the on-demand delivery of IT resources over the Internet with pay-as-you-go pricing. Instead of buying, owning, and maintaining physical data centers and servers, you can access technology services, such as computing power, storage, and databases, on an as-needed basis from a cloud provider.
 
 .. important::
    
@@ -108,7 +108,7 @@ To launch DXJupyterLab from the command line, run:
 Costs and Billing
 *****************
 
-Detailed information about rates of different instance types is available `here <https://20779781.fs1.hubspotusercontent-na1.net/hubfs/20779781/Product%20Team%20Folder/Rate%20Cards/BiobankResearchAnalysisPlatform_Rate%20Card_Current.pdf>`_.
+You can use the AWS estimator `here <https://calculator.aws>`__ to obtain an estimated cost. Detailed information about rates of different instance types is available `here <https://20779781.fs1.hubspotusercontent-na1.net/hubfs/20779781/Product%20Team%20Folder/Rate%20Cards/BiobankResearchAnalysisPlatform_Rate%20Card_Current.pdf>`__. 
 
 NeuroImaging Tools & Resourcees Collaboratory (NITRC)
 -----------------------------------------------------

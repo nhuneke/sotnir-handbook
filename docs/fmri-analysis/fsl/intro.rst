@@ -35,7 +35,11 @@ If you have a FEAT configuration file (``.fsf``) from a previous analysis, you c
 Slice timing correction
 ***********************
 
-To be added.
+Click on the "Pre-stats" tab, and select "Slice timing correction" from the drop-down menu. Choose "Use slice timings file", and select the file that corresponds to the input data. The file should be a text file with one number per line, corresponding to the slice acquisition order. 
+
+.. important:: Check whether your DICOM data contains slice timing information
+
+    It is important to check with radiographer whether the DICOM data contains slice timing information. Data collected UHS MRI scanners undergo anonymisation process, which can remove slice timing information before the data is transferred to the user. Typically, slice timing information can be preserved when the DICOM images are burnt onto a DVD from the scanners.
 
 Head motion correction
 **********************

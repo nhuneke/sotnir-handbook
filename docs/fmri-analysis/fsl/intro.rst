@@ -54,11 +54,36 @@ Viewing Atlases
 FSLeyes - 3D mode
 *****************
 
-(Optional) Brain Extraction Tool (BET)
---------------------------------------
+Brain Extraction Tool (BET)
+---------------------------
+
+Accurate brain extraction is crucial for carrying out structural analysis that involves segmentation. In FSL, it is straightforward to perform brain extraction by running BET, but obtaining accurate results will involve some skill and diligence.
+
+For command-line version, you can type ``bet`` to learn about the usage description:
+
+::
+
+    bet <input> <output> [options]
+
+where ``input`` and ``output`` stand for filenames, and ``options`` can be many, or none, of the available extra options. 
+
+Varying the fractional intensity threshold parameter (-f)
+**********************************************************
+
+The ``-f`` option in ``bet`` controls the fractional intensity threshold that distinguishes brain from non-brain. By default the value is set on 0.5, and when it is smaller, the brain estimate gets larger. In command line, try setting the ``-f`` option from 0.2 to 0.8, in turn, to see the effect it has. Save these outputs with different names and load them into FSLeyes. 
 
 Troubleshooting Brain Extraction
 ********************************
+
+The section describes some of the more problematic brain extraction cases, which are common with images that have large FOV and/or substantial bias field.
+
+Using the gradient threshold option (-g)
+
+Dealing with large FOV
+
+1. crop image first to remove the neck
+2. provide an estimate of the centre of the brain
+3. use other BET options that might be more robust
 
 (Optional) FSLUTILS
 -------------------

@@ -14,7 +14,44 @@ fMRI Analysis with FSL
 FEAT
 ----
 
+Launch FSL FEAT GUI
+*******************
+
+To be added.
+
+(Optional) Load FEAT Configuration
+**********************************
+
+If you have a FEAT configuration file (``.fsf``) from a previous analysis, you can load it by clicking on the **Load** button. This will import all the settings from the configuration file, and you'll be able to modify from there.
+
+Slice timing correction
+***********************
+
+To be added.
+
+Head motion correction
+**********************
+
+To be added.
+
+Coregistration
+***************
+
 To be added
+
+Normalisation
+*************
+
+You'll need to choose brain atlas for this step. In FSL there are a range of standard brain atlases available, in which we will be using the MNI152 T1 2mm atlas (``MNI152_T1_2mm_brain.nii.gz``). This is a commonly used standard brain in neuroimaging research.
+
+.. tip:: How to find the path of FSL installation
+
+    In a terminal, type ``whereis fsl``. This will return the path of the FSL installation.
+
+Run FEAT
+********
+
+You are now ready to run FEAT. Press **Go** to start the analysis. FEAT should normally take a few minutes to complete. 
 
 Viewing FEAT Analyses Results
 -----------------------------
@@ -22,6 +59,9 @@ Viewing FEAT Analyses Results
 In a file browser (e.g. Windows File Explorer), navigate to the output folder of the FEAT analysis. This folder should end with the suffix ``.feat``. Inside this folder, there should be a file called ``report.html``. Double-clicking on this file, a web browser should open and display the status and results of the FEAT analysis, which is a convenient way to view the results. 
 
 While FEAT analysis is still running, it will display "STILL RUNNING" in the main page. When the analysis is complete, open FSLeyes and load the preprocessed fMRI image (``filtered_func_data``) from the ``.feat`` folder. 
+
+.. image:: ../../images/fmri-feat-viewing.png
+   :width: 600
 
 FSLeyes: a brief intro
 **********************

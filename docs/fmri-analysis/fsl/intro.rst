@@ -17,7 +17,15 @@ FEAT
 Launch FSL FEAT GUI
 *******************
 
-To be added.
+In the terminal, type ``fsl &`` to launch FSL, and click on the "FEAT FMRI Analysis" icon to launch the FEAT GUI.
+
+.. tip:: Navigating to the data folder first
+
+    It is recommended that the command is called after navigating to the directory where the data is located, so that loading the image data will be easier.
+
+.. tip:: Avoiding spaces in file and folder names
+
+    Avoiding having spaces in the file and folder names. This is considered a good practice in general when operating in Unix/Linux environment. Consider replacing spaces with underscores or dashes.
 
 (Optional) Load FEAT Configuration
 **********************************

@@ -44,12 +44,16 @@ Click on the "Pre-stats" tab, and select "Slice timing correction" from the drop
 Head motion correction
 **********************
 
-To be added.
+Under "Pre-stats" tab, select "MCFLIRT" from the drop-down menu of motion correction. This will enable motion correction.
 
 Coregistration
 ***************
 
-To be added
+Click on the "Registration" tab, and under "Main structural image", select the individual's T1-weighted brain image.
+
+.. tip:: Perform brain extraction on the T1-weighted image beforehand
+
+    Registration may be affected by large field of view (FOV) of the T1-weighted image and the skull. Therefore, performing brain extraction on the T1-weighted image beforehand can improve the registration accuracy. Even though BET brain extraction can be enabled in FEAT, it's good idea to provide a brain-extracted T1-weighted image directly if possible.
 
 Normalisation
 *************

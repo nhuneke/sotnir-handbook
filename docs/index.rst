@@ -64,3 +64,8 @@ Contributors are credited on each page.
 
    dmri-analysis/intro.rst
 
+.. toctree::
+   :maxdepth: 1
+   :caption: QSM Analysis
+
+   qsm-analysis/intro.rst

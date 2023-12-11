@@ -37,6 +37,7 @@ Contributors are credited on each page.
    projects-soton/trainings.rst
    projects-soton/mri-scanner.rst
    projects-soton/hpc.rst
+   projects-soton/cloud-computing.rst
 
 .. toctree::
    :maxdepth: 1

@@ -30,6 +30,12 @@ Motivations for QSM
 
 Iron accumulates in the brain with age and link to neurodegenerative diseases, such as Alzheimer's disease, Parkinson's disease, and multiple sclerosis. 
 
+Magnetic Susceptibility
+***********************
+
+.. image:: ../images/qsm-magnetic-susceptibilities.png
+    :width: 600
+
 Clinical Applications
 ---------------------
 

@@ -67,7 +67,7 @@ Many thanks
 
 <**Your full name**>"
 
-(Optional Topic) Mount Research Filestore to Iridis
+(Optional) Mount Research Filestore to Iridis
 ======================================
 
 The University Research Filestore is a secure research data storage service provided by iSolutions, for the research community to store active research data. Data on the research filestore is backed up and with an extra copy stored in a secure location (for disaster recovery purposes). The newest research filestore supports mounting onto Iridis 5, and this allows a more direct access to the research data via a shared filesystems and network.

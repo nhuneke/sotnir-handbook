@@ -46,6 +46,9 @@ Head motion correction
 
 Under "Pre-stats" tab, select "MCFLIRT" from the drop-down menu of motion correction. This will enable motion correction.
 
+.. image:: ../../images/fmri-feat-mcflirt.png
+   :width: 600
+
 Coregistration
 ***************
 

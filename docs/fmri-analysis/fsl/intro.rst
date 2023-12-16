@@ -46,6 +46,13 @@ Head motion correction
 
 Under "Pre-stats" tab, select "MCFLIRT" from the drop-down menu of motion correction. This will enable motion correction.
 
+.. image:: ../../images/fmri-feat-mcflirt.png
+   :width: 600
+
+.. note:: Motion correction is not always necessary
+
+    While head motion correction is critical, it is not always a mandatory preprocessing step. For instance, motion correction is not accurate on edge slices, where the cerebrospinal fluid (CSF) flows in and out of the imaging volume. Performing motion correction in this case can actually lead to inaccurate voxel's slice position. See `Fultz et al. 2019 <https://pubmed.ncbi.nlm.nih.gov/31672896/>`_ for details. 
+
 Coregistration
 ***************
 

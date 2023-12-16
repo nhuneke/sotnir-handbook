@@ -42,6 +42,14 @@ Clinical Applications
 Calcification
 *************
 
+- Question: how to tell difference between iron and calcification in susceptibility weighted images?
+- Higher concentrations would exhibit greater enhancement of the region.
+
+Case study of patient with both calcification and bleeds
+
+- Depends on handedness of scanner, veins and bleeds may appear dark and calcifications may appear bright.
+- Need to check for dipole field pattern in sagittal or coronal plane, which will be much more evident around paramagnetic regions, as these have a larger susceptibility difference compared to the diamagnetic tissue.
+
 Hypoxic Ischemic Encephalopathy
 *******************************
 

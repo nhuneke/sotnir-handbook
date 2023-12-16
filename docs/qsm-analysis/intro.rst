@@ -57,3 +57,8 @@ Superficial Siderosis
 
 .. image:: ../images/qsm-superficial-siderosis.png
     :width: 300
+
+Workflow:
+
+.. image:: ../images/workflow-superficial-siderosis.png
+    :width: 600

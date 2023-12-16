@@ -34,13 +34,26 @@ Once your access has been granted, you are also subscribed to the HPC mailing li
 
 Here are a few links to the resources:
 
-- Forum: https://hpc.soton.ac.uk/redmine/projects/iridis-5-support/boards
 - HPC Community Wiki: https://sotonac.sharepoint.com/teams/HPCCommunityWiki
 - Submit a job: https://sotonac.sharepoint.com/teams/HPCCommunityWiki/SitePages/Submitting-Jobs-Slurm.aspx
     - Specify job resources: https://sotonac.sharepoint.com/teams/HPCCommunityWiki/SitePages/Submitting-Jobs-Slurm.aspx#specifying-job-resources
+- Job extension policy: https://sotonac.sharepoint.com/teams/HPCCommunityWiki/SitePages/Fair-usage-and-Job-extension-policy.aspx
 
-.. note::
-	Examples: under construction
+Login nodes
+===========
+
+
+.. important::
+
+	Overloading login nodes can cause issues for other users. Login nodes are intended for short interactive processing only. For longer, interactive work, please utilize ``sinteractive`` sessions. 
+
+Compute nodes
+=============
+
+Initiaing an interactive session on a compute node using the ``sinteractive`` command allows for interactive computing and the use of the GUI over X11, e.g. for RStudio, without the risk of overloading the login nodes.
+
+Check out the following page for more details on how to use ``sinteractive``: https://sotonac.sharepoint.com/teams/HPCCommunityWiki/SitePages/Submitting-Jobs-Slurm.aspx#interactive-jobs
+
 
 Using job arrays
 ==================
@@ -56,6 +69,23 @@ Although mainly operated in a command line interface, Iridis 5 provides options 
 
  - Setting up EngineFrame VNC: https://sotonac.sharepoint.com/teams/HPCCommunityWiki/SitePages/Data-Visualisation.aspx#engineframe-vnc
 
+Visualization Expansion Portal (Linux Orange)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In addition to Linux Desktop, Iridis 5 visualisation expansion portal Linux Orange has become available since October 2023. 
+
++----------------+-------------------------------+
+| Nodes          | ``orange02`` and ``orange03`` |
++----------------+-------------------------------+
+| Sessions       | 4                             |
++----------------+-------------------------------+
+| CPU cores      | 12                            |
++----------------+-------------------------------+
+| Memory         | 240 GB                        |
++----------------+-------------------------------+
+| GPU available? | No                            |
++----------------+-------------------------------+
+
 (Optional) Mount Research Filestore to Iridis
 ======================================
 
@@ -65,3 +95,25 @@ The University Research Filestore is a secure research data storage service prov
 	Due to the age and the nature of the setup, some research filestore cannot be mounted onto Iridis 5. This is mainly for security reasons. Older research filestore can't set up an NFS export that allows the directory to be mounted in a way that protects the sensitive nature of the data when retrieved via other users on Iridis 5. 
 	
 	**Solution:** If the data owner requests a new research filestore space, then it can be set up with the old data copied into it. To do this, make a request by filling out a form `here <https://sotonproduction.service-now.com/serviceportal?id=sc_cat_item&sys_id=903e688edbbbf300f91c8c994b961974>`_. iSolution should be able to mount the new filestore to Iridis 5 allow direct access of data.
+
+A100 Scavenger Nodes
+--------------------
+
+An A100 scavenger queue has been added to Iridis 5 in December 2023. This queue contains one node and has a twelve hour time limit, and is available to all Iridis 5 users. This may be of interest to users who are interested in testing the A100 GPUs before their full release to the user community.
+
+Specification
+=============
+
++----------------+-----------------------------------------------------------------------+
+| GPU hardware   | Dual A100 NVLinked GPUs (160GB VRAM total across two GPUs)            |
++----------------+-----------------------------------------------------------------------+
+| CPU hardware   | 48 intel CPUs (24 cores x 2 sockets, Intel(R) Xeon(R) Gold 6336Y CPU  |
+|                | @ 2.40GHz)                                                            |
++----------------+-----------------------------------------------------------------------+
+| Memory         | 480GB of RAM                                                          |
++----------------+-----------------------------------------------------------------------+
+
+How to access the node
+======================
+
+Please use the partition ``a100_scavenger`` to access the node.

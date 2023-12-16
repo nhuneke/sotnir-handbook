@@ -8,6 +8,10 @@ Research MRI Scanners
 
 --------------
 
+.. important::
+
+    Our LabArchives Scheduler subscription, which was funded by the University's Research Concordat, supported up to 12 users until 2nd September 2023. We are currently in the process of renewing our Scheduler license, and we are actively exploring a more long-term solution to the management of research MRI slots. 
+
 Making Reservation
 ------------------
 

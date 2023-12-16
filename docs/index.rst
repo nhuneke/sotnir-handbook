@@ -37,6 +37,7 @@ Contributors are credited on each page.
    projects-soton/trainings.rst
    projects-soton/mri-scanner.rst
    projects-soton/hpc.rst
+   projects-soton/cloud-computing.rst
 
 .. toctree::
    :maxdepth: 1
@@ -54,18 +55,18 @@ Contributors are credited on each page.
 
 .. toctree::
    :maxdepth: 2
-   :caption: fMRI Analysis
+   :caption: functional MRI
 
    fmri-analysis/intro.rst
 
 .. toctree::
    :maxdepth: 1
-   :caption: dMRI Analysis
+   :caption: diffusion MRI
 
    dmri-analysis/intro.rst
 
 .. toctree::
    :maxdepth: 1
-   :caption: QSM Analysis
+   :caption: Quantitative Susceptibility Mapping
 
    qsm-analysis/intro.rst

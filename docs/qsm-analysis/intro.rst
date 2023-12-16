@@ -46,7 +46,22 @@ Hypoxic Ischemic Encephalopathy
 *******************************
 
 Subarachnoid haemorrhage
-*************************
+************************
+
+- Subarachnoid haemorrhage refers to the bleeding in the subarachnoid space, usually from a ruptured aneurysm.
+
+
+.. image:: ../images/qsm-subarachnoid-haemorrhage.png
+    :width: 300
+
+Workflow:
+
+.. image:: ../images/workflow-subarachnoid-haemorrhage.png
+    :width: 600
+
+- Iron deposited in the brain after subarachnoid haemorrhage around the Sylvian fissures.
+- Need to investigate the relationship of iron and brain volume changes.
+- Future work includes studying whether clinical outcome is more closely associated with baseline blood volume or iron deposition.
 
 Superficial Siderosis
 *********************
@@ -54,9 +69,6 @@ Superficial Siderosis
 - Hemosiderin deposited on the pial surface of the brain and/or spinal cord, as a result of chronic subarachnoid haemorrhage.
 - Deferiprone is an iron chelator that can be used to treat superficial siderosis.
 - There is a need to develop a workflow for rare clinical cases, such as superficial siderosis.
-
-.. image:: ../images/qsm-superficial-siderosis.png
-    :width: 300
 
 Workflow:
 

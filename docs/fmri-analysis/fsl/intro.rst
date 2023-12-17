@@ -11,6 +11,9 @@ fMRI Analysis with FSL
 .. note::
     Under construction
 
+.. contents::
+   :local:
+
 FEAT
 ----
 

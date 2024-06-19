@@ -49,27 +49,27 @@ Overall, it is important to be aware of the limitations and technical barriers o
 Relevant Readings
 *****************
 
-- `What is Diffusion <https://mri-q.com/what-is-diffusion.html >`__
-- `What is Apparent Diffusion Coefficient (ADC) <https://mriquestions.com/apparent-diffusion.html>`__
-- `How do you make a Diffusion Weighted Image <https://mriquestions.com/making-a-dw-image.html>`__
-- `Trace versus ADC <https://mriquestions.com/trace-vs-adc-map.html>`__
+- `What is Diffusion <https://mri-q.com/what-is-diffusion.html>`_
+- `What is Apparent Diffusion Coefficient (ADC) <https://mriquestions.com/apparent-diffusion.html>`_
+- `How do you make a Diffusion Weighted Image <https://mriquestions.com/making-a-dw-image.html>`_
+- `Trace versus ADC <https://mriquestions.com/trace-vs-adc-map.html>`_
 
 .. topic:: References
 
-    .. [Chanraud2010] S. Chanraud, N. Zahr, E. V. Sullivan, and A. Pfefferbaum, “MR diffusion tensor imaging: A window into white matter integrity of the working brain,” 2010. doi: `10.1007/s11065-010-9129-7 <https://doi.org/10.1007/s11065-010-9129-7>`__.
+    .. [Chanraud2010] Chanraud S, Zahr N, Sullivan EV, Pfefferbaum A, “MR diffusion tensor imaging: A window into white matter integrity of the working brain,” 2010. doi: `10.1007/s11065-010-9129-7 <https://doi.org/10.1007/s11065-010-9129-7>`_.
 
-    .. [Mukherjee2008a] P. Mukherjee, J. I. Berman, S. W. Chung, C. P. Hess, and R. G. Henry, “Diffusion tensor MR imaging and fiber tractography: Theoretic underpinnings,” 2008. doi: `10.3174/ajnr.A1051 <https://doi.org/10.3174/ajnr.A1051>`__.
+    .. [Mukherjee2008a] Mukherjee P, Berman JI, Chung SW, Hess CP, Henry RG, “Diffusion tensor MR imaging and fiber tractography: Theoretic underpinnings,” 2008. doi: `10.3174/ajnr.A1051 <https://doi.org/10.3174/ajnr.A1051>`_.
 
-    .. [Mukherjee2008b] P. Mukherjee, S. W. Chung, J. I. Berman, C. P. Hess, and R. G. Henry, “Diffusion tensor MR imaging and fiber tractography: Technical considerations,” in American Journal of Neuroradiology, 2008. doi: `10.3174/ajnr.A1052 <https://doi.org/10.3174/ajnr.A1052>`__.
+    .. [Mukherjee2008b] Mukherjee P, Chung SW, Berman JI, Hess CP, Henry RG, “Diffusion tensor MR imaging and fiber tractography: Technical considerations,” in American Journal of Neuroradiology, 2008. doi: `10.3174/ajnr.A1052 <https://doi.org/10.3174/ajnr.A1052>`_.
 
-    .. [Pfefferbaum2005] A. Pfefferbaum and E. V. Sullivan, “Disruption of brain white matter microstructure by excessive intracellular and extracellular fluid in alcoholism: Evidence from diffusion tensor imaging,” Neuropsychopharmacology, 2005. doi: `10.1038/sj.npp.1300623 <https://doi.org/10.1038/sj.npp.1300623>`__.
+    .. [Pfefferbaum2005] Pfefferbaum A and Sullivan EV, “Disruption of brain white matter microstructure by excessive intracellular and extracellular fluid in alcoholism: Evidence from diffusion tensor imaging,” Neuropsychopharmacology, 2005. doi: `10.1038/sj.npp.1300623 <https://doi.org/10.1038/sj.npp.1300623>`_.
 
-    .. [Jbabdi2015] S. Jbabdi, S. N. Sotiropoulos, S. N. Haber, D. C. Van Essen, and T. E. Behrens, “Measuring macroscopic brain connec- tions in vivo,” 2015. doi: `10.1038/nn.4134 <https://doi.org/10.1038/nn.4134>`__.
+    .. [Jbabdi2015] Jbabdi S, Sotiropoulos SN, Haber SN, Van Essen DC, Behrens TE, “Measuring macroscopic brain connec- tions in vivo,” 2015. doi: `10.1038/nn.4134 <https://doi.org/10.1038/nn.4134>`_.
 
-    .. [Beaulieu2002] C. Beaulieu, “The basis of anisotropic water diffusion in the nervous system - a technical review,” NMR Biomed, vol. 15, no. 7-8, pp. 435–455, 2002. doi: `10.1002/nbm.782 <https://doi.org/10.1002/nbm.782>`__.
+    .. [Beaulieu2002] Beaulieu C, “The basis of anisotropic water diffusion in the nervous system - a technical review,” NMR Biomed, vol. 15, no. 7-8, pp. 435–455, 2002. doi: `10.1002/nbm.782 <https://doi.org/10.1002/nbm.782>`_.
 
-    .. [Thomas2014] C. Thomas, F. Q. Ye, M. O. Irfanoglu, P. Modi, K. S. Saleem, D. A. Leopold, and C. Pierpaoli, “Anatomical accuracy of brain connections derived from diffusion MRI tractography is inherently limited,” Proceedings of the National Academy of Sciences, 2014. doi: `10.1073/pnas.1405672111 <https://doi.org/10.1073/pnas.1405672111>`__.
+    .. [Thomas2014] Thomas C, Ye FQ, Irfanoglu MO, Modi P, Saleem KS, Leopold DA, Pierpaoli C, “Anatomical accuracy of brain connections derived from diffusion MRI tractography is inherently limited,” Proceedings of the National Academy of Sciences, 2014. doi: `10.1073/pnas.1405672111 <https://doi.org/10.1073/pnas.1405672111>`_.
 
-    .. [Tuch2002] D. S. Tuch, T. G. Reese, M. R. Wiegell, N. Makris, J. W. Belliveau, and V. J. Wedeen, “High angular resolution diffusion imaging reveals intravoxel white matter fiber heterogeneity,” Magnetic Resonance in Medicine, 2002. doi: `10.1002/mrm.10268 <https://doi.org/10.1002/mrm.10268>`__.
+    .. [Tuch2002] Tuch DS, Reese TG, Wiegell MR, Makris N, Belliveau JW, Wedeen VJ, “High angular resolution diffusion imaging reveals intravoxel white matter fiber heterogeneity,” Magnetic Resonance in Medicine, 2002. doi: `10.1002/mrm.10268 <https://doi.org/10.1002/mrm.10268>`_.
 
-    .. [Hess2007] C. P. Hess and P. Mukherjee, “Visualizing White Matter Pathways in the Living Human Brain: Diffusion Tensor Imaging and Beyond,” 2007. doi: `10.1016/j.nic.2007.07.002 <https://doi.org/10.1016/j.nic.2007.07.002>`__.
+    .. [Hess2007] Hess CP and Mukherjee P, “Visualizing White Matter Pathways in the Living Human Brain: Diffusion Tensor Imaging and Beyond,” 2007. doi: `10.1016/j.nic.2007.07.002 <https://doi.org/10.1016/j.nic.2007.07.002>`_.

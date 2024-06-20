@@ -60,10 +60,10 @@ Contributors are credited on each page.
    fmri-analysis/intro.rst
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: diffusion MRI
 
-   dmri-analysis/index
+   dmri/index
 
 .. toctree::
    :maxdepth: 1

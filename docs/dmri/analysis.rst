@@ -1,4 +1,4 @@
-.. _fmriprep.rst:
+.. _analysis.rst:
 
 ==============================================
 DTI Analysis with FSL

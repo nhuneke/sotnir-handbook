@@ -1,4 +1,4 @@
-.. _intro.rst:
+.. _index.rst:
 
 ==============================================
 Quality Assurance Checks

@@ -1,4 +1,4 @@
-.. _intro.rst:
+.. _fsl.rst:
 
 ==============================================
 fMRI Analysis with FSL

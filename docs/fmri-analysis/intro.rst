@@ -14,7 +14,7 @@ Under construction
     :maxdepth: 1
     :caption: Sections
 
-    qa-checks/qa-checks.rst
     fmriprep/intro.rst
-    fsl/intro.rst
+    fsl
+    qa-checks/qa-checks.rst
     connectivity/intro.rst

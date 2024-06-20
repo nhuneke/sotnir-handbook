@@ -1,4 +1,4 @@
-.. _fmriprep.rst:
+.. _intro.rst:
 
 ==============================================
 Diffusion Tensor Imaging: An Introduction

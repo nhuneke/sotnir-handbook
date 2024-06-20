@@ -63,7 +63,7 @@ Contributors are credited on each page.
    :maxdepth: 1
    :caption: diffusion MRI
 
-   dmri-analysis/index
+   dmri/index
 
 .. toctree::
    :maxdepth: 1

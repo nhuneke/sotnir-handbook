@@ -1,4 +1,4 @@
-.. _intro.rst:
+.. _index.rst:
 
 ==============================================
 fMRI Analysis
@@ -11,10 +11,10 @@ fMRI Analysis
 Under construction
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :caption: Sections
 
     fmriprep/intro.rst
     fsl
-    qa-checks/qa-checks.rst
+    quality-assurance
     connectivity/intro.rst

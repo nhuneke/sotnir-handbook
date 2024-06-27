@@ -1,4 +1,4 @@
-.. _fmriprep.rst:
+.. _index.rst:
 
 ==============================================
 fMRI Preprocessing with fMRIPrep

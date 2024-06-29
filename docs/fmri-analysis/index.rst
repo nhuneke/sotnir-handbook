@@ -14,7 +14,7 @@ Under construction
     :maxdepth: 2
     :caption: Sections
 
-    fmriprep
-    fsl
-    quality-assurance
+    fmriprep/index
+    fsl/index
+    quality-assurance/index
     connectivity/intro.rst

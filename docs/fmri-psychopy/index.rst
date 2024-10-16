@@ -1,7 +1,7 @@
 .. _index.rst:
 
 ==============================================
-fMRI Analysis
+PsychoPy
 ==============================================
 | Contributors: Nathan TM Huneke, Yukai Zou
 | Maintainers: Nathan TM Huneke
@@ -9,12 +9,3 @@ fMRI Analysis
 ------------------------------------------
 
 Under construction
-
-.. toctree::
-    :maxdepth: 2
-    :caption: Sections
-
-    fmriprep/index
-    fsl/index
-    quality-assurance/index
-    connectivity/intro.rst

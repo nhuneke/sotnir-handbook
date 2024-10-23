@@ -16,6 +16,15 @@ What is Unix?
 * Most neuroimaging packages need to be run from a command line
 * MacOS and Linux have Terminals installed. To use Unix commands on Windows, you would need to install a Terminal emulator (e.g. `Git for Windows <https://gitforwindows.org/>`_), or to enable `Windows Subsystem for Linux (WSL) <https://docs.microsoft.com/en-us/windows/wsl/install>`_ feature.
 
+Command Structure
+*****************
+
+A command typically consists of the following four components:
+
+.. image:: ../images/unix-command-structure.png
+   :width: 600
+   :alt: Anatomy of a command
+
 .. note::
     You can practice using Unix online with JupyterLab (see https://neuroimaging-core-docs.readthedocs.io/en/latest/pages/unix.html for an excellent tutorial).
     

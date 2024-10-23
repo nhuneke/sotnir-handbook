@@ -7,8 +7,8 @@ Unix Basics
 | Maintainers: Nathan TM Huneke
 ------------------------
 
-Unix
-------
+What is Unix?
+-------------
 * Unix refers to a family of proprietary operating system. 
 * Different from Windows which presents a *graphical user interface (GUI)*, Unix uses a *command line interface (CLI)* where you type commands you want to run into a terminal.
 * Unix was designed to be used by many users at the same time.

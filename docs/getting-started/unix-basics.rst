@@ -9,8 +9,9 @@ Unix Basics
 
 Unix
 ------
-* Unix is an operating system (like Windows).
-* It uses a command line interface (or command line) where you type commands you want to run into a terminal.
+* Unix refers to a family of proprietary operating system. 
+* Different from Windows which presents a _graphical user interface (GUI)_, Unix uses a _command line interface (CLI)_ where you type commands you want to run into a terminal.
+* Unix was designed to be used by many users at the same time.
 * Command line interpreters are called shells (two commonly used ones are bash [Bourne-again shell] and zsh [Z-shell])
 * Most neuroimaging packages need to be run from a command line
 * MacOS and Linux have Terminals installed. To use Unix commands on Windows, you would need to install a Terminal emulator (e.g. `Git for Windows <https://gitforwindows.org/>`_), or to enable `Windows Subsystem for Linux (WSL) <https://docs.microsoft.com/en-us/windows/wsl/install>`_ feature.

@@ -125,45 +125,6 @@ Installed Packages
 
 Below are the packages already installed for NITRC-CE (v0.57-14):
 
-I have a list with this structure:
- SOFTWARE_NAME (VERSION)
-
-And I need to convert to a list with the following format:
- * - SOFTWARE_NAME
-   - VERSION
-   - SOFTWARE_NAME Desctiption
-  
-Please do this for the following list:
- AFNI (AFNI_24.0.15)
- ANTS (2.4.2)
- BrainSuite (16a1)
- CONN (22a)
- C-PAC (1.8.6)
- DataLad (0.19.5-1~nd22.04+1)
- Docker (24.0.2)
- DTIPrep (1.2.4)
- EEGLAB (v2023.1)
- FreeSurfer (7.2.0)
- FSL (6.0.7.9)
- HeuDiConv (0.13.1-1~nd22.04+1)
- HTCondor (10.0.9-1.1)
- MaCH (1.0.18.c)
- MRIcron (1.2.20211006+dfsg-1)
- MRtrix (3.0.3-1)
- NeuroDocker (0.9.4)
- NEURON (7.6.3-1build6)
- PLINK! (v1.07)
- Pydicom (2.2.2-1)
- dipy (1.4.1-1build1)
- NiBabel (3.2.2-1)
- NIPY (0.5.0)
- NiPype (1.7.0-1)
- Singularity (3.7.3)
- SOLAR-Eclipse (8.4.2)
- SPM (12)
- TrackVis (0.6.1)
-
-
 .. list-table:: 
     :widths: 10 10 50
     :header-rows: 1

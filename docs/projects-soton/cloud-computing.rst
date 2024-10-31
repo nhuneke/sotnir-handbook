@@ -102,7 +102,7 @@ To launch DXJupyterLab from the command line, run:
    dx run dxjupyterlab
    dx run dxjupyterlab -h # List instructions for specifying inputs
 
-:: important::
+.. important::
    You will first need to set up the ``dx`` command-line client. Click `here <https://documentation.dnanexus.com/getting-started/cli-quickstart>`__ for a quickstart.
 
 Costs and Billing

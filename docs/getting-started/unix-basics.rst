@@ -7,13 +7,23 @@ Unix Basics
 | Maintainers: Nathan TM Huneke
 ------------------------
 
-Unix
-------
-* Unix is an operating system (like Windows).
-* It uses a command line interface (or command line) where you type commands you want to run into a terminal.
+What is Unix?
+-------------
+* Unix refers to a family of proprietary operating system. 
+* Different from Windows which presents a *graphical user interface (GUI)*, Unix uses a *command line interface (CLI)* where you type commands you want to run into a terminal.
+* Unix was designed to be used by many users at the same time.
 * Command line interpreters are called shells (two commonly used ones are bash [Bourne-again shell] and zsh [Z-shell])
 * Most neuroimaging packages need to be run from a command line
-* MacOS and Linux have Terminals installed. To use Unix commands on Windows, you would need to install a Terminal emulator, or to enable `Windows Subsystem for Linux (WSL)<https://docs.microsoft.com/en-us/windows/wsl/install>`_ feature.
+* MacOS and Linux have Terminals installed. To use Unix commands on Windows, you would need to install a Terminal emulator (e.g. `Git for Windows <https://gitforwindows.org/>`_), or to enable `Windows Subsystem for Linux (WSL) <https://docs.microsoft.com/en-us/windows/wsl/install>`_ feature.
+
+Command Structure
+*****************
+
+A command typically consists of the following four components:
+
+.. image:: ../images/unix-command-structure.png
+   :width: 600
+   :alt: Anatomy of a command
 
 .. note::
     You can practice using Unix online with JupyterLab (see https://neuroimaging-core-docs.readthedocs.io/en/latest/pages/unix.html for an excellent tutorial).
@@ -23,23 +33,38 @@ Unix
 Basic Unix Commands
 --------------------
 
+- ``man`` Display the manual page of a given command
 - ``pwd`` Print Working Directory, tells you the current directory you are in  
-- ``cd directory``    Change Directory, takes to you the directory specified                                                                        
+- ``cd <directory>``    Change Directory, takes to you the directory specified                                                                        
 - ``cd ~``               Go to home directory                                                                                                           
 - ``cd /``                 Go to root directory                                                                                                         
+- ``cd ..``                 Go to the parent directory
+- ``cd -``                 Go to the last directory
 - ``ls``                    List, lists the contents of the directory you are in                                                                        
-- ``ls <directory>`` lists contents of the specified directory                                                                                           
-- ``ls -a``                lists all files and directories in the directory you are in (including hidden ones which start with an “.” and don’t appear is you just you the “ls” command)
+- ``ls <directory>`` Lists contents of the specified directory                                                                                           
+- ``ls -a``                Lists all files and directories in the directory you are in (including hidden ones which start with an “.” and don’t appear is you just you the “ls” command)
+- ``ls -F``                Annotate different types of files, directories (ended with "\") and links (ended with "@")
 - ``ls -l``                 Long list, lists all files and directory with ownership and user permissions                                        
 - ``ls -al``               Long list (including hidden files and directories)                                                                         
-- ``mkdir <name>``  creates a directory with that name                                                                                                   
-- ``mkdir .<name>`` creates a hidden directory with that name                                                                                         
-- ``history``            lists all recently run commands                                                                                                
-- ``!<number>``   re-runs command specified (by number from history list)                                                                     
-- ``cp -r <from> <to>`` copies a directory from one path to another path                                                                           
-- ``mv <from> <to>``  renames a file or directory                                                                                                         
-- ``rm <file>``      deletes a file                                                                                                               
-- ``rm -rf <directory>`` deletes a directory                                                                                                             
+- ``ls -t``                Sort files by last-modified time
+- ``ls -r``                Reverse the order of the sort
+- ``ls -h``                Display file sizes in human readable format
+- ``mkdir <name>``  Creates a directory with that name                                                                                                   
+- ``mkdir .<name>`` Creates a hidden directory with that name                                                                                         
+- ``history``            Lists all recently run commands                                                                                                
+- ``!<number>``   Re-runs command specified (by number from history list)                                                                     
+- ``cp -r <from> <to>`` Copies a directory from one path to another path                                                                           
+- ``mv <from> <to>``  Move a file to a new location, or rename a file or directory to a different name
+- ``rm <file>``      Deletes a file                                                                                                               
+- ``rm -rf <directory>`` Deletes a directory
+- ``ln``                 Create a link to an existing file or directory
+- ``ln -s``                 Create a *symbolic* (or *soft*) link that can point to a path of a file or directory
+- ``cat``                   Concatenate the contents of the given files, or simply to view the content of a single file
+- ``diff <file1> <file2>``                 Compare two files and mark the lin numbers where they are different. Can also compare two different directories.
+
+.. tip:: Tab completion
+
+    Pressing the "Tab" key can auto-complete commands, files and directories or, when multiple entries are identified, suggest possible options. This would allow faster typing and is less likely to introduce typos.
 
 Important Unix Directories
 --------------------------

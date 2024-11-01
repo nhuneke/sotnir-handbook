@@ -51,7 +51,9 @@ Instance Types
 
 .. note::
     
-    **What are the differences between ssd and hdd?**
+    **What are the differences between SSD and HDD?**
+
+    HDD (Hard Disk Drive) and SSD (Solid-State Drive) are two main types of storage device. HDD uses spinning metal disks to read and write data, whereas SSD relies on flash memory (similar to what is used in USB thumb drives). Generally speaking, HDD is more affordable and durable than SSD, and SSD are generally faster in reading and writing data than HDD.
 
 .. note::
     

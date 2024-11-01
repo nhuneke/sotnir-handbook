@@ -35,6 +35,7 @@ extensions = [
 	'sphinx_rtd_theme',
 	'sphinx.ext.autosectionlabel',
 	'sphinx.ext.todo',
+    'sphinx_tabs.tabs',
 ]
 
 extensions.append('sphinx.ext.todo')

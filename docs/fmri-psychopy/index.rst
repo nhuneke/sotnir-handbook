@@ -14,5 +14,5 @@ PsychoPy
 .. tabs::
     .. group-tab:: Windows
         Windows contents
-    .. group-tabs:: MacOS
+    .. group-tab:: MacOS
         MacOS contents

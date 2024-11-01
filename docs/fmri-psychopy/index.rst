@@ -8,4 +8,11 @@ PsychoPy
 
 ------------------------------------------
 
-Under construction
+.. note:: 
+    Under construction
+
+.. tabs::
+    .. group-tab:: Windows
+        Windows contents
+    .. group-tabs:: MacOS
+        MacOS contents

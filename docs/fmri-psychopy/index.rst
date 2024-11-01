@@ -14,7 +14,7 @@ PsychoPy
 psychopy-mri-emulator
 *********************
 
-`psychopy-mri-emulator` used to be a `module <https://psychopy.org/_modules/psychopy_mri_emulator/emulator.html>_` within PsychoPy's core functionality, but has been migrated to `PsychoPy's plugin system <https://psychopy.org/usingplugins.html>_` for PsychoPy's newer versions. Please make sure that your old codes that utilised this module are compatible with the newer versions.
+`psychopy-mri-emulator` used to be a `module <https://psychopy.org/_modules/psychopy_mri_emulator/emulator.html>`_ within PsychoPy's core functionality, but has been migrated to `PsychoPy's plugin system <https://psychopy.org/usingplugins.html>`_ for PsychoPy's newer versions. Please make sure that your old codes that utilised this module are compatible with the newer versions.
 
 .. important:: 
     For PsychoPy version newer than `2024.1.0` it is recommended that you install psychopy-mri-emulator via the plugins and packages manager in Builder.

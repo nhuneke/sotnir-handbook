@@ -3,7 +3,7 @@
 ==============================================
 fMRI Analysis
 ==============================================
-| Contributors: Nathan TM Huneke
+| Contributors: Nathan TM Huneke, Yukai Zou
 | Maintainers: Nathan TM Huneke
 
 ------------------------------------------
@@ -14,7 +14,7 @@ Under construction
     :maxdepth: 2
     :caption: Sections
 
-    fmriprep/index.rst
-    fsl/index.rst
-    quality-assurance/index.rst
+    fmriprep/index
+    fsl/index
+    quality-assurance/index
     connectivity/intro.rst

@@ -57,13 +57,14 @@ Contributors are credited on each page.
    :maxdepth: 2
    :caption: functional MRI
 
+   fmri-psychopy/index
    fmri-analysis/index
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: diffusion MRI
 
-   dmri-analysis/index
+   dmri/index
 
 .. toctree::
    :maxdepth: 1

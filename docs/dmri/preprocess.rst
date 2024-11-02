@@ -1,4 +1,4 @@
-.. _fmriprep.rst:
+.. _preprocess.rst:
 
 ==============================================
 DTI Preprocessing with FSL

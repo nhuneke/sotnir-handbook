@@ -138,88 +138,88 @@ Below are the packages already installed for NITRC-CE (v0.57-14):
     * - `3D Slicer <https://www.slicer.org/>`_
       - 4.11.20210226
       - An open source software platform for medical image informatics, image processing, and three-dimensional visualisation.
-    * - AFNI
+    * - `AFNI <https://afni.nimh.nih.gov/>`_
       - AFNI_24.0.15
       - A collection of tools for processing and analyzing functional MRI data.
-    * - ANTS
+    * - `ANTS <http://stnava.github.io/ANTs/>`_
       - 2.4.2
       - Image registration and segmentation tool for medical imaging.
-    * - BrainSuite
+    * - `BrainSuite <https://brainsuite.org/>`_
       - 16a1
       - A software for analysing structural MRI images of the brain.
-    * - CONN
+    * - `CONN <https://web.conn-toolbox.org/>`_
       - 22a
       - A MATLAB-based software for fMRI analysis.
-    * - C-PAC
+    * - `C-PAC <https://fcp-indi.github.io/>`_
       - 1.8.6
       - A pipeline for reproducible fMRI data processing and analysis.
-    * - DataLad
+    * - `DataLad <https://www.datalad.org/>`_
       - 0.19.5-1~nd22.04+1
       - A data management tool that streamlines seamless data access versioning, and sharing for scientific research.
-    * - Docker
+    * - `Docker <https://www.docker.com/>`_
       - 24.0.2
       - A platform for developing, deploying, and executing applications in a containerised and reproducible environment.
-    * - DTIPrep
+    * - `DTIPrep <https://www.nitrc.org/projects/dtiprep/>`_
       - 1.2.4
       - A tool for quality control and preprocessing of diffusion tensor imaging (DTI) data.
-    * - EEGLAB
+    * - `EEGLAB <https://sccn.ucsd.edu/eeglab/>`_
       - v2023.1
       - An interactive MATLAB-based toolbox for processing and analysing EEG data.
-    * - FreeSurfer
+    * - `FreeSurfer <https://surfer.nmr.mgh.harvard.edu/>`_
       - 7.2.0
       - A popular software for neuroimaging analysis.
-    * - FSL
+    * - `FSL <https://fsl.fmrib.ox.ac.uk>`_
       - 6.0.7.9
       - A popular and comprehensive library of tools for analysing MRI neuroimaging data.
-    * - HeuDiConv
+    * - `HeuDiConv <https://heudiconv.readthedocs.io>`_
       - 0.13.1-1~nd22.04+1
       - A DICOM converter for organizing and converting neuroimaging data into NIfTI format that are BIDS-compliant.
-    * - HTCondor
+    * - `HTCondor <https://htcondor.org/>`_
       - 10.0.9-1.1
       - A high-throughput computing software for distributed task scheduling and resource management.
-    * - MaCH
+    * - `MaCH <csg.sph.umich.edu/abecasis/mach>`_
       - 1.0.18.c
       - A Markov Chain based tool for haplotype estimation and genotype imputation in genetics research.
-    * - MRIcron
+    * - `MRIcron <https://www.nitrc.org/projects/mricron>`_
       - 1.2.20211006+dfsg-1
       - A tool for viewing neuroimaging data and converting image data formats.
-    * - MRtrix
+    * - `MRtrix <https://www.mrtrix.org/>`_
       - 3.0.3-1
       - A popular tool for processing, analyzing, and visualizing diffusion MRI data.
-    * - NeuroDocker
+    * - `NeuroDocker <https://www.repronim.org/neurodocker/>`_
       - 0.9.4
       - A command-line program that creates custom Dockerfiles and Singularity images for neuroimaging software.
-    * - NEURON
+    * - `NEURON <https://neuron.yale.edu/neuron/>`_
       - 7.6.3-1build6
       - A simulation environment for modeling neurons and networks of neurons.
-    * - PLINK!
+    * - `PLINK <https://zzz.bwh.harvard.edu/plink>`_
       - v1.07
       - A collection of tools for genome-wide association studies and population genetics analysis.
-    * - Pydicom
+    * - `Pydicom <https://pydicom.github.io/>`_
       - 2.2.2-1
       - A Python package for working with DICOM medical image files.
-    * - dipy
+    * - `dipy <https://dipy.org/>`_
       - 1.4.1-1build1
       - A popular python library for analysing diffusion MRI data.
-    * - NiBabel
+    * - `NiBabel <https://nipy.org/nibabel>`_
       - 3.2.2-1
       - A python library for accessing and transforming neuroimaging data formats.
-    * - NIPY
+    * - `NIPY <https://nipy.org>`_
       - 0.5.0
       - A python project that provides tools for processing and analysis of neuroimaging data.
-    * - NiPype
+    * - `NiPype <https://nipype.readthedocs.io>`_
       - 1.7.0-1
       - A python library for creating reproducible and flexible neuroimaging workflows.
-    * - Singularity
+    * - `Singularity <https://docs.sylabs.io/guides/latest/user-guide/>`_
       - 3.7.3
       - A container platform designed for high-performance computing and reproducible research.
-    * - SOLAR-Eclipse
+    * - `SOLAR-Eclipse <https://solar-eclipse-genetics.org/>`_
       - 8.4.2
       - A statistical software for genetic and linkage analysis.
-    * - SPM
+    * - `SPM <https://www.fil.ion.ucl.ac.uk/spm/>`_
       - 12
       - A popular MATLAB-based software package for brain imaging analysis, especially for PET and fMRI data.
-    * - TrackVis
+    * - `TrackVis <https://trackvis.org/>`_
       - 0.6.1
       - A tool for visualising and analysing fiber tracks of diffusion MRI data.
 

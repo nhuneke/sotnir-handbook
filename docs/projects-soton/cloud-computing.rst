@@ -135,9 +135,9 @@ Below are the packages already installed for NITRC-CE (v0.57-14):
     * - Package
       - Version
       - Description
-    * - 3D Slicer
+    * - `3D Slicer <https://www.slicer.org/>`_
       - 4.11.20210226
-      - 3D Slicer Decription
+      - An open source software platform for medical image informatics, image processing, and three-dimensional visualisation.
     * - AFNI
       - AFNI_24.0.15
       - A collection of tools for processing and analyzing functional MRI data.

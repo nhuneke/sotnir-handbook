@@ -1,9 +1,9 @@
-.. _intro.rst:
+.. _index.rst:
 
 ==============================================
 fMRI Analysis
 ==============================================
-| Contributors: Nathan TM Huneke
+| Contributors: Nathan TM Huneke, Yukai Zou
 | Maintainers: Nathan TM Huneke
 
 ------------------------------------------
@@ -11,10 +11,10 @@ fMRI Analysis
 Under construction
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :caption: Sections
 
-    qa-checks/qa-checks.rst
-    fmriprep/intro.rst
-    fsl/intro.rst
+    fmriprep/index
+    fsl/index
+    quality-assurance/index
     connectivity/intro.rst

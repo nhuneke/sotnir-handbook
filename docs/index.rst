@@ -57,7 +57,8 @@ Contributors are credited on each page.
    :maxdepth: 2
    :caption: functional MRI
 
-   fmri-analysis/intro.rst
+   fmri-psychopy/index
+   fmri-analysis/index
 
 .. toctree::
    :maxdepth: 2

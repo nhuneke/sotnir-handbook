@@ -1,4 +1,4 @@
-.. _qa-checks.rst:
+.. _index.rst:
 
 ==============================================
 Quality Assurance Checks

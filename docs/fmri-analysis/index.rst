@@ -3,7 +3,7 @@
 ==============================================
 fMRI Analysis
 ==============================================
-| Contributors: Nathan TM Huneke
+| Contributors: Nathan TM Huneke, Yukai Zou
 | Maintainers: Nathan TM Huneke
 
 ------------------------------------------

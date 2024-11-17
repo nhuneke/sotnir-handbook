@@ -34,31 +34,45 @@ Clusters are designed to specifically tackle large-scale and computationally int
 Node vs. Core
 ~~~~~~~~~~~~~
 
+A *node* is a *single* computing unit on a cluster. Normally, a node consists of processor(s), memory, storage, network connectivity, and can communicate with other nodes in the cluster to exchange data and coordinate their work.
+
+A *core*, also known as logical processor, is an *individual* compute unit on a physical processor (or CPU, Central Processing Unit).
+
+Below is an example of a node containing two physical processors, each with 10 cores, resulting in a total of 20 logical processors:
+
 .. image:: ../images/node-processors-cores.png
    :width: 600
    :alt: A diagram of a node that consists of two physical processores with ten cores (logical processors) each.
+
+In HPC, the queue manager essentially "sees" logical processors rather than those physical chips (CPUs). Therefore, we will mostly focus on how to make the most of *cores* to help accelerate our workload.
 
 Login vs. Compute Node
 ~~~~~~~~~~~~~~~~~~~~~~
 
 - Login node is also known as the front-end node.
 - Login node is shared by many users.
-- Your goal is to get to the compute nodes to run your jobs.
+- Compute node is dedicated nodes that are configured to run a computationally intensive task.
+- Your goal is to get your jobs running at the compute nodes.
 
+Below is a diagram that illustrates differences between login node and compute node:
+
+.. image:: ../images/frontend-vs-compute-nodes.png
+   :width: 600
+   :alt: Basic components of a cluster, illustrating differences between login and compute nodes.
+
+.. important::
+
+	Overloading login nodes can cause issues for other users. Login nodes are intended for short interactive processing only. For longer, interactive work, please utilise ``sinteractive`` sessions. 
 
 Request Access
 --------------
 
-.. note::
+.. tabs::
+    .. group-tab:: For Staff/PGR Students
+        Once you have obtained UoS username and password, you will be able to apply for Iridis access after a completing an `Iridis Account Application form <https://sotonproduction.service-now.com/serviceportal?id=sc_cat_item&sys_id=bce3a6fa1bf34210e3076351f54bcbe9>`_. The form will ask for a brief justification of usage. If you are uncertain how to fill out the form, please contact your research advisor or line manager.
+    .. group-tab:: For Undergraduate/MSc Students
+        You can access the Lyceum service and your Project Supervisor/Course Tutor will fill out an `Lyceum Account Application form <https://sotonproduction.service-now.com/serviceportal?id=sc_cat_item&sys_id=2ba3bad5db8f2b00f91c8c994b961961>`_ on your behalf.
 
-    If you are off site when planning to use Iridis, you will need to connect to  
-    the University's `VPN <https://knowledgenow.soton.ac.uk/Articles/KB0011610>`_ first.
-
-Once you obtain UoS username and password, you will be able to apply for Iridis access after a completing an `online application form <https://sotonproduction.service-now.com/soton/it_rq_iridis_application>`_. The form will ask for a brief justification of usage. 
-
-.. note::
-	If you are uncertain how to fill out the form, please contact your research advisor or line manager.
-	
 Once your access has been granted, you are also subscribed to the HPC mailing list. Make sure to keep an eye on any notice regarding power outage and scheduled maintenance, to ensure your workflow can complete successfully.
 
 Here are a few links to the resources:
@@ -68,21 +82,28 @@ Here are a few links to the resources:
     - Specify job resources: https://sotonac.sharepoint.com/teams/HPCCommunityWiki/SitePages/Submitting-Jobs-Slurm.aspx#specifying-job-resources
 - Job extension policy: https://sotonac.sharepoint.com/teams/HPCCommunityWiki/SitePages/Fair-usage-and-Job-extension-policy.aspx
 
-Login nodes
-===========
+Connect to Iridis
+-----------------
 
+To access Iridis, you would need to set up an SSH connection. The methods depend on the operating system you are using.
 
-.. important::
+.. note::
 
-	Overloading login nodes can cause issues for other users. Login nodes are intended for short interactive processing only. For longer, interactive work, please utilize ``sinteractive`` sessions. 
+    If you are off site when planning to use Iridis, you will need to connect to  
+    the University's `VPN <https://knowledgenow.soton.ac.uk/Articles/KB0011610>`_ first.
 
-Compute nodes
-=============
+.. tabs::
+    .. group-tab:: Windows
+        You may use clients available for Windows, such as `MobaXterm <https://mobaxterm.mobatek.net/>`_, `PuTTY <https://www.putty.org/>`, or `ThinLinc <https://www.cendio.com/thinlinc>`_. Alternatively, you may run SSH in `Windows Subsystem for Linux <https://learn.microsoft.com/en-us/windows/wsl>`.
+    .. group-tab:: MacOS/Linux
+        You can run SSH in `Terminal <https://support.apple.com/en-gb/guide/terminal/welcome>`_ or a Terminal emulator such as `iTerm2 <https://iterm2.com/>`_. Instructions for MacOS goes here.
 
-Initiaing an interactive session on a compute node using the ``sinteractive`` command allows for interactive computing and the use of the GUI over X11, e.g. for RStudio, without the risk of overloading the login nodes.
+Launching an interactive session
+================================
+
+Initiating an interactive session on a compute node using the ``sinteractive`` command allows for interactive computing and the use of the GUI over X11, e.g. for RStudio, without the risk of overloading the login nodes.
 
 Check out the following page for more details on how to use ``sinteractive``: https://sotonac.sharepoint.com/teams/HPCCommunityWiki/SitePages/Submitting-Jobs-Slurm.aspx#interactive-jobs
-
 
 Using job arrays
 ==================

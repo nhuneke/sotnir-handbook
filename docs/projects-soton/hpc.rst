@@ -11,19 +11,48 @@ High Performance Computing
 .. note::
 	Under construction
 
-High Performance Computing (HPC) accelerates large workflows of *highly-interdependent* sub-tasks, which can effectively make the processing and analysis of neuroimage data (especially large dataset) more efficient. The University of Southampton has one of the largest computational facilities in the UK. `The Iridis Compute Cluster <https://www.southampton.ac.uk/isolutions/staff/iridis.page>`_ is one of the world's top supercomputers, which is now in the 5th generation.
-
 .. important::
    
    There is a learning curve ahead. It's important that you first get familiar with operating within a command line interface, and know how to write basic scriptings. More contents and resources of these topics will be added to this handbook.
-   
+
+High Performance Computing (HPC) accelerates large workflows of *highly-interdependent* sub-tasks, which can effectively make the processing and analysis of neuroimage data (especially large dataset) more efficient. The University of Southampton has one of the largest computational facilities in the UK. `The Iridis Compute Cluster <https://www.southampton.ac.uk/isolutions/staff/iridis.page>`_ is one of the world's top supercomputers, which is now in the 5th generation.
+
+HPC Vocabulary
+--------------
+
+What is a Cluster?
+~~~~~~~~~~~~~~~~~~
+
+A cluster can be conceptualised as a *system* that consists of three main components:
+
+1. **Hardware**. This includes compute nodes, interconnection networks, and storage.
+2. **Software**. This includes the operating system, compilers, libraries, applications, and the queue manager that handles the scheduling and execution of tasks.
+3. **Infrastructure**. This includes front-end interface, power supply, cooling, data center facility, and technical staff who manages and maintain all of them.
+
+Clusters are designed to specifically tackle large-scale and computationally intensive problems, such as image processing and simulations. Clusters are widely used in applications such as hydraulic modeling, finance, climate prediction, urban traffic analysis, astronomy, proteomics, and many more.
+
+Node vs. Core
+~~~~~~~~~~~~~
+
+.. image:: ../images/node-processors-cores.png
+   :width: 600
+   :alt: A diagram of a node that consists of two physical processores with ten cores (logical processors) each.
+
+Login vs. Compute Node
+~~~~~~~~~~~~~~~~~~~~~~
+
+- Login node is also known as the front-end node.
+- Login node is shared by many users.
+- Your goal is to get to the compute nodes to run your jobs.
+
+
+Request Access
+--------------
+
 .. note::
 
     If you are off site when planning to use Iridis, you will need to connect to  
     the University's `VPN <https://knowledgenow.soton.ac.uk/Articles/KB0011610>`_ first.
-
-Request Access
-----------------------
 
 Once you obtain UoS username and password, you will be able to apply for Iridis access after a completing an `online application form <https://sotonproduction.service-now.com/soton/it_rq_iridis_application>`_. The form will ask for a brief justification of usage. 
 

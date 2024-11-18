@@ -41,7 +41,7 @@ A *core*, also known as logical processor, is an *individual* compute unit on a 
 Below is an example of a node containing two physical processors, each with 10 cores, resulting in a total of 20 logical processors:
 
 .. image:: ../images/node-processors-cores.png
-   :width: 600
+   :width: 400
    :alt: A diagram of a node that consists of two physical processores with ten cores (logical processors) each.
 
 In HPC, the queue manager essentially "sees" logical processors rather than those physical chips (CPUs). Therefore, we will mostly focus on how to make the most of *cores* to help accelerate our workload.
@@ -57,7 +57,7 @@ Login vs. Compute Node
 Below is a diagram that illustrates differences between login node and compute node:
 
 .. image:: ../images/frontend-vs-compute-nodes.png
-   :width: 400
+   :width: 600
    :alt: Basic components of a cluster, illustrating differences between login and compute nodes.
 
 .. important::

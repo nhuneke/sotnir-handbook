@@ -27,7 +27,7 @@ How to run Unix commands
         You already have Terminal installed, so you can open a terminal directly and start typing commands.
 
 Command Structure
-*****************
+-----------------
 
 A command typically consists of the following four components:
 

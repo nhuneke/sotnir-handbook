@@ -25,7 +25,7 @@ What is a Cluster?
 
 A cluster can be conceptualised as a *system* that consists of three main components:
 
-1. **Hardware**. This includes compute nodes, interconnection networks, and storage.
+1. **Hardware**. This includes nodes, interconnection, and storage.
 2. **Software**. This includes the operating system, compilers, libraries, applications, and the queue manager that handles the scheduling and execution of tasks.
 3. **Infrastructure**. This includes front-end interface, power supply, cooling, data center facility, and technical staff who manages and maintain all of them.
 

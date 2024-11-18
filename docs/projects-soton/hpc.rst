@@ -57,7 +57,7 @@ Login vs. Compute Node
 Below is a diagram that illustrates differences between login node and compute node:
 
 .. image:: ../images/frontend-vs-compute-nodes.png
-   :width: 600
+   :width: 400
    :alt: Basic components of a cluster, illustrating differences between login and compute nodes.
 
 .. important::

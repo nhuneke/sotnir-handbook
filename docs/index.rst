@@ -22,13 +22,7 @@ Contributors are credited on each page.
    
    getting-started/linux-machines.rst
    getting-started/unix-basics.rst
- 
-.. toctree::
-   :maxdepth: 1
-   :caption: Getting Access to Clinical Data at UHS
 
-   XNAT/intro.rst
- 
 .. toctree::
    :maxdepth: 1
    :caption: Undertaking a Neuroimaging Project in Southampton

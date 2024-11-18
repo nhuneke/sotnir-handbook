@@ -34,7 +34,7 @@ Clusters are designed to specifically tackle large-scale and computationally int
 Node vs. Core
 ~~~~~~~~~~~~~
 
-A *node* is a *single* computing unit on a cluster. Normally, a node consists of processor(s), memory, storage, network connectivity, and can communicate with other nodes in the cluster to exchange data and coordinate their work.
+A *node* is a *single* computing unit on a cluster. Normally, a node consists of processor(s), memory, storage, and network connectivity that allows exchange of data and coordinate tasks with other nodes in the cluster.
 
 A *core*, also known as logical processor, is an *individual* compute unit on a physical processor (or CPU, Central Processing Unit).
 

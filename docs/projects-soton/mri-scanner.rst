@@ -10,7 +10,7 @@ Research MRI Scanners
 
 .. important::
 
-    We have now transitioned to **`Calpendo <https://uhs-rad.calpendo.com/>`_**, a new booking system for managing research MRI slots. Calpendo offers enhanced features for scheduling and resource management, and we are confident it will provide a more efficient and long-term solution for our research MRI bookings. 
+    We have now transitioned to `**Calpendo** <https://uhs-rad.calpendo.com/>`_, a new booking system for managing research MRI slots. Calpendo offers enhanced features for scheduling and resource management, and we are confident it will provide a more efficient and long-term solution for our research MRI bookings. 
 
 Making Reservation
 ------------------
@@ -51,4 +51,6 @@ To make a reservation, click on "Calendar" in the navigation bar (you will typic
 .. image:: ../images/calpendo-booking-example.png
    :width: 600
 
-In the pop-up window, you will need to provide key information about your reservation. It is recommended to include the **participant IDs (instead of their names)** and specify your Project name. Click on "Create Booking" to submit your reservation request. The Admin team will review your request, and you will receive an email notification once it is approved. By default, you will get a reminder email before the appointment. Please ensure you coordinate with the participant to facilitate a smooth scanning session.
+In the pop-up window, you will need to provide key information about your reservation. It is recommended to include the **participant IDs (instead of their names)** and specify your Project name. Click on "Create Booking" to submit your reservation request. 
+
+The Admin team will review your request, and you will receive an email notification once it is approved. By default, you will get a reminder email before the appointment. Please ensure you coordinate with the participant to facilitate a smooth scanning session.

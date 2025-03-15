@@ -10,7 +10,7 @@ Research MRI Scanners
 
 .. important::
 
-    We have now transitioned to `**Calpendo** <https://uhs-rad.calpendo.com/>`_, a new booking system for managing research MRI slots. Calpendo offers enhanced features for scheduling and resource management, and we are confident it will provide a more efficient and long-term solution for our research MRI bookings. 
+    We have now transitioned to `Calpendo <https://uhs-rad.calpendo.com/>`_, a new booking system for managing research MRI slots. Calpendo offers enhanced features for scheduling and resource management, and we are confident it will provide a more efficient and long-term solution for our research MRI bookings. 
 
 Making Reservation
 ------------------

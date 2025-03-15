@@ -40,7 +40,7 @@ Here is how the calendar looks like:
     
     **What is SMR3C exactly?** 
     
-    SMR3C is a 3T Siemens Vida MRI scanner located on Level C in the `MRI Outpatients Department at UHS<https://www.uhs.nhs.uk/whats-new/press-releases/university-hospital-southampton-opens-12.2m-state-of-the-art-mri-outpatients-department>`_. SMR3C supports various research studies and is a critical research imaging infrastructure at Southampton.
+    SMR3C is a 3T Siemens Vida MRI scanner located on Level C in the `MRI Outpatients Department at UHS <https://www.uhs.nhs.uk/whats-new/press-releases/university-hospital-southampton-opens-12.2m-state-of-the-art-mri-outpatients-department>`_. SMR3C supports various research studies and is a critical research imaging infrastructure at Southampton.
 
 
 How do I make a reservation?

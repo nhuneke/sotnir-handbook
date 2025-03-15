@@ -10,53 +10,45 @@ Research MRI Scanners
 
 .. important::
 
-    Our LabArchives Scheduler subscription, which was funded by the University's Research Concordat, supported up to 12 users until 2nd September 2023. We are currently in the process of renewing our Scheduler license, and we are actively exploring a more long-term solution to the management of research MRI slots. 
+    We have now transitioned to **`Calpendo <https://uhs-rad.calpendo.com/>`_**, a new booking system for managing research MRI slots. Calpendo offers enhanced features for scheduling and resource management, and we are confident it will provide a more efficient and long-term solution for our research MRI bookings. 
 
 Making Reservation
 ------------------
 
-LabArchives is being used as the online booking system for the research MRI scanners. It allows both UoS researchers and UHS staff (radiographers and research nurses) to view the scanner availability and make, update, and cancel reservations.
+`Calpendo <https://uhs-rad.calpendo.com/>`_ is now the online booking system for our research MRI scanners at UHS. It allows both UoS researchers and UHS staff (radiographers and research nurses) to view scanner availability and make, update, and cancel reservations.
 
-Link: https://scheduler.labarchives.com/
+Link: https://uhs-rad.calpendo.com/
 
 How do I register?
 ==================
 
-You would need a web browser that is not Internet Explorer (e.g. Firefox, Chrome, Microsoft Edge), create a password that is at least 12-digit long, and selecting “United Kingdom” for the instance of creating account from the UK server.
+To register for Calpendo, please visit `https://uhs-rad.calpendo.com/ <https://uhs-rad.calpendo.com/>`_ and click on "Register new user" to request an account. You will need to provide your name, email address, login username, and a password. Once you have submitted your request, you will get notified once your request is approved, typically within a week.
 
 How does this work?
 ===================
 
 Here is how the calendar looks like:
 
-.. image:: ../images/labarchives-layout-2022.png
+.. image:: ../images/calpendo-booking-calendar-2025.png
    :width: 600
 
-**For Radiographer**: You, as the resource administrator of SMR1/SMR5, will get email notification every time a new reservation is proposed. You can then choose to approve/disprove depending on staff availability during that time. Our study coordinator will then confirm with the participant about the time and date to come.
+**For Radiographer**: As the resource administrator of SMR3C, you will receive email notifications whenever a new reservation is proposed. You can then approve or reject the reservation based on staff availability during the requested time. Once approved, the study coordinator will confirm the appointment with the participant.
 
-The scheduler itself has an email subscription functionality - it will send you email to inform you a potential reservation to review and approve. You can adjust setting to turn on/off notifications to reduce email traffic, because they could get overwhelming (hopefully not).
-
-**For Research Nurse/Coordinator**: You will have access to view the calendar of the research MRI scanner, where you can see the available scanners (SMR1/SMR5), when the scanner is available/unavailable/booked. You can propose new reservation on the calendar, which is pending approval (i.e. not confirmed yet) depending on radiographer availability during the proposed time. Once the reservation is approved, you would get an email notification, you can confirm with the participant about the time and date to come.
+**For Research Coordinators/Nurses**: You will have access to view the availability for SMR3C. You can propose new reservations, which will remain pending until approved by a radiographer. Once approved, you will receive an email notification, and you can then confirm the appointment with the participant.
 
 .. note::
     
-    **What are SMR1 and SMR5 exactly?**
+    **What is SMR3C exactly?** 
     
-    SMR1 and SMR5 are the names for the two MRI scanners in our hospital. SMR1 is located on Level B, and SMR5 is located on Level C. They are managed as two separate resources on the LabArchives, so that it helps radiographers to anticipate where to assist research scans. Make sure you know which scanner to book, and if unsure, please check with the project PI.
+    SMR3C is a 3T Siemens Vida MRI scanner located on Level C in the `MRI Outpatients Department at UHS<https://www.uhs.nhs.uk/whats-new/press-releases/university-hospital-southampton-opens-12.2m-state-of-the-art-mri-outpatients-department>`_. SMR3C supports various research studies and is a critical research imaging infrastructure at Southampton.
 
-What should I do after signing in?
-==================================
 
-After joining (once this step is done), you will need to click on your name at the top right and select Switch Organizations. This will open up a window where you can choose which organization to view. Select "Southampton Research MRI”, and you should be able to view the calendar.
+How do I make a reservation?
+=============================
 
-How to look up for the reservations?
-====================================
+To make a reservation, click on "Calendar" in the navigation bar (you will typically be viewing the Calendar after logging in). Then, click on or drag on the booking calendr to select the desired time slot. Note that different colors on the calendar indicate whether the scanner is available for booking or unavailable due to maintenance or clinical work. A pop-up window will appear like the following:
 
-To get there you need to click on “Application Management” on top and then select “Reservations”. From there you can specify the filter to, e.g., a certain period of time, user (who made the reservations), and search for any keywords in the Title/Description (i.e. subject ID, hospital ID) of the reservations.
+.. image:: ../images/calpendo-booking-example.png
+   :width: 600
 
-Your feedback matters
----------------------
-
-If you wish to share your thoughts and feedbacks on how to improve the running and management of research MRI slots, they are more than welcome and appreciated. Below you may find the link to a survey for submitting anonymous feedback:
-
-- Link to the survey: https://forms.office.com/r/ZS6LrG3dde
+In the pop-up window, you will need to provide key information about your reservation. It is recommended to include the **participant IDs (instead of their names)** and specify your Project name. Click on "Create Booking" to submit your reservation request. The Admin team will review your request, and you will receive an email notification once it is approved. By default, you will get a reminder email before the appointment. Please ensure you coordinate with the participant to facilitate a smooth scanning session.

@@ -11,7 +11,7 @@ Nordic Neuro Lab (NNL)
 Configuring NNL Equipment with Your PC
 ***************************************
 
-Please follow the instructions `here <../_assets/nnl-quickstart-uos.pdf>`_ to set up the NNL equipment to work with your PC.
+Please follow the instructions `here <../nnl-quickstart-uos.pdf>`_ to set up the NNL equipment to work with your PC.
 
 NNL SyncBox Configuration with PsychoPy
 ***************************************

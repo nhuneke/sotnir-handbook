@@ -29,8 +29,3 @@ psychopy-mri-emulator
         Windows contents
     .. group-tab:: MacOS
         MacOS contents
-
-NeuroNordicLab SyncBox Configuration
-************************************
-
-A detailed instructions for setting up PsychoPy with NordicNeuroLab fMRI hardware can be found `here <https://info.nordicneurolab.com/NL-100-0104-02_PsychoPy-Setup-with-NordicNeuroLab-fMRI-Hardware.pdf>`_.

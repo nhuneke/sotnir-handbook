@@ -27,7 +27,6 @@ Contributors are credited on each page.
    :maxdepth: 1
    :caption: Undertaking a Neuroimaging Project in Southampton
 
-   projects-soton/intro.rst
    projects-soton/trainings.rst
    projects-soton/mri-scanner.rst
    projects-soton/hpc.rst
@@ -51,6 +50,7 @@ Contributors are credited on each page.
    :maxdepth: 2
    :caption: functional MRI
 
+   fmri-nnl/index
    fmri-psychopy/index
    fmri-analysis/index
 

@@ -50,6 +50,7 @@ Contributors are credited on each page.
    :maxdepth: 2
    :caption: functional MRI
 
+   fmri-nnl/index
    fmri-psychopy/index
    fmri-analysis/index
 

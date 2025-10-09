@@ -47,7 +47,7 @@ Plan Ahead
 
 .. important::
 
-    Bookings cannot be made at least **3 working days in advance**.
+    Bookings must be made at least **3 working days in advance**.
 
 Please plan your scans well ahead of time to avoid missing your preferred time slots. Each slot becomes unavailable a few days in advance:
 

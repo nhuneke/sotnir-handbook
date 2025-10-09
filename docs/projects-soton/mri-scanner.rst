@@ -53,7 +53,7 @@ Please plan your scans well ahead of time to avoid missing your preferred time s
 
 - **Tuesday 8am slot**: unavailable from the previous Thursday at 8am
 - **Thursday 3pm slot**: unavailable from the previous Monday at 3pm
-- **Saturday 9am slot**: becomes unavailable from the previous Wednesday at 9am
+- **Saturday 9am slot**: unavailable from the previous Wednesday at 9am
 
 How do I make a reservation?
 =============================

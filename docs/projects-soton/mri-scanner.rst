@@ -42,6 +42,18 @@ Here is how the calendar looks like:
     
     SMR3C is a 3T Siemens Vida MRI scanner located on Level C in the `MRI Outpatients Department at UHS <https://www.uhs.nhs.uk/whats-new/press-releases/university-hospital-southampton-opens-12.2m-state-of-the-art-mri-outpatients-department>`_. SMR3C supports various research studies and is a critical research imaging infrastructure at Southampton.
 
+Plan Ahead
+==========
+
+.. important::
+
+    Bookings must be made at least **3 working days in advance**.
+
+Please plan your scans well ahead of time to avoid missing your preferred time slots. Each slot becomes unavailable a few days in advance:
+
+- **Tuesday 8am slot**: unavailable from the previous Thursday at 8am
+- **Thursday 3pm slot**: unavailable from the previous Monday at 3pm
+- **Saturday 9am slot**: unavailable from the previous Wednesday at 9am
 
 How do I make a reservation?
 =============================

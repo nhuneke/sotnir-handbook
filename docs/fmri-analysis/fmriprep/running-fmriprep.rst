@@ -88,7 +88,7 @@ Run fMRIPrep with Apptainer
 
 .. note::
 
-    Logout and log back in to Iridis on a compute node
+    Logout and log back in to Iridis on a compute node. Remember to re-load the Apptainer module when logging back in.
 
 Unfortunately there is no python wrapper for fMRIPrep to use with Apptainer, so the command is slightly more complex.
 

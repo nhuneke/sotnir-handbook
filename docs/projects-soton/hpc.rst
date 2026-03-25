@@ -3,7 +3,7 @@
 ==========================
 High Performance Computing
 ==========================
-| Contributors: Yukai Zou
+| Contributors: Yukai Zou, Nathan Huneke
 | Maintainer: Yukai Zou
 
 --------------
@@ -64,106 +64,63 @@ Below is a diagram that illustrates differences between login node and compute n
 
 	Overloading login nodes can cause issues for other users. Login nodes are intended for short interactive processing only. For longer, interactive work, please utilise ``sinteractive`` sessions. 
 
-Request Access
---------------
+Iridis Open OnDemand
+----------------------
 
-.. tabs::
-    .. group-tab:: For Staff/PGR Students
-        Once you have obtained UoS username and password, you will be able to apply for Iridis access after a completing an `Iridis Account Application form <https://sotonproduction.service-now.com/serviceportal?id=sc_cat_item&sys_id=bce3a6fa1bf34210e3076351f54bcbe9>`_. The form will ask for a brief justification of usage. If you are uncertain how to fill out the form, please contact your research advisor or line manager.
-    .. group-tab:: For Undergraduate/MSc Students
-        You can access the Lyceum service and your Project Supervisor/Course Tutor will fill out an `Lyceum Account Application form <https://sotonproduction.service-now.com/serviceportal?id=sc_cat_item&sys_id=2ba3bad5db8f2b00f91c8c994b961961>`_ on your behalf.
+For imaging projects, we suggest connecting via Iridis Open OnDemand. This allows you to use interactive apps via a graphical interface, which is almost essential when using FSL or CONN.
 
-Once your access has been granted, you are also subscribed to the HPC mailing list. Make sure to keep an eye on any notice regarding power outage and scheduled maintenance, to ensure your workflow can complete successfully.
+Requesting Access
+~~~~~~~~~~~~~~~~~~~
 
-Here are a few links to the resources:
+You can request access to Iridis Open OnDemand at the `Sharepoint site <https://sotonac.sharepoint.com/teams/HPCCommunityWiki/SitePages/Iridis_Open_OnDemand.aspx>`_
 
-- HPC Community Wiki: https://sotonac.sharepoint.com/teams/HPCCommunityWiki
-- Submit a job: https://sotonac.sharepoint.com/teams/HPCCommunityWiki/SitePages/Submitting-Jobs-Slurm.aspx
-    - Specify job resources: https://sotonac.sharepoint.com/teams/HPCCommunityWiki/SitePages/Submitting-Jobs-Slurm.aspx#specifying-job-resources
-- Job extension policy: https://sotonac.sharepoint.com/teams/HPCCommunityWiki/SitePages/Fair-usage-and-Job-extension-policy.aspx
+Connecting to Iridis Open OnDemand
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Connect to Iridis
------------------
+.. important::
+    
+    You must be connected to the University VPN to use Iridis Open OnDemand
 
-To access Iridis, you would need to set up an SSH connection. The methods depend on the operating system you are using.
+Click on `Connect` on the `Sharepoint site <https://sotonac.sharepoint.com/teams/HPCCommunityWiki/SitePages/Iridis_Open_OnDemand.aspx>`_.
 
-.. note::
+You will see the following screen:
 
-    If you are off site when planning to use Iridis, you will need to connect to  
-    the University's `VPN <https://knowledgenow.soton.ac.uk/Articles/KB0011610>`_ first.
+.. image:: ../images/iridis-connect-screen.png
 
-.. tabs::
-    .. group-tab:: Windows
-        You may use clients available for Windows, such as `MobaXterm <https://mobaxterm.mobatek.net/>`_, `PuTTY <https://www.putty.org/>`, or `ThinLinc <https://www.cendio.com/thinlinc>`_. Alternatively, you may run SSH in `Windows Subsystem for Linux <https://learn.microsoft.com/en-us/windows/wsl>`_.
-    .. group-tab:: MacOS/Linux
-        You can run SSH in `Terminal <https://support.apple.com/en-gb/guide/terminal/welcome>`_ or a Terminal emulator such as `iTerm2 <https://iterm2.com/>`_.
+We suggest opening the `desktop` app. Clicking on this will give you several login options:
 
-Launching an interactive session
-================================
+.. image:: ../images/iridis-connect-options.png
 
-Initiating an interactive session on a compute node using the ``sinteractive`` command allows for interactive computing and the use of the GUI over X11, e.g. for RStudio, without the risk of overloading the login nodes.
+- Node type
+  
+  .. rubric:: Options
 
-Check out the following page for more details on how to use ``sinteractive``: https://sotonac.sharepoint.com/teams/HPCCommunityWiki/SitePages/Submitting-Jobs-Slurm.aspx#interactive-jobs
+        **Login Node**
+            Gives up to 2 hours access. *Use this node for Internet access.* When choosing this node the other options below will not apply.
 
-Using job arrays
-==================
+        **Compute Node**
+            *No internet access!* Use this node for running compute jobs only.
 
-To run jobs in parallel can greatly accelerate your workflow and save time.
+- Desktop environment: your only option here is xfce
+- Partition
 
-- https://sotonac.sharepoint.com/teams/HPCCommunityWiki/SitePages/Submitting-Jobs-Slurm.aspx#job-arrays
+    .. rubric:: Options
 
-Visualisation on Iridis 5
-=========================
+        **AMD CPU partition**
+            Up to 32 cores for compute jobs
 
-Although mainly operated in a command line interface, Iridis 5 provides options for visualisation through graphical interface. This section concerns with the option of using `NICE Desktop Cloud Virtualisation <https://nice.soton.ac.uk>`_.
+        **L4 GPU partition**
+            Required if you plan on using applications with a GUI (e.g. FSL)
+        
+        **Others**
+            Dedicated for ECS
 
- - Setting up EngineFrame VNC: https://sotonac.sharepoint.com/teams/HPCCommunityWiki/SitePages/Data-Visualisation.aspx#engineframe-vnc
+- If choosing the AMD CPU partition, you will be asked how many cores you would like: must be <=32 (3.5GB RAM per core)
+- Walltime (hours): must be <= 60 hours
+- Name: leave blank
 
-Visualization Expansion Portal (Linux Orange)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Once you launch your session, a screen summarising it will appear, with a button saying `Launch Desktop`. Click on this and you will see the xfce environment below:
 
-In addition to Linux Desktop, Iridis 5 visualisation expansion portal Linux Orange has become available since October 2023. 
+.. image:: ../images/iridis-xfce.png
 
-+----------------+-------------------------------+
-| Nodes          | ``orange02`` and ``orange03`` |
-+----------------+-------------------------------+
-| Sessions       | 4                             |
-+----------------+-------------------------------+
-| CPU cores      | 12                            |
-+----------------+-------------------------------+
-| Memory         | 240 GB                        |
-+----------------+-------------------------------+
-| GPU available? | No                            |
-+----------------+-------------------------------+
-
-(Optional) Mount Research Filestore to Iridis
-======================================
-
-The University Research Filestore is a secure research data storage service provided by iSolutions, for the research community to store active research data. Data on the research filestore is backed up and with an extra copy stored in a secure location (for disaster recovery purposes). The newest research filestore supports mounting onto Iridis 5, and this allows a more direct access to the research data via a shared filesystems and network.
-
-.. note::
-	Due to the age and the nature of the setup, some research filestore cannot be mounted onto Iridis 5. This is mainly for security reasons. Older research filestore can't set up an NFS export that allows the directory to be mounted in a way that protects the sensitive nature of the data when retrieved via other users on Iridis 5. 
-	
-	**Solution:** If the data owner requests a new research filestore space, then it can be set up with the old data copied into it. To do this, make a request by filling out a form `here <https://sotonproduction.service-now.com/serviceportal?id=sc_cat_item&sys_id=903e688edbbbf300f91c8c994b961974>`_. iSolution should be able to mount the new filestore to Iridis 5 allow direct access of data.
-
-A100 Scavenger Nodes
---------------------
-
-An A100 scavenger queue has been added to Iridis 5 in December 2023. This queue contains one node and has a twelve hour time limit, and is available to all Iridis 5 users. This may be of interest to users who are interested in testing the A100 GPUs before their full release to the user community.
-
-Specification
-=============
-
-+----------------+-----------------------------------------------------------------------+
-| GPU hardware   | Dual A100 NVLinked GPUs (160GB VRAM total across two GPUs)            |
-+----------------+-----------------------------------------------------------------------+
-| CPU hardware   | 48 intel CPUs (24 cores x 2 sockets, Intel(R) Xeon(R) Gold 6336Y CPU  |
-|                | @ 2.40GHz)                                                            |
-+----------------+-----------------------------------------------------------------------+
-| Memory         | 480GB of RAM                                                          |
-+----------------+-----------------------------------------------------------------------+
-
-How to access the node
-======================
-
-Please use the partition ``a100_scavenger`` to access the node.
+When you are done, click on your `username` in the top right corner and `logout`. You can then close the window. 

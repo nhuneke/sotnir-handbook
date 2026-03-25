@@ -20,6 +20,53 @@ FMRIB Software Library (FSL)
 
     running-feat
 
+Using FSL on Iridis Open OnDemand
+----------------------------------
+
+FSL does not install properly on Iridis. But we have found that it runs perfectly well (without FSLeyes) by using an ``Apptainer`` image. You can see more about using Apptainer on Iridis `here <https://sotonac.sharepoint.com/teams/HPCCommunityWiki/SitePages/Apptainer.aspx?web=1>`_.
+
+Get Apptainer image
+********************
+
+.. note:: 
+
+    You will need to be using a ``Login node`` for internet access
+
+Load the module:
+
+.. code-block:: bash
+
+    module load Apptainer
+
+Get the image. We found one on the Docker library that works:
+
+.. code-block:: bash
+
+    apptainer pull docker://diannepat/fsl6 \
+        ~/my_images/fsl6_latest.sif
+
+Run FSL using Apptainer
+************************
+
+.. note::
+
+    Logout and switch to a compute node with GPU
+
+You need to launch the FSL container in a very specific way:
+
+.. code-block:: bash
+    module load apptainer  # load Apptainer if not done already
+
+    apptainer exec \
+        --fakeroot \
+        --bind /scratch/nh6g15 \  # bind directories required for analysis
+        images/fsl6_latest.sif \  # change to path of where your fsl6 image is
+        bash -lc "source /usr/local/fsl/etc/fslconf/fsl.sh; exec bash"  # configure FSL within the container
+
+You will now be in a Terminal within the Apptainer virtual machine. You can now run FSL in here as if it were on your machine, e.g. use commands like ``Feat`` to open the FEAT GUI.
+
+The argument ``bash -lc "source /usr/local/fsl/etc/fslconf/fsl.sh; exec bash"`` tells the virtual machine's bash profile to correctly add ``$FSLDIR`` to ``path``. 
+
 FSLeyes: a brief intro
 ----------------------
 

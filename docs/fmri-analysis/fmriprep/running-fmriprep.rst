@@ -56,6 +56,66 @@ There are a few arguments to explain here:
 - ``--skip-bids-validation`` prevents an error when using datalad datasets
 - ``--fs-license-file`` specifies the location of the freesurfer license file, which is needed for surface reconstruction. The location above is correct for the university linux machines and does not need to be changed
 
+Using fMRIPrep on Iridis Open OnDemand
+---------------------------------------
+
+On the HPC cluster, rather than using ``Docker`` you will need to run fMRIPrep in ``Apptainer``. You can see more about using Apptainer on Iridis `here <https://sotonac.sharepoint.com/teams/HPCCommunityWiki/SitePages/Apptainer.aspx?web=1>`_.
+
+Install the image
+~~~~~~~~~~~~~~~~~~
+
+.. note::
+
+    You will need to be using the login node for internet access to install the image
+
+Open a terminal and load the module:
+
+.. code-block:: bash
+
+    module load apptainer
+
+Next you will need to download the image:
+
+.. code-block:: bash
+
+    apptainer pull ~/my_images/fmriprep-latest.sif \ 
+        docker://nipreps/fmriprep:latest
+
+If you need to download a specific version of fmriprep, then replace ``latest`` with the version number you require in the command above.
+
+Run fMRIPrep with Apptainer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. note::
+
+    Logout and log back in to Iridis on a compute node
+
+Unfortunately there is no python wrapper for fMRIPrep to use with Apptainer, so the command is slightly more complex.
+
+.. code-block:: bash
+
+    apptainer run --unsquash \
+        --bind path/to/bids/directory:/data \
+        --bind path/to/scratch:/scratch \
+        ~/my_images/fmriprep-latest.sif \
+        /data/sub-01 \
+        /data/sub-01/derivatives/fmriprep \
+        participant \
+        --participant-label 01 \
+        --skip-bids-validation \
+        --fs-license-file /home/nh6g15/freesurfer/license.txt \
+        --work-dir /scratch/nh6g15/fmriprep_work
+
+The first part of the command, until the ``path/to/image.sif`` are apptainer related arguments: 
+- ``unsquash`` avoids using squashfs. We found this tends to work better on Iridis.
+- ``bind`` tells apptainer to bind directories to certain paths within the image. You will need to ``bind`` your ``BIDS`` directory and ``scratch`` (if both are in ``scratch`` then only bind once)
+
+Following this, hopefully the command appears familiar. This is essentially the command we passed to ``fmriprep-docker``.
+
+.. important::
+
+    We suggest using all 32 cores available to you in the AMD compute nodes. Processing each participant will take 2-3 hours.
+
 Inspecting the Outputs
 -------------------------
 

@@ -61,7 +61,7 @@ You need to launch the FSL container in a very specific way:
     apptainer exec \
         --fakeroot \
         --bind /scratch/nh6g15 \  # bind directories required for analysis
-        images/fsl6_latest.sif \  # change to path of where your fsl6 image is
+        ~/my_images/fsl6_latest.sif \  # change to path of where your fsl6 image is
         bash -lc "source /usr/local/fsl/etc/fslconf/fsl.sh; exec bash"  # configure FSL within the container
 
 You will now be in a Terminal within the Apptainer virtual machine. You can now run FSL in here as if it were on your machine, e.g. use commands like ``Feat`` to open the FEAT GUI.

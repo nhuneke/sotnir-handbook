@@ -64,7 +64,7 @@ On the HPC cluster, rather than using ``Docker`` you will need to run fMRIPrep i
 Install the image
 ~~~~~~~~~~~~~~~~~~
 
-.. note::
+.. important::
 
     You will need to be using the login node for internet access to install the image
 
@@ -86,7 +86,7 @@ If you need to download a specific version of fmriprep, then replace ``latest`` 
 Run fMRIPrep with Apptainer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. note::
+.. important::
 
     Logout and log back in to Iridis on a compute node. Remember to re-load the Apptainer module when logging back in.
 
@@ -107,6 +107,7 @@ Unfortunately there is no python wrapper for fMRIPrep to use with Apptainer, so 
         --work-dir /scratch/nh6g15/fmriprep_work
 
 The first part of the command, until the ``path/to/image.sif`` are apptainer related arguments: 
+
 - ``unsquash`` avoids using squashfs. We found this tends to work better on Iridis.
 - ``bind`` tells apptainer to bind directories to certain paths within the image. You will need to ``bind`` your ``BIDS`` directory and ``scratch`` (if both are in ``scratch`` then only bind once)
 

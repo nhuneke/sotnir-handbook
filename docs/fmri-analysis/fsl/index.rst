@@ -28,7 +28,7 @@ FSL does not install properly on Iridis. But we have found that it runs perfectl
 Get Apptainer image
 ********************
 
-.. note:: 
+.. important:: 
 
     You will need to be using a ``Login node`` for internet access
 
@@ -48,13 +48,14 @@ Get the image. We found one on the Docker library that works:
 Run FSL using Apptainer
 ************************
 
-.. note::
+.. important::
 
-    Logout and switch to a compute node with GPU
+    Logout and switch to a ``compute`` node with GPU
 
 You need to launch the FSL container in a very specific way:
 
 .. code-block:: bash
+    
     module load apptainer  # load Apptainer if not done already
 
     apptainer exec \

@@ -32,6 +32,8 @@ Here is how the calendar looks like:
 .. image:: ../images/calpendo-booking-calendar-2025.png
    :width: 600
 
+Different colours on the calendar indicate whether the scanner is available for booking or unavailable due to other reasons.
+
 **For Radiographer**: As the resource administrator of SMR3C, you will receive email notifications whenever a new reservation is proposed. You can then approve or reject the reservation based on staff availability during the requested time. Once approved, the study coordinator will confirm the appointment with the participant.
 
 **For Research Coordinators/Nurses**: You will have access to view the availability for SMR3C. You can propose new reservations, which will remain pending until approved by a radiographer. Once approved, you will receive an email notification, and you can then confirm the appointment with the participant.
@@ -59,8 +61,6 @@ How do I make a reservation?
 =============================
 
 To make a reservation, click **Calendar** in the navigation bar (this is usually the default view after logging in). Then you can either click on or drag across the booking calendar to select the desired time slot.
-
-Different colours on the calendar indicate whether the scanner is available for booking or unavailable due to other reasons.
 
 A pop-up window similar to the one below will appear:
 

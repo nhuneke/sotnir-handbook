@@ -78,7 +78,7 @@ Booking Information Requirements
 - If the participant requires wearing goggles, please indicate this in the booking request, so that a pair of MR-compatible goggles will be prepared. **This is important for fMRI studies involving visual stimulus presentation.**
 - If goggles are required, please include the participant's prescription (e.g. Left -2, Right -2) in the description field.
 
-3. *Patient Identifiable Information (PII)**
+3. **Patient Identifiable Information (PII)**
 
 - *Do not enter any patient identifiable information in the Description field.* 
 - Use pseudonymised participant identifiers instead of names, dates of birth, NHS numbers, hospital numbers, or any other identifying details.

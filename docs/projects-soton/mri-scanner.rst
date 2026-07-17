@@ -58,11 +58,49 @@ Please plan your scans well ahead of time to avoid missing your preferred time s
 How do I make a reservation?
 =============================
 
-To make a reservation, click on "Calendar" in the navigation bar (you will typically be viewing the Calendar after logging in). Then, click on or drag on the booking calendr to select the desired time slot. Note that different colors on the calendar indicate whether the scanner is available for booking or unavailable due to maintenance or clinical work. A pop-up window will appear like the following:
+To make a reservation, click **Calendar** in the navigation bar (this is usually the default view after logging in). Then you can either click on or drag across the booking calendar to select the desired time slot.
+
+Different colours on the calendar indicate whether the scanner is available for booking or unavailable due to other reasons.
+
+A pop-up window similar to the one below will appear:
 
 .. image:: ../images/calpendo-booking-example.png
    :width: 600
 
-In the pop-up window, you will need to provide key information about your reservation. It is recommended to include the **participant IDs (instead of their names)** and specify your Project name. Click on "Create Booking" to submit your reservation request. 
+where you will need to provide key information about your reservation.
 
-The Admin team will review your request, and you will receive an email notification once it is approved. By default, you will get a reminder email before the appointment. Please ensure you coordinate with the participant to facilitate a smooth scanning session.
+Booking Information Requirements
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1. **Project:** The relevant project must be selected when creating a booking request.
+2. **Goggles Requirement** 
+
+- If the participant requires wearing goggles, please indicate this in the booking request, so that a pair of MR-compatible goggles will be prepared. **This is important for fMRI studies involving visual stimulus presentation.**
+- If goggles are required, please include the participant's prescription (e.g. Left -2, Right -2) in the description field.
+
+3. *Patient Identifiable Information (PII)**
+
+- *Do not enter any patient identifiable information in the Description field.* 
+- Use pseudonymised participant identifiers instead of names, dates of birth, NHS numbers, hospital numbers, or any other identifying details.
+- Before a booking request can be submitted, you must confirm that no identifiable information has been entered by selecting **Yes** in the confirmation box.
+- **Booking requests containing patient identifiable information will be cancelled and a new request will need to be submitted.**
+
+
+Example
+~~~~~~~
+
+Here is an example for correct and incorrect information entered in the Description field:
+
+.. image:: ../images/calpendo-booking-descriptions.png
+   :width: 600
+
+What Happens Next
+~~~~~~~~~~~~~~~~~
+
+After submission, the MRI Research Admin Team will review your request.
+
+If further information about the participant is required, you may be contacted by the Admin Team. Any personal information or identifiable data must be sent using a secure email method, in compliance with UHS information governance.
+
+You will receive an email notification once the booking request has been approved.
+
+By default, reminder emails are sent before the appointment. Please ensure that all participant arrangements have been confirmed in advance to facilitate a smooth scanning session.

@@ -3,7 +3,7 @@
 ==========================
 High Performance Computing
 ==========================
-| Contributors: Yukai Zou
+| Contributors: Yukai Zou, Nathan Huneke
 | Maintainer: Yukai Zou
 
 --------------
@@ -61,6 +61,62 @@ Below is a diagram that illustrates differences between login node and compute n
 
 	Overloading login nodes can cause issues for other users. Login nodes are intended for short interactive processing only. For longer, interactive work, please utilise ``sinteractive`` sessions. 
 
+Iridis Open OnDemand
+----------------------
+
+For imaging projects, we suggest connecting via Iridis Open OnDemand. This allows you to use interactive apps via a graphical interface, which is almost essential when using FSL or CONN.
+
+Requesting Access
+~~~~~~~~~~~~~~~~~~~
+
+You can request access to Iridis Open OnDemand at the `Sharepoint site <https://sotonac.sharepoint.com/teams/HPCCommunityWiki/SitePages/Iridis_Open_OnDemand.aspx>`_
+
+Connecting to Iridis Open OnDemand
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. important::
+    
+    You must be connected to the University VPN to use Iridis Open OnDemand
+
+Click on ``Connect`` on the `Sharepoint site <https://sotonac.sharepoint.com/teams/HPCCommunityWiki/SitePages/Iridis_Open_OnDemand.aspx>`_.
+
+You will see the following screen:
+
+.. image:: ../images/iridis-connect-screen.png
+
+We suggest opening the ``desktop`` app. Clicking on this will give you several login options:
+
+.. image:: ../images/iridis-connect-options.png
+
+- Node type
+
+    **Login Node**
+        Gives up to 2 hours access. *Use this node for Internet access.* When choosing this node the other options below will not apply.
+
+    **Compute Node**
+        *No internet access!* Use this node for running compute jobs only.
+
+- Desktop environment: your only option here is xfce
+- Partition
+
+    **AMD CPU partition**
+        Up to 32 cores for compute jobs
+
+    **L4 GPU partition**
+        Required if you plan on using applications with a GUI (e.g. FSL)
+        
+    **Others**
+        Dedicated for ECS
+
+- If choosing the AMD CPU partition, you will be asked how many cores you would like: must be <=32 (3.5GB RAM per core)
+- Walltime (hours): must be <= 60 hours
+- Name: leave blank
+
+Once you launch your session, a screen summarising it will appear, with a button saying ``Launch Desktop``. Click on this and you will see the xfce environment below:
+
+.. image:: ../images/iridis-xfce.png
+
+When you are done, click on your ``username`` in the top right corner and ``logout``. You can then close the window. 
 Request Access
 --------------
 
